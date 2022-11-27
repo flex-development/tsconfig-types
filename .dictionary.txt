@@ -23,6 +23,7 @@ npmrc
 pkgs
 preid
 syncer
+testts
 vates
 vitest
 vsicons

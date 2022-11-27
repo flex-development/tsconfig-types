@@ -995,16 +995,18 @@ const config = {
       }
     },
     {
-      files: ['**/__tests__/*.spec.*'],
+      files: ['**/__tests__/*.spec.*', '**/__tests__/*.spec-d.ts'],
       globals: {
         afterAll: true,
         afterEach: true,
         assert: true,
+        assertType: true,
         beforeAll: true,
         beforeEach: true,
         chai: true,
         describe: true,
         expect: true,
+        expectTypeOf: true,
         it: true,
         suite: true,
         test: true,

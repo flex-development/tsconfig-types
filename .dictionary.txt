@@ -13,6 +13,7 @@ gpgsign
 graphqlrc
 hmarr
 iife
+jsxdev
 keyid
 larsgw
 lcov

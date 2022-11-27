@@ -5,25 +5,6 @@ __metadata:
   version: 7
   cacheKey: 9
 
-"@actions/core@npm:^1.10.0":
-  version: 1.10.0
-  resolution: "@actions/core@npm:1.10.0"
-  dependencies:
-    "@actions/http-client": "npm:^2.0.1"
-    uuid: "npm:^8.3.2"
-  checksum: 61bceec8b8f233da0b678f011e2ce6f1e46de7493d0c9eafbcbff45c46451fb714bd84be9bcc71b0813eab4bca5bc41063ba787eefccea3ed59c1c69e9841f7a
-  languageName: node
-  linkType: hard
-
-"@actions/http-client@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@actions/http-client@npm:2.0.1"
-  dependencies:
-    tunnel: "npm:^0.0.6"
-  checksum: 855409b15276e888e656d9970f3662c11c0db95b5e018dbdc1be24f33144f8536b87d22ce6ec2c2d099442d27cee3b1c9d38f9d1366abe48607062beb2d2f168
-  languageName: node
-  linkType: hard
-
 "@ardatan/sync-fetch@larsgw/sync-fetch#head=worker_threads":
   version: 0.3.1
   resolution: "@ardatan/sync-fetch@https://github.com/larsgw/sync-fetch.git#commit=3fb71aeed5ff6655421064c4e4b234f524896cd2"
@@ -927,7 +908,6 @@ __metadata:
     vite: "npm:3.2.4"
     vite-tsconfig-paths: "npm:3.6.0"
     vitest: "npm:0.25.3"
-    vitest-github-actions-reporter: "npm:0.9.0"
     yaml-eslint-parser: "npm:1.1.0"
   peerDependencies:
     "@flex-development/tutils": ">=6.0.0-alpha.2"
@@ -7930,13 +7910,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tunnel@npm:^0.0.6":
-  version: 0.0.6
-  resolution: "tunnel@npm:0.0.6"
-  checksum: 4b6009e1ed9c1857d58462867cd731f4af255c0406fc982dd0a17735c5c991293bc57a8c0957c5f51dfc3778baa280e399d3e05f1ca4aaf7442349c529b7c89d
-  languageName: node
-  linkType: hard
-
 "type-check@npm:^0.4.0, type-check@npm:~0.4.0":
   version: 0.4.0
   resolution: "type-check@npm:0.4.0"
@@ -8274,17 +8247,6 @@ __metadata:
   bin:
     vite: bin/vite.js
   checksum: 7d3d67837a0400cb9c79c7ce0ffe26eb65d5668437b47e3a34c231c5ffb96e02d2d592867b0c1f863d9b8bf5ff6f3ea3b602e086ca6f48687ee00105f1b5516e
-  languageName: node
-  linkType: hard
-
-"vitest-github-actions-reporter@npm:0.9.0":
-  version: 0.9.0
-  resolution: "vitest-github-actions-reporter@npm:0.9.0"
-  dependencies:
-    "@actions/core": "npm:^1.10.0"
-  peerDependencies:
-    vitest: ">=0.16.0"
-  checksum: 02606397a535c898526fa3e282c5c48878ffffa953a702386cd1c7f486e38b2c6f39db1df85aadeb5617969074bb2b2179049584f07922a5cf347a89029dfd7c
   languageName: node
   linkType: hard
 

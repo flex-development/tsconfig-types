@@ -3,4 +3,4 @@
  * @module tsconfig-types
  */
 
-export {}
+export * from './types'

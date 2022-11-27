@@ -8,7 +8,6 @@ import { NodeEnv } from '@flex-development/tutils'
 import ci from 'is-ci'
 import path from 'node:path'
 import tsconfigpaths from 'vite-tsconfig-paths'
-import GithubActionsReporter from 'vitest-github-actions-reporter'
 import {
   defineConfig,
   type UserConfig,
@@ -53,14 +52,12 @@ const config: UserConfigExport = defineConfig((): UserConfig => {
       include: ['**/__tests__/*.spec.ts', '**/__tests__/*.spec-d.ts'],
       isolate: true,
       mockReset: true,
-      outputFile: {
-        json: './__tests__/report.json'
-      },
+      outputFile: { json: './__tests__/report.json' },
       passWithNoTests: true,
       reporters: [
         'json',
         'verbose',
-        ci ? new GithubActionsReporter() : './__tests__/reporters/notifier.ts'
+        !ci ? './__tests__/reporters/notifier.ts' : ''
       ],
       /**
        * Stores snapshots next to `file`'s directory.

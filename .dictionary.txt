@@ -23,6 +23,7 @@ nocheck
 npmrc
 pkgs
 preid
+psql
 syncer
 testts
 vates

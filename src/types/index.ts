@@ -7,3 +7,4 @@ export type { default as ImportsNotUsedAsValues } from './imports-not-used-as-va
 export type { default as Jsx } from './jsx'
 export type { default as Lib } from './lib'
 export type { default as Module } from './module'
+export type { default as ModuleDetection } from './module-detection'

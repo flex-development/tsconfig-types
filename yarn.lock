@@ -853,7 +853,7 @@ __metadata:
     "@commitlint/cli": "npm:17.3.0"
     "@commitlint/config-conventional": "npm:17.3.0"
     "@flex-development/mkbuild": "npm:1.0.0-alpha.9"
-    "@flex-development/tutils": "npm:6.0.0-alpha.2"
+    "@flex-development/tutils": "npm:6.0.0-alpha.3"
     "@graphql-eslint/eslint-plugin": "npm:3.13.1"
     "@types/chai": "npm:4.3.4"
     "@types/conventional-changelog": "npm:3.1.1"
@@ -910,7 +910,7 @@ __metadata:
     vitest: "npm:0.25.3"
     yaml-eslint-parser: "npm:1.1.0"
   peerDependencies:
-    "@flex-development/tutils": ">=6.0.0-alpha.2"
+    "@flex-development/tutils": ">=6.0.0-alpha.3"
   languageName: unknown
   linkType: soft
 
@@ -921,12 +921,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@flex-development/tutils@npm:6.0.0-alpha.2":
-  version: 6.0.0-alpha.2
-  resolution: "@flex-development/tutils@npm:6.0.0-alpha.2::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40flex-development%2Ftutils%2F6.0.0-alpha.2%2F23cbeb83400ffb2033ec126c23a4c0f3744d03f7"
+"@flex-development/tutils@npm:6.0.0-alpha.3":
+  version: 6.0.0-alpha.3
+  resolution: "@flex-development/tutils@npm:6.0.0-alpha.3::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40flex-development%2Ftutils%2F6.0.0-alpha.3%2Fef07d41bc78ee59d62bcffdd43ced41ddf19faf5"
   peerDependencies:
     typescript: ">=4.7"
-  checksum: 2a6c8e1dddb09fc28e693716b6abd06f638aeaac9272ae930d8a35161df75566a8fff38e01cee4610159b366c1a95564eb3df87b0cff6c86e4a8f3a03c25679b
+  checksum: 519b523356cea7407d07486c370dfd582c6ea7ae5ea0213b60efb042c293c8fa4df9048bbc58843ad8ca24220a9e50fae0df67a9b5f4818059b21808a57e3759
   languageName: node
   linkType: hard
 

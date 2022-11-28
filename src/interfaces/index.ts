@@ -4,3 +4,4 @@
  */
 
 export type { default as Plugin } from './plugin'
+export type { default as ProjectReference } from './project-reference'

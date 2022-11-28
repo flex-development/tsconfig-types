@@ -6,3 +6,4 @@
 export type { default as ImportsNotUsedAsValues } from './imports-not-used-as-values'
 export type { default as Jsx } from './jsx'
 export type { default as Lib } from './lib'
+export type { default as Module } from './module'

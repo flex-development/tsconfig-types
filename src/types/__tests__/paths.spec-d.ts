@@ -3,7 +3,7 @@
  * @module tsconfig-types/types/tests/Paths
  */
 
-import tsconfig from '../../../tsconfig.json'
+import tsconfig from '../../../tsconfig.json' assert { type: 'json' }
 import type TestSubject from '../paths'
 
 describe('unit:types/Paths', () => {

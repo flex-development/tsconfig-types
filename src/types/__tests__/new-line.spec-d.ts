@@ -6,6 +6,14 @@
 import type TestSubject from '../new-line'
 
 describe('unit:types/NewLine', () => {
+  it('should allow "CRLF"', () => {
+    assertType<TestSubject>('CRLF')
+  })
+
+  it('should allow "LF"', () => {
+    assertType<TestSubject>('LF')
+  })
+
   describe('lowercase', () => {
     it('should allow "crlf"', () => {
       assertType<TestSubject>('crlf')
@@ -13,16 +21,6 @@ describe('unit:types/NewLine', () => {
 
     it('should allow "lf"', () => {
       assertType<TestSubject>('lf')
-    })
-  })
-
-  describe('uppercase', () => {
-    it('should allow "CRLF"', () => {
-      assertType<TestSubject>('CRLF')
-    })
-
-    it('should allow "LF"', () => {
-      assertType<TestSubject>('LF')
     })
   })
 })

@@ -6,6 +6,22 @@
 import type TestSubject from '../module-resolution'
 
 describe('unit:types/ModuleResolution', () => {
+  it('should allow "Classic"', () => {
+    assertType<TestSubject>('Classic')
+  })
+
+  it('should allow "Node"', () => {
+    assertType<TestSubject>('Node')
+  })
+
+  it('should allow "Node16"', () => {
+    assertType<TestSubject>('Node16')
+  })
+
+  it('should allow "NodeNext"', () => {
+    assertType<TestSubject>('NodeNext')
+  })
+
   describe('lowercase', () => {
     it('should allow "classic"', () => {
       assertType<TestSubject>('classic')
@@ -21,24 +37,6 @@ describe('unit:types/ModuleResolution', () => {
 
     it('should allow "nodenext"', () => {
       assertType<TestSubject>('nodenext')
-    })
-  })
-
-  describe('uppercase', () => {
-    it('should allow "Classic"', () => {
-      assertType<TestSubject>('Classic')
-    })
-
-    it('should allow "Node"', () => {
-      assertType<TestSubject>('Node')
-    })
-
-    it('should allow "Node16"', () => {
-      assertType<TestSubject>('Node16')
-    })
-
-    it('should allow "NodeNext"', () => {
-      assertType<TestSubject>('NodeNext')
     })
   })
 })

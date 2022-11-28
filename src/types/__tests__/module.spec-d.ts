@@ -6,6 +6,54 @@
 import type TestSubject from '../module'
 
 describe('unit:types/Module', () => {
+  it('should allow "AMD"', () => {
+    assertType<TestSubject>('AMD')
+  })
+
+  it('should allow "CommonJS"', () => {
+    assertType<TestSubject>('CommonJS')
+  })
+
+  it('should allow "ES6"', () => {
+    assertType<TestSubject>('ES6')
+  })
+
+  it('should allow "ES2015"', () => {
+    assertType<TestSubject>('ES2015')
+  })
+
+  it('should allow "ES2020"', () => {
+    assertType<TestSubject>('ES2020')
+  })
+
+  it('should allow "ES2022"', () => {
+    assertType<TestSubject>('ES2022')
+  })
+
+  it('should allow "ESNext"', () => {
+    assertType<TestSubject>('ESNext')
+  })
+
+  it('should allow "Node16"', () => {
+    assertType<TestSubject>('Node16')
+  })
+
+  it('should allow "NodeNext"', () => {
+    assertType<TestSubject>('NodeNext')
+  })
+
+  it('should allow "None"', () => {
+    assertType<TestSubject>('None')
+  })
+
+  it('should allow "System"', () => {
+    assertType<TestSubject>('System')
+  })
+
+  it('should allow "UMD"', () => {
+    assertType<TestSubject>('UMD')
+  })
+
   describe('lowercase', () => {
     it('should allow "amd"', () => {
       assertType<TestSubject>('amd')
@@ -53,56 +101,6 @@ describe('unit:types/Module', () => {
 
     it('should allow "umd"', () => {
       assertType<TestSubject>('umd')
-    })
-  })
-
-  describe('uppercase', () => {
-    it('should allow "AMD"', () => {
-      assertType<TestSubject>('AMD')
-    })
-
-    it('should allow "CommonJS"', () => {
-      assertType<TestSubject>('CommonJS')
-    })
-
-    it('should allow "ES6"', () => {
-      assertType<TestSubject>('ES6')
-    })
-
-    it('should allow "ES2015"', () => {
-      assertType<TestSubject>('ES2015')
-    })
-
-    it('should allow "ES2020"', () => {
-      assertType<TestSubject>('ES2020')
-    })
-
-    it('should allow "ES2022"', () => {
-      assertType<TestSubject>('ES2022')
-    })
-
-    it('should allow "ESNext"', () => {
-      assertType<TestSubject>('ESNext')
-    })
-
-    it('should allow "Node16"', () => {
-      assertType<TestSubject>('Node16')
-    })
-
-    it('should allow "NodeNext"', () => {
-      assertType<TestSubject>('NodeNext')
-    })
-
-    it('should allow "None"', () => {
-      assertType<TestSubject>('None')
-    })
-
-    it('should allow "System"', () => {
-      assertType<TestSubject>('System')
-    })
-
-    it('should allow "UMD"', () => {
-      assertType<TestSubject>('UMD')
     })
   })
 })

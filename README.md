@@ -31,6 +31,8 @@ exported by the `typescript` module itself are not compatible with values passed
 
 ## Install
 
+This package is [ESM only][3].
+
 ```sh
 yarn add @flex-development/tsconfig-types
 ```
@@ -62,3 +64,4 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 [1]: https://typescriptlang.org/
 [2]: https://www.typescriptlang.org/tsconfig
+[3]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c

@@ -13,6 +13,7 @@
         "deps-bundle",
         "deps-dev",
         "deps-peer",
+        "enums",
         "esm",
         "exports",
         "github",

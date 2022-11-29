@@ -3,6 +3,7 @@
  * @module tsconfig-types/interfaces
  */
 
+export type { default as CompilerOptions } from './compiler-options'
 export type { default as Plugin } from './plugin'
 export type { default as ProjectReference } from './project-reference'
 export type { default as TypeAcquisition } from './type-acquisition'

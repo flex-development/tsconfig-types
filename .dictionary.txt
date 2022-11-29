@@ -24,6 +24,7 @@ npmrc
 pkgs
 preid
 psql
+recompiles
 syncer
 testts
 vates

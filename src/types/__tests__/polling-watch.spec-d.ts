@@ -3,23 +3,24 @@
  * @module tsconfig-types/types/tests/PollingWatch
  */
 
+import { PollingWatchKind } from '#src/enums'
 import type TestSubject from '../polling-watch'
 
 describe('unit:types/PollingWatch', () => {
   it('should allow "dynamicPriorityPolling"', () => {
-    assertType<TestSubject>('dynamicPriorityPolling')
+    assertType<TestSubject>(PollingWatchKind.DynamicPriority)
   })
 
   it('should allow "fixedChunkSize"', () => {
-    assertType<TestSubject>('fixedChunkSize')
+    assertType<TestSubject>(PollingWatchKind.FixedChunkSize)
   })
 
   it('should allow "fixedPollingInterval"', () => {
-    assertType<TestSubject>('fixedPollingInterval')
+    assertType<TestSubject>(PollingWatchKind.FixedInterval)
   })
 
   it('should allow "priorityPollingInterval"', () => {
-    assertType<TestSubject>('priorityPollingInterval')
+    assertType<TestSubject>(PollingWatchKind.PriorityInterval)
   })
 
   it('should allow "synchronousWatchDirectory"', () => {

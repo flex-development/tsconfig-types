@@ -3,6 +3,7 @@
  * @module tsconfig-types/interfaces/WatchOptions
  */
 
+import type { PollingWatchKind } from '#src/enums'
 import type {
   CompilerOptionsValue,
   PollingWatch,
@@ -34,7 +35,7 @@ interface WatchOptions {
    *
    * **Note**: Only applicable when using file-system events.
    */
-  fallbackPolling?: PollingWatch
+  fallbackPolling?: PollingWatch | PollingWatchKind
 
   /**
    * Synchronously call callbacks and update the state of directory watchers on

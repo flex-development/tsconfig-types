@@ -3,6 +3,7 @@
  * @module tsconfig-types/interfaces/interfaces/WatchOptions
  */
 
+import { PollingWatchKind } from '#src/enums'
 import type TestSubject from '../watch-options'
 
 describe('unit:interfaces/WatchOptions', () => {
@@ -14,7 +15,7 @@ describe('unit:interfaces/WatchOptions', () => {
     assertType<Required<TestSubject>>({
       excludeDirectories: ['**/node_modules', '_build', 'temp/*'],
       excludeFiles: ['temp/file.ts'],
-      fallbackPolling: 'synchronousWatchDirectory',
+      fallbackPolling: PollingWatchKind.SynchronousWatchDirectory,
       synchronousWatchDirectory: true,
       watchDirectory: 'useFsEvents',
       watchFile: 'useFsEvents'

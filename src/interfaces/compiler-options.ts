@@ -7,7 +7,8 @@ import type {
   ImportsNotUsedKind,
   JsxEmit,
   ModuleDetectionKind,
-  ModuleKind
+  ModuleKind,
+  ModuleResolutionKind
 } from '#src/enums'
 import type {
   CompilerOptionsValue,
@@ -400,7 +401,7 @@ interface CompilerOptions {
    *
    * @default ['AMD','ES6','System'].includes(module)?'classic':'node'
    */
-  moduleResolution?: ModuleResolution
+  moduleResolution?: ModuleResolution | ModuleResolutionKind
 
   /**
    * List of file name suffixes to search when resolving a module.

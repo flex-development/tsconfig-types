@@ -3,6 +3,7 @@
  * @module tsconfig-types/types/tests/ModuleResolution
  */
 
+import { ModuleResolutionKind } from '#src/enums'
 import type TestSubject from '../module-resolution'
 
 describe('unit:types/ModuleResolution', () => {
@@ -24,19 +25,19 @@ describe('unit:types/ModuleResolution', () => {
 
   describe('lowercase', () => {
     it('should allow "classic"', () => {
-      assertType<TestSubject>('classic')
+      assertType<TestSubject>(ModuleResolutionKind.Classic)
     })
 
     it('should allow "node"', () => {
-      assertType<TestSubject>('node')
+      assertType<TestSubject>(ModuleResolutionKind.NodeJs)
     })
 
     it('should allow "node16"', () => {
-      assertType<TestSubject>('node16')
+      assertType<TestSubject>(ModuleResolutionKind.Node16)
     })
 
     it('should allow "nodenext"', () => {
-      assertType<TestSubject>('nodenext')
+      assertType<TestSubject>(ModuleResolutionKind.NodeNext)
     })
   })
 })

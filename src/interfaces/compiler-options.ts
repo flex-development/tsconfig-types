@@ -10,7 +10,8 @@ import type {
   ModuleKind,
   ModuleResolutionKind,
   NewLineKind,
-  ScriptTarget
+  ScriptTarget,
+  WatchDirectoryKind
 } from '#src/enums'
 import type {
   CompilerOptionsValue,
@@ -790,7 +791,7 @@ interface CompilerOptions {
    * @deprecated Use `watchOptions.watchDirectory` instead
    * @default 'useFsEvents'
    */
-  watchDirectory?: WatchDirectory
+  watchDirectory?: WatchDirectory | WatchDirectoryKind
 
   /**
    * Strategy for watching individual files.

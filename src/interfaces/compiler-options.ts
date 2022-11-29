@@ -11,7 +11,8 @@ import type {
   ModuleResolutionKind,
   NewLineKind,
   ScriptTarget,
-  WatchDirectoryKind
+  WatchDirectoryKind,
+  WatchFileKind
 } from '#src/enums'
 import type {
   CompilerOptionsValue,
@@ -799,7 +800,7 @@ interface CompilerOptions {
    * @deprecated Use `watchOptions.watchFile` instead
    * @default 'useFsEvents'
    */
-  watchFile?: WatchFile
+  watchFile?: WatchFile | WatchFileKind
 }
 
 export type { CompilerOptions as default }

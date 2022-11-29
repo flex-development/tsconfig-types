@@ -28,6 +28,7 @@ recompiles
 syncer
 testts
 ttypescript
+usefseventsonparentdirectory
 vates
 vitest
 vsicons

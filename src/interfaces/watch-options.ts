@@ -3,7 +3,11 @@
  * @module tsconfig-types/interfaces/WatchOptions
  */
 
-import type { PollingWatchKind, WatchDirectoryKind } from '#src/enums'
+import type {
+  PollingWatchKind,
+  WatchDirectoryKind,
+  WatchFileKind
+} from '#src/enums'
 import type {
   CompilerOptionsValue,
   PollingWatch,
@@ -56,7 +60,7 @@ interface WatchOptions {
    *
    * @default 'useFsEvents'
    */
-  watchFile?: WatchFile
+  watchFile?: WatchFile | WatchFileKind
 }
 
 export type { WatchOptions as default }

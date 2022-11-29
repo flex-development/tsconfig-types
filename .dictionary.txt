@@ -27,6 +27,7 @@ psql
 recompiles
 syncer
 testts
+ttypescript
 vates
 vitest
 vsicons

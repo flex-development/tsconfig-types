@@ -5,7 +5,7 @@
 
 import type {
   CompilerOptionsValue,
-  FallbackPolling,
+  PollingWatch,
   WatchDirectory,
   WatchFile
 } from '#src/types'
@@ -34,7 +34,7 @@ interface WatchOptions {
    *
    * **Note**: Only applicable when using file-system events.
    */
-  fallbackPolling?: FallbackPolling
+  fallbackPolling?: PollingWatch
 
   /**
    * Synchronously call callbacks and update the state of directory watchers on

@@ -3,20 +3,23 @@
  * @module tsconfig-types/types/FallbackPolling
  */
 
+import type { OrLowercase } from '@flex-development/tutils'
+
 /**
  * Polling strategies used when the system runs out of native file watchers
  * and/or doesn’t support native file watchers.
  *
- * @see https://www.typescriptlang.org/tsconfig#watch-fallbackPolling
+ * [1]: ./fallback-polling-watch.ts
+ *
+ * @deprecated Use [`PollingWatch`][1] instead
  */
 type FallbackPolling =
-  | 'dynamicPriority'
+  | OrLowercase<'fixedChunkSize'>
+  | 'dynamicpriority'
   | 'dynamicPriorityPolling'
-  | 'fixedChunkSize'
-  | 'fixedInterval'
+  | 'fixedinterval'
   | 'fixedPollingInterval'
-  | 'priorityInterval'
+  | 'priorityinterval'
   | 'priorityPollingInterval'
-  | 'synchronousWatchDirectory'
 
 export type { FallbackPolling as default }

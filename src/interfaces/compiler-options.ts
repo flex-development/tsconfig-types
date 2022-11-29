@@ -249,7 +249,7 @@ interface CompilerOptions {
    *
    * @deprecated Use `watchOptions.fallbackPolling` instead
    */
-  fallbackPolling?: Exclude<FallbackPolling, 'synchronousWatchDirectory'>
+  fallbackPolling?: FallbackPolling
 
   /**
    * Ensure that casing is correct in imports.

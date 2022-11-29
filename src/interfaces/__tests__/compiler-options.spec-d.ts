@@ -40,7 +40,7 @@ describe('unit:interfaces/CompilerOptions', () => {
       experimentalDecorators: true,
       explainFiles: false,
       extendedDiagnostics: false,
-      fallbackPolling: 'fixedInterval',
+      fallbackPolling: 'fixedPollingInterval',
       forceConsistentCasingInFileNames: true,
       generateCpuProfile: 'profile.cpuprofile',
       importHelpers: false,

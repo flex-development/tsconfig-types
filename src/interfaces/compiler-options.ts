@@ -3,6 +3,7 @@
  * @module tsconfig-types/interfaces/CompilerOptions
  */
 
+import type { ImportsNotUsedKind } from '#src/enums'
 import type {
   CompilerOptionsValue,
   FallbackPolling,
@@ -272,7 +273,7 @@ interface CompilerOptions {
    *
    * @default 'remove'
    */
-  importsNotUsedAsValues?: ImportsNotUsedAsValues
+  importsNotUsedAsValues?: ImportsNotUsedAsValues | ImportsNotUsedKind
 
   /**
    * Save `.tsbuildinfo` files to allow for incremental compilation of projects.

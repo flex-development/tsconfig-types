@@ -26,8 +26,7 @@
   },
   "type": "module",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "exports": {
     ".": "./dist/index.mjs",

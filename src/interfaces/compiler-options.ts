@@ -8,7 +8,8 @@ import type {
   JsxEmit,
   ModuleDetectionKind,
   ModuleKind,
-  ModuleResolutionKind
+  ModuleResolutionKind,
+  NewLineKind
 } from '#src/enums'
 import type {
   CompilerOptionsValue,
@@ -411,7 +412,7 @@ interface CompilerOptions {
   /**
    * End of line sequence to be used when emitting files.
    */
-  newLine?: NewLine
+  newLine?: NewLine | NewLineKind
 
   /**
    * Disable emitting files.

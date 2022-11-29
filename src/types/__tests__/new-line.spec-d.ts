@@ -3,6 +3,7 @@
  * @module tsconfig-types/types/tests/NewLine
  */
 
+import { NewLineKind } from '#src/enums'
 import type TestSubject from '../new-line'
 
 describe('unit:types/NewLine', () => {
@@ -16,11 +17,11 @@ describe('unit:types/NewLine', () => {
 
   describe('lowercase', () => {
     it('should allow "crlf"', () => {
-      assertType<TestSubject>('crlf')
+      assertType<TestSubject>(NewLineKind.CarriageReturnLineFeed)
     })
 
     it('should allow "lf"', () => {
-      assertType<TestSubject>('lf')
+      assertType<TestSubject>(NewLineKind.LineFeed)
     })
   })
 })

@@ -3,7 +3,11 @@
  * @module tsconfig-types/interfaces/CompilerOptions
  */
 
-import type { ImportsNotUsedKind, JsxEmit } from '#src/enums'
+import type {
+  ImportsNotUsedKind,
+  JsxEmit,
+  ModuleDetectionKind
+} from '#src/enums'
 import type {
   CompilerOptionsValue,
   FallbackPolling,
@@ -388,7 +392,7 @@ interface CompilerOptions {
   /**
    * Algorithm used to determine if a JavaScript file is a module.
    */
-  moduleDetection?: ModuleDetection
+  moduleDetection?: ModuleDetection | ModuleDetectionKind
 
   /**
    * Algorithm used to resolve a module specifier.

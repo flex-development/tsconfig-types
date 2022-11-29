@@ -3,6 +3,7 @@
  * @module tsconfig-types/types/tests/Target
  */
 
+import { ScriptTarget } from '#src/enums'
 import type TestSubject from '../target'
 
 describe('unit:types/Target', () => {
@@ -46,53 +47,61 @@ describe('unit:types/Target', () => {
     assertType<TestSubject>('ES2021')
   })
 
+  it('should allow "ES2022"', () => {
+    assertType<TestSubject>('ES2022')
+  })
+
   it('should allow "ESNext"', () => {
     assertType<TestSubject>('ESNext')
   })
 
   describe('lowercase', () => {
     it('should allow "es3"', () => {
-      assertType<TestSubject>('es3')
+      assertType<TestSubject>(ScriptTarget.ES3)
     })
 
     it('should allow "es5"', () => {
-      assertType<TestSubject>('es5')
+      assertType<TestSubject>(ScriptTarget.ES5)
     })
 
     it('should allow "es6"', () => {
-      assertType<TestSubject>('es6')
+      assertType<TestSubject>(ScriptTarget.ES6)
     })
 
     it('should allow "es2015"', () => {
-      assertType<TestSubject>('es2015')
+      assertType<TestSubject>(ScriptTarget.ES2015)
     })
 
     it('should allow "es2016"', () => {
-      assertType<TestSubject>('es2016')
+      assertType<TestSubject>(ScriptTarget.ES2016)
     })
 
     it('should allow "es2017"', () => {
-      assertType<TestSubject>('es2017')
+      assertType<TestSubject>(ScriptTarget.ES2017)
     })
 
     it('should allow "es2018"', () => {
-      assertType<TestSubject>('es2018')
+      assertType<TestSubject>(ScriptTarget.ES2018)
     })
 
     it('should allow "es2019"', () => {
-      assertType<TestSubject>('es2019')
+      assertType<TestSubject>(ScriptTarget.ES2019)
     })
 
     it('should allow "es2020"', () => {
-      assertType<TestSubject>('es2020')
+      assertType<TestSubject>(ScriptTarget.ES2020)
     })
 
     it('should allow "es2021"', () => {
-      assertType<TestSubject>('es2021')
+      assertType<TestSubject>(ScriptTarget.ES2021)
+    })
+
+    it('should allow "es2022"', () => {
+      assertType<TestSubject>(ScriptTarget.ES2022)
     })
 
     it('should allow "esnext"', () => {
-      assertType<TestSubject>('esnext')
+      assertType<TestSubject>(ScriptTarget.ESNext)
     })
   })
 })

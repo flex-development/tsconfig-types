@@ -9,7 +9,8 @@ import type {
   ModuleDetectionKind,
   ModuleKind,
   ModuleResolutionKind,
-  NewLineKind
+  NewLineKind,
+  ScriptTarget
 } from '#src/enums'
 import type {
   CompilerOptionsValue,
@@ -734,7 +735,7 @@ interface CompilerOptions {
    *
    * @default 'ES3'
    */
-  target?: Target
+  target?: ScriptTarget | Target
 
   /**
    * Log paths used during the {@linkcode moduleResolution} process.

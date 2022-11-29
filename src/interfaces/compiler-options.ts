@@ -3,7 +3,7 @@
  * @module tsconfig-types/interfaces/CompilerOptions
  */
 
-import type { ImportsNotUsedKind } from '#src/enums'
+import type { ImportsNotUsedKind, JsxEmit } from '#src/enums'
 import type {
   CompilerOptionsValue,
   FallbackPolling,
@@ -308,7 +308,7 @@ interface CompilerOptions {
   /**
    * Type of JSX code to generate.
    */
-  jsx?: Jsx
+  jsx?: Jsx | JsxEmit
 
   /**
    * JSX factory function.

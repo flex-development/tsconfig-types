@@ -6,7 +6,8 @@
 import type {
   ImportsNotUsedKind,
   JsxEmit,
-  ModuleDetectionKind
+  ModuleDetectionKind,
+  ModuleKind
 } from '#src/enums'
 import type {
   CompilerOptionsValue,
@@ -387,7 +388,7 @@ interface CompilerOptions {
    *
    * @default ['ES3','ES5'].includes(target)?'CommonJS':'ES6'
    */
-  module?: Module
+  module?: Module | ModuleKind
 
   /**
    * Algorithm used to determine if a JavaScript file is a module.

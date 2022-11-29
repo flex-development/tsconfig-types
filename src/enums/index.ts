@@ -6,3 +6,4 @@
 export { default as ImportsNotUsedKind } from './imports-not-used-kind'
 export { default as JsxEmit } from './jsx-emit'
 export { default as ModuleDetectionKind } from './module-detection-kind'
+export { default as ModuleKind } from './module-kind'

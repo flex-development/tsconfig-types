@@ -3,6 +3,7 @@
  * @module tsconfig-types/types/tests/Module
  */
 
+import { ModuleKind } from '#src/enums'
 import type TestSubject from '../module'
 
 describe('unit:types/Module', () => {
@@ -56,51 +57,51 @@ describe('unit:types/Module', () => {
 
   describe('lowercase', () => {
     it('should allow "amd"', () => {
-      assertType<TestSubject>('amd')
+      assertType<TestSubject>(ModuleKind.AMD)
     })
 
     it('should allow "commonjs"', () => {
-      assertType<TestSubject>('commonjs')
+      assertType<TestSubject>(ModuleKind.CommonJS)
     })
 
     it('should allow "es6"', () => {
-      assertType<TestSubject>('es6')
+      assertType<TestSubject>(ModuleKind.ES6)
     })
 
     it('should allow "es2015"', () => {
-      assertType<TestSubject>('es2015')
+      assertType<TestSubject>(ModuleKind.ES2015)
     })
 
     it('should allow "es2020"', () => {
-      assertType<TestSubject>('es2020')
+      assertType<TestSubject>(ModuleKind.ES2020)
     })
 
     it('should allow "es2022"', () => {
-      assertType<TestSubject>('es2022')
+      assertType<TestSubject>(ModuleKind.ES2022)
     })
 
     it('should allow "esnext"', () => {
-      assertType<TestSubject>('esnext')
+      assertType<TestSubject>(ModuleKind.ESNext)
     })
 
     it('should allow "node16"', () => {
-      assertType<TestSubject>('node16')
+      assertType<TestSubject>(ModuleKind.Node16)
     })
 
     it('should allow "nodenext"', () => {
-      assertType<TestSubject>('nodenext')
+      assertType<TestSubject>(ModuleKind.NodeNext)
     })
 
     it('should allow "none"', () => {
-      assertType<TestSubject>('none')
+      assertType<TestSubject>(ModuleKind.None)
     })
 
     it('should allow "system"', () => {
-      assertType<TestSubject>('system')
+      assertType<TestSubject>(ModuleKind.System)
     })
 
     it('should allow "umd"', () => {
-      assertType<TestSubject>('umd')
+      assertType<TestSubject>(ModuleKind.UMD)
     })
   })
 })

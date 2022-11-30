@@ -52,7 +52,209 @@ yarn add @flex-development/tsconfig-types@flex-development/tsconfig-types
 
 ## Use
 
-**TODO**: Update documentation.
+```typescript
+/**
+ * @file Utilities - compilerOptionsForProgram
+ * @module utils/compilerOptionsForProgram
+ */
+
+import {
+  ImportsNotUsedKind,
+  JsxEmit,
+  ModuleDetectionKind,
+  ModuleKind,
+  ModuleResolutionKind,
+  NewLineKind,
+  ScriptTarget,
+  type CompilerOptions
+} from '@flex-development/tsconfig-types'
+import ts from 'typescript'
+
+/**
+ * Converts user compiler options to programmatic compiler options.
+ *
+ * @param {CompilerOptions} [compilerOptions={}] - User compiler options
+ * @return {ts.CompilerOptions} Compiler options for TypeScript program
+ */
+const compilerOptionsForProgram = (
+  compilerOptions: CompilerOptions = {}
+): ts.CompilerOptions => {
+  /**
+   * Compiler options for TypeScript program.
+   *
+   * @const {ts.CompilerOptions} options
+   */
+  const options: ts.CompilerOptions = {}
+
+  // user compiler options
+  const {
+    importsNotUsedAsValues,
+    jsx,
+    lib,
+    module,
+    moduleDetection,
+    moduleResolution,
+    newLine,
+    target
+  } = compilerOptions
+
+  // typescript program expects declaration names to match node_modules exactly
+  if (Array.isArray(lib)) {
+    options.lib = lib.map((name: string) => `lib.${name}.d.ts`)
+  }
+
+  // importsNotUsedAsValues
+  switch (importsNotUsedAsValues?.toLowerCase() as ImportsNotUsedKind) {
+    case ImportsNotUsedKind.Error:
+      options.importsNotUsedAsValues = ts.ImportsNotUsedAsValues.Error
+      break
+    case ImportsNotUsedKind.Preserve:
+      options.importsNotUsedAsValues = ts.ImportsNotUsedAsValues.Preserve
+      break
+    case ImportsNotUsedKind.Remove:
+      options.importsNotUsedAsValues = ts.ImportsNotUsedAsValues.Error
+      break
+  }
+
+  // jsx
+  switch (jsx?.toLowerCase() as JsxEmit) {
+    case JsxEmit.Preserve:
+      options.jsx = ts.JsxEmit.Preserve
+      break
+    case JsxEmit.React:
+      options.jsx = ts.JsxEmit.React
+      break
+    case JsxEmit.ReactJSX:
+      options.jsx = ts.JsxEmit.ReactJSX
+      break
+    case JsxEmit.ReactJSXDev:
+      options.jsx = ts.JsxEmit.ReactJSXDev
+      break
+    case JsxEmit.ReactNative:
+      options.jsx = ts.JsxEmit.ReactNative
+      break
+  }
+
+  // module
+  switch (module?.toLowerCase() as ModuleKind) {
+    case ModuleKind.AMD:
+      options.module = ts.ModuleKind.AMD
+      break
+    case ModuleKind.CommonJS:
+      options.module = ts.ModuleKind.CommonJS
+      break
+    case ModuleKind.ES6:
+    case ModuleKind.ES2015:
+      options.module = ts.ModuleKind.ES2015
+      break
+    case ModuleKind.ES2020:
+      options.module = ts.ModuleKind.ES2020
+      break
+    case ModuleKind.ES2022:
+      options.module = ts.ModuleKind.ES2022
+      break
+    case ModuleKind.ESNext:
+      options.module = ts.ModuleKind.ESNext
+      break
+    case ModuleKind.Node16:
+      options.module = ts.ModuleKind.Node16
+      break
+    case ModuleKind.NodeNext:
+      options.module = ts.ModuleKind.NodeNext
+      break
+    case ModuleKind.None:
+      options.module = ts.ModuleKind.None
+      break
+    case ModuleKind.System:
+      options.module = ts.ModuleKind.System
+      break
+    case ModuleKind.UMD:
+      options.module = ts.ModuleKind.UMD
+      break
+  }
+
+  // moduleDetection
+  switch (moduleDetection?.toLowerCase() as ModuleDetectionKind) {
+    case ModuleDetectionKind.Auto:
+      options.moduleDetection = ts.ModuleDetectionKind.Auto
+      break
+    case ModuleDetectionKind.Force:
+      options.moduleDetection = ts.ModuleDetectionKind.Force
+      break
+    case ModuleDetectionKind.Legacy:
+      options.moduleDetection = ts.ModuleDetectionKind.Legacy
+      break
+  }
+
+  // moduleResolution
+  switch (moduleResolution?.toLowerCase() as ModuleResolutionKind) {
+    case ModuleResolutionKind.Classic:
+      options.moduleResolution = ts.ModuleResolutionKind.Classic
+      break
+    case ModuleResolutionKind.Node16:
+      options.moduleResolution = ts.ModuleResolutionKind.Node16
+      break
+    case ModuleResolutionKind.NodeJs:
+      options.moduleResolution = ts.ModuleResolutionKind.NodeJs
+      break
+    case ModuleResolutionKind.NodeNext:
+      options.moduleResolution = ts.ModuleResolutionKind.NodeNext
+      break
+  }
+
+  // newLine
+  switch (newLine?.toLowerCase() as NewLineKind) {
+    case NewLineKind.CarriageReturnLineFeed:
+      options.newLine = ts.NewLineKind.CarriageReturnLineFeed
+      break
+    case NewLineKind.LineFeed:
+      options.newLine = ts.NewLineKind.LineFeed
+      break
+  }
+
+  // target
+  switch (target?.toLowerCase() as ScriptTarget) {
+    case ScriptTarget.ES3:
+      options.target = ts.ScriptTarget.ES3
+      break
+    case ScriptTarget.ES5:
+      options.target = ts.ScriptTarget.ES5
+      break
+    case ScriptTarget.ES6:
+    case ScriptTarget.ES2015:
+      options.target = ts.ScriptTarget.ES2015
+      break
+    case ScriptTarget.ES2016:
+      options.target = ts.ScriptTarget.ES2016
+      break
+    case ScriptTarget.ES2017:
+      options.target = ts.ScriptTarget.ES2017
+      break
+    case ScriptTarget.ES2018:
+      options.target = ts.ScriptTarget.ES2018
+      break
+    case ScriptTarget.ES2019:
+      options.target = ts.ScriptTarget.ES2019
+      break
+    case ScriptTarget.ES2020:
+      options.target = ts.ScriptTarget.ES2020
+      break
+    case ScriptTarget.ES2021:
+      options.target = ts.ScriptTarget.ES2021
+      break
+    case ScriptTarget.ES2022:
+      options.target = ts.ScriptTarget.ES2022
+      break
+    case ScriptTarget.ESNext:
+      options.target = ts.ScriptTarget.ESNext
+      break
+  }
+
+  return { ...compilerOptions, ...options } as ts.CompilerOptions
+}
+
+export default compilerOptionsForProgram
+```
 
 ## API
 

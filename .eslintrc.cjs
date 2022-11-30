@@ -10,7 +10,16 @@
  */
 const config = {
   root: true,
-  extends: ['./.eslintrc.base.cjs']
+  extends: ['./.eslintrc.base.cjs'],
+  overrides: [
+    ...require('./.eslintrc.base.cjs').overrides,
+    {
+      files: ['./scratch.ts'],
+      rules: {
+        'unicorn/prefer-module': 0
+      }
+    }
+  ]
 }
 
 module.exports = config

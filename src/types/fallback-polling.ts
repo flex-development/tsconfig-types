@@ -9,7 +9,7 @@ import type { OrLowercase } from '@flex-development/tutils'
  * Polling strategies used when the system runs out of native file watchers
  * and/or doesn’t support native file watchers.
  *
- * [1]: ./fallback-polling-watch.ts
+ * [1]: ./polling-watch.ts
  *
  * @deprecated Use [`PollingWatch`][1] instead
  */

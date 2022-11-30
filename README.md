@@ -258,7 +258,46 @@ export default compilerOptionsForProgram
 
 ## API
 
-**TODO**: Update documentation.
+### Enums
+
+- [`ImportsNotUsedKind`](src/enums/imports-not-used-kind.ts)
+- [`JsxEmit`](src/enums/jsx-emit.ts)
+- [`ModuleDetectionKind`](src/enums/module-detection-kind.ts)
+- [`ModuleKind`](src/enums/module-kind.ts)
+- [`ModuleResolutionKind`](src/enums/module-resolution-kind.ts)
+- [`NewLineKind`](src/enums/new-line-kind.ts)
+- [`PollingWatchKind`](src/enums/polling-watch-kind.ts)
+- [`ScriptTarget`](src/enums/script-target.ts)
+- [`WatchDirectoryKind`](src/enums/watch-directory-kind.ts)
+- [`WatchFileKind`](src/enums/watch-file-kind.ts)
+
+### Interfaces
+
+- [`BuildOptions`](src/interfaces/build-options.ts)
+- [`CompilerOptions`](src/interfaces/compiler-options.ts)
+- [`Plugin`](src/interfaces/plugin.ts)
+- [`ProjectReference`](src/interfaces/project-reference.ts)
+- [`TsNodeOptions`](src/interfaces/ts-node-options.ts)
+- [`TSConfig`](src/interfaces/tsconfig.ts)
+- [`TypeAcquisition`](src/interfaces/type-acquisition.ts)
+- [`WatchOptions`](src/interfaces/watch-options.ts)
+
+### Types
+
+- [`CompilerOptionsValue`](src/types/compiler-options-value.ts)
+- [`FallbackPolling`](src/types/fallback-polling.ts)
+- [`ImportsNotUsedAsValues`](src/types/imports-not-used-as-values.ts)
+- [`Jsx`](src/types/jsx.ts)
+- [`Lib`](src/types/lib.ts)
+- [`ModuleDetection`](src/types/module-detection.ts)
+- [`ModuleResolution`](src/types/module-resolution.ts)
+- [`Module`](src/types/module.ts)
+- [`NewLine`](src/types/new-line.ts)
+- [`Paths`](src/types/paths.ts)
+- [`PollingWatch`](src/types/polling-watch.ts)
+- [`Target`](src/types/target.ts)
+- [`WatchDirectory`](src/types/watch-directory.ts)
+- [`WatchFile`](src/types/watch-file.ts)
 
 ## Contribute
 

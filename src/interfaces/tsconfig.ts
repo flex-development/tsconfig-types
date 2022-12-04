@@ -4,7 +4,7 @@
  */
 
 import type { CompilerOptionsValue } from '#src/types'
-import type { JSONValue } from '@flex-development/tutils'
+import type { JsonValue } from '@flex-development/tutils'
 import type BuildOptions from './build-options'
 import type CompilerOptions from './compiler-options'
 import type ProjectReference from './project-reference'
@@ -20,7 +20,7 @@ import type WatchOptions from './watch-options'
 interface TSConfig {
   [option: string]:
     | CompilerOptionsValue
-    | JSONValue
+    | JsonValue
     | ProjectReference[]
     | TsNodeOptions
     | TypeAcquisition

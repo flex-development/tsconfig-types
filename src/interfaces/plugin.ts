@@ -3,16 +3,16 @@
  * @module tsconfig-types/interfaces/Plugin
  */
 
-import type { JSONObject } from '@flex-development/tutils'
+import type { JsonObject } from '@flex-development/tutils'
 
 /**
  * Language service plugin.
  *
  * @see https://www.typescriptlang.org/tsconfig#plugins
  *
- * @extends {JSONObject}
+ * @extends {JsonObject}
  */
-interface Plugin extends JSONObject {
+interface Plugin extends JsonObject {
   /**
    * Plugin name.
    */

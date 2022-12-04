@@ -4,7 +4,7 @@
  */
 
 import type { Plugin, ProjectReference } from '#src/interfaces'
-import type { JSONPrimitive, MapLike } from '@flex-development/tutils'
+import type { JsonPrimitive, MapLike } from '@flex-development/tutils'
 
 /**
  * [`compilerOptions`][1] values.
@@ -13,7 +13,7 @@ import type { JSONPrimitive, MapLike } from '@flex-development/tutils'
  */
 type CompilerOptionsValue =
   | (number | string)[]
-  | JSONPrimitive
+  | JsonPrimitive
   | MapLike<string[]>
   | Plugin[]
   | ProjectReference[]

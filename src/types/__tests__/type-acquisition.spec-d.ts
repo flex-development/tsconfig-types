@@ -1,6 +1,6 @@
 /**
  * @file Unit Tests - TypeAcquisition
- * @module tsconfig-types/interfaces/interfaces/TypeAcquisition
+ * @module tsconfig-types/types/tests/TypeAcquisition
  */
 
 import type TestSubject from '../type-acquisition'
@@ -18,9 +18,5 @@ describe('unit:interfaces/TypeAcquisition', () => {
       exclude: ['jest', 'mocha'],
       include: ['jquery']
     })
-  })
-
-  it('should allow object with unknown key', () => {
-    assertType<TestSubject>({ key: 'value' })
   })
 })

@@ -1,6 +1,6 @@
 /**
  * @file Unit Tests - CompilerOptions
- * @module tsconfig-types/interfaces/interfaces/CompilerOptions
+ * @module tsconfig-types/types/tests/CompilerOptions
  */
 
 import type TestSubject from '../compiler-options'
@@ -125,9 +125,5 @@ describe('unit:interfaces/CompilerOptions', () => {
       watchDirectory: 'useFsEvents',
       watchFile: 'useFsEvents'
     })
-  })
-
-  it('should allow object with unknown key', () => {
-    assertType<TestSubject>({ key: 'value' })
   })
 })

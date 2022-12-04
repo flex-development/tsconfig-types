@@ -1,14 +1,16 @@
 /**
  * @file Unit Tests - TSConfig
- * @module tsconfig-types/interfaces/interfaces/TSConfig
+ * @module tsconfig-types/interfaces/tests/TSConfig
  */
 
+import type {
+  BuildOptions,
+  ProjectReference,
+  TypeAcquisition,
+  WatchOptions
+} from '#src/types'
 import tsconfig from '../../../tsconfig.json' assert { type: 'json' }
-import type BuildOptions from '../build-options'
-import type ProjectReference from '../project-reference'
 import type TestSubject from '../tsconfig'
-import type TypeAcquisition from '../type-acquisition'
-import type WatchOptions from '../watch-options'
 
 describe('unit:interfaces/TSConfig', () => {
   it('should allow empty object', () => {

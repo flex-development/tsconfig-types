@@ -1,6 +1,6 @@
 /**
  * @file Unit Tests - WatchOptions
- * @module tsconfig-types/interfaces/interfaces/WatchOptions
+ * @module tsconfig-types/types/tests/WatchOptions
  */
 
 import { PollingWatchKind } from '#src/enums'
@@ -20,9 +20,5 @@ describe('unit:interfaces/WatchOptions', () => {
       watchDirectory: 'useFsEvents',
       watchFile: 'useFsEvents'
     })
-  })
-
-  it('should allow object with unknown key', () => {
-    assertType<TestSubject>({ key: 'value' })
   })
 })

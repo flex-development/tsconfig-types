@@ -1,6 +1,6 @@
 /**
  * @file Unit Tests - TsNodeOptions
- * @module tsconfig-types/interfaces/interfaces/TsNodeOptions
+ * @module tsconfig-types/types/tests/TsNodeOptions
  */
 
 import type { TsConfigOptions } from 'ts-node'

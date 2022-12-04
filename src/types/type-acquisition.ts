@@ -1,18 +1,14 @@
 /**
- * @file Interfaces - TypeAcquisition
- * @module tsconfig-types/interfaces/TypeAcquisition
+ * @file Type Definitions - TypeAcquisition
+ * @module tsconfig-types/types/TypeAcquisition
  */
-
-import type { CompilerOptionsValue } from '#src/types'
 
 /**
  * Auto type-acquisition options.
  *
  * @see https://www.typescriptlang.org/tsconfig#typeAcquisition
  */
-interface TypeAcquisition {
-  [option: string]: CompilerOptionsValue | undefined
-
+type TypeAcquisition = {
   /**
    * Prevent TypeScript from inferring types based on filenames.
    */

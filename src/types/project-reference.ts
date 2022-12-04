@@ -1,6 +1,6 @@
 /**
- * @file Interfaces - ProjectReference
- * @module tsconfig-types/interfaces/ProjectReference
+ * @file Type Definitions - ProjectReference
+ * @module tsconfig-types/types/ProjectReference
  */
 
 /**
@@ -10,7 +10,7 @@
  *
  * @see https://www.typescriptlang.org/docs/handbook/project-references.html
  */
-interface ProjectReference {
+type ProjectReference = {
   /**
    * Indicates if the reference forms a circularity.
    */

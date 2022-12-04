@@ -3,14 +3,16 @@
  * @module tsconfig-types/interfaces/TSConfig
  */
 
-import type { CompilerOptionsValue } from '#src/types'
+import type {
+  BuildOptions,
+  CompilerOptions,
+  CompilerOptionsValue,
+  ProjectReference,
+  TsNodeOptions,
+  TypeAcquisition,
+  WatchOptions
+} from '#src/types'
 import type { JsonValue } from '@flex-development/tutils'
-import type BuildOptions from './build-options'
-import type CompilerOptions from './compiler-options'
-import type ProjectReference from './project-reference'
-import type TsNodeOptions from './ts-node-options'
-import type TypeAcquisition from './type-acquisition'
-import type WatchOptions from './watch-options'
 
 /**
  * TypeScript configuration options.

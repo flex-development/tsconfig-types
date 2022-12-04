@@ -1,6 +1,6 @@
 /**
- * @file Interfaces - TsNodeOptions
- * @module tsconfig-types/interfaces/TsNodeOptions
+ * @file Type Definitions - TsNodeOptions
+ * @module tsconfig-types/types/TsNodeOptions
  */
 
 import type { LiteralUnion } from '@flex-development/tutils'
@@ -13,7 +13,7 @@ import type CompilerOptions from './compiler-options'
  *
  * @see https://typestrong.org/ts-node/docs/options
  */
-interface TsNodeOptions {
+type TsNodeOptions = {
   /**
    * Custom TypeScript compiler.
    *

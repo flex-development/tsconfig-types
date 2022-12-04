@@ -1,11 +1,11 @@
 /**
  * @file Unit Tests - BuildOptions
- * @module tsconfig-types/interfaces/interfaces/BuildOptions
+ * @module tsconfig-types/types/tests/BuildOptions
  */
 
 import type TestSubject from '../build-options'
 
-describe('unit:interfaces/BuildOptions', () => {
+describe('unit:types/BuildOptions', () => {
   it('should allow empty object', () => {
     assertType<TestSubject>({})
   })
@@ -19,9 +19,5 @@ describe('unit:interfaces/BuildOptions', () => {
       traceResolution: false,
       verbose: false
     })
-  })
-
-  it('should allow object with unknown key', () => {
-    assertType<TestSubject>({ key: 'value' })
   })
 })

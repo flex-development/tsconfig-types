@@ -1,6 +1,6 @@
 /**
  * @file Unit Tests - Plugin
- * @module tsconfig-types/interfaces/interfaces/Plugin
+ * @module tsconfig-types/interfaces/tests/Plugin
  */
 
 import type TestSubject from '../plugin'

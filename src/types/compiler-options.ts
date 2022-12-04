@@ -1,6 +1,6 @@
 /**
- * @file Interfaces - CompilerOptions
- * @module tsconfig-types/interfaces/CompilerOptions
+ * @file Type Definitions - CompilerOptions
+ * @module tsconfig-types/types/CompilerOptions
  */
 
 import type {
@@ -14,32 +14,27 @@ import type {
   WatchDirectoryKind,
   WatchFileKind
 } from '#src/enums'
-import type {
-  CompilerOptionsValue,
-  FallbackPolling,
-  ImportsNotUsedAsValues,
-  Jsx,
-  Lib,
-  Module,
-  ModuleDetection,
-  ModuleResolution,
-  NewLine,
-  Paths,
-  Target,
-  WatchDirectory,
-  WatchFile
-} from '#src/types'
+import type { Plugin } from '#src/interfaces'
 import type { LiteralUnion } from '@flex-development/tutils'
-import type Plugin from './plugin'
+import type FallbackPolling from './fallback-polling'
+import type ImportsNotUsedAsValues from './imports-not-used-as-values'
+import type Jsx from './jsx'
+import type Lib from './lib'
+import type Module from './module'
+import type ModuleDetection from './module-detection'
+import type ModuleResolution from './module-resolution'
+import type NewLine from './new-line'
+import type Paths from './paths'
+import type Target from './target'
+import type WatchDirectory from './watch-directory'
+import type WatchFile from './watch-file'
 
 /**
  * TypeScript compiler options.
  *
  * @see https://www.typescriptlang.org/tsconfig#compilerOptions
  */
-interface CompilerOptions {
-  [option: string]: CompilerOptionsValue | undefined
-
+type CompilerOptions = {
   /**
    * Allow JavaScript files to be a part of the program.
    *

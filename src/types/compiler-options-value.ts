@@ -3,8 +3,9 @@
  * @module tsconfig-types/types/CompilerOptionsValue
  */
 
-import type { Plugin, ProjectReference } from '#src/interfaces'
+import type { Plugin } from '#src/interfaces'
 import type { JsonPrimitive, MapLike } from '@flex-development/tutils'
+import type ProjectReference from './project-reference'
 
 /**
  * [`compilerOptions`][1] values.

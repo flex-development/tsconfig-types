@@ -1,6 +1,6 @@
 /**
  * @file Unit Tests - ProjectReference
- * @module tsconfig-types/interfaces/interfaces/ProjectReference
+ * @module tsconfig-types/types/tests/ProjectReference
  */
 
 import { resolve } from 'node:path'

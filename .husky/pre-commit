@@ -6,6 +6,5 @@
 #
 # - https://github.com/okonet/lint-staged#command-line-flags
 
-yarn typecheck
-yarn check:types:build
+yarn typecheck --changed HEAD^
 lint-staged

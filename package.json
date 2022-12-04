@@ -1,6 +1,6 @@
 {
   "name": "@flex-development/tsconfig-types",
-  "description": "TypeScript definitions for tsconfig.json (and its values!)",
+  "description": "TypeScript definitions for tsconfig.json",
   "version": "1.0.0",
   "keywords": [
     "tsconfig",

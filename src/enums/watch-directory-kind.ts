@@ -16,7 +16,6 @@ enum WatchDirectoryKind {
   DynamicPriorityPolling = 'dynamicprioritypolling',
   FixedChunkSizePolling = 'fixedchunksizepolling',
   FixedPollingInterval = 'fixedpollinginterval',
-  PriorityPollingInterval = 'prioritypollinginterval',
   UseFsEvents = 'usefsevents'
 }
 

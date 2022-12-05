@@ -299,6 +299,10 @@ export default compilerOptionsForProgram
 - [`WatchFile`](src/types/watch-file.ts)
 - [`WatchOptions`](src/types/watch-options.ts)
 
+## Related
+
+- [`pkg-types`][4] &mdash; TypeScript definitions for `package.json`
+
 ## Contribute
 
 See [`CONTRIBUTING.md`](CONTRIBUTING.md).
@@ -306,3 +310,4 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 [1]: https://typescriptlang.org/
 [2]: https://www.typescriptlang.org/tsconfig
 [3]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
+[4]: https://github.com/flex-development/pkg-types

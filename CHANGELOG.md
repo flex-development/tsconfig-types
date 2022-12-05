@@ -1,3 +1,47 @@
+## [2.0.0](https://github.com/flex-development/tsconfig-types/compare/1.0.0...2.0.0) (2022-12-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* **enums:** remove `WatchDirectoryKind.PriorityPollingInterval`
+* **deps-peer:** bump @flex-development/tutils from 6.0.0-alpha.3 to 6.0.0-alpha.7
+
+### :package: Build
+
+* **deps-peer:** bump @flex-development/tutils from 6.0.0-alpha.3 to 6.0.0-alpha.7 ([11ac73f](https://github.com/flex-development/tsconfig-types/commit/11ac73f2068f626a2d24ea6e96bb7e2640260c2b))
+
+
+### :robot: Continuous Integration
+
+* **deps:** Bump dessant/lock-threads from 3.0.0 to 4.0.0 ([#2](https://github.com/flex-development/tsconfig-types/issues/2)) ([9fc1f3d](https://github.com/flex-development/tsconfig-types/commit/9fc1f3dba6a560b299fbdda4522f0e9f58f4774d))
+
+
+### :pencil: Documentation
+
+* related ([e8840f3](https://github.com/flex-development/tsconfig-types/commit/e8840f3a65de78b07b9a49bb5298e16aca914d4c))
+
+
+### :bug: Fixes
+
+* **enums:** remove `WatchDirectoryKind.PriorityPollingInterval` ([c367d77](https://github.com/flex-development/tsconfig-types/commit/c367d775d05fc12258b95f171859bc9a8f1c4b85))
+
+
+### :house_with_garden: Housekeeping
+
+* update project architecture ([bbd2d00](https://github.com/flex-development/tsconfig-types/commit/bbd2d00f8fe68823bf28dc44705a75ff7a3192b7))
+* update project description ([6c53c52](https://github.com/flex-development/tsconfig-types/commit/6c53c528078de815580bab306bb23a6552effbf7))
+
+
+### :zap: Refactors
+
+* **ts:** ensure definitions are json-compatible ([b1cd1af](https://github.com/flex-development/tsconfig-types/commit/b1cd1af7d9e1d978213b47c0f423367ef5b6a0b2))
+* **ts:** prevent re-opening of closed definitions ([1459f07](https://github.com/flex-development/tsconfig-types/commit/1459f07f88012243581fe6bf54296509fb2aa426))
+
+
+### :white_check_mark: Testing
+
+* **enums:** add enum tests ([9e797f3](https://github.com/flex-development/tsconfig-types/commit/9e797f36b07f41517a66e71ff621d4733712edab))
+
 ## 1.0.0 (2022-11-29)
 
 

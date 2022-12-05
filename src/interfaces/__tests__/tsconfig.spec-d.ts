@@ -5,11 +5,13 @@
 
 import type {
   BuildOptions,
+  CompilerOptions,
   ProjectReference,
+  TsNodeOptions,
   TypeAcquisition,
   WatchOptions
 } from '#src/types'
-import tsconfig from '../../../tsconfig.json' assert { type: 'json' }
+import type { JsonObject } from '@flex-development/tutils'
 import type TestSubject from '../tsconfig'
 
 describe('unit:interfaces/TSConfig', () => {
@@ -17,31 +19,73 @@ describe('unit:interfaces/TSConfig', () => {
     assertType<TestSubject>({})
   })
 
-  it('should allow object with all config options', () => {
-    assertType<Required<TestSubject>>({
-      buildOptions: {} as BuildOptions,
-      compileOnSave: false,
-      compilerOptions: { lib: ['es2020'], module: 'esnext', target: 'esnext' },
-      exclude: tsconfig.exclude,
-      extends: '../tsconfig.base.json',
-      files: ['./typings/index.d.ts'],
-      include: tsconfig.include,
-      references: [] as ProjectReference[],
-      'ts-node': {
-        compilerOptions: {},
-        esm: true,
-        experimentalResolver: true,
-        experimentalSpecifierResolution: 'node',
-        moduleTypes: {},
-        require: [],
-        transpileOnly: true
-      },
-      typeAcquisition: {} as TypeAcquisition,
-      watchOptions: {} as WatchOptions
-    })
+  it('should be json object', () => {
+    expectTypeOf<TestSubject>().toMatchTypeOf<JsonObject>()
   })
 
-  it('should allow object with unknown key', () => {
-    assertType<TestSubject>({ vueCompilerOptions: {} })
+  it('should match [buildOptions?: BuildOptions]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('buildOptions')
+      .toEqualTypeOf<BuildOptions | undefined>()
+  })
+
+  it('should match [compileOnSave?: boolean]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('compileOnSave')
+      .toEqualTypeOf<boolean | undefined>()
+  })
+
+  it('should match [compilerOptions?: CompilerOptions]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('compilerOptions')
+      .toEqualTypeOf<CompilerOptions | undefined>()
+  })
+
+  it('should match [exclude?: string[]]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('exclude')
+      .toEqualTypeOf<string[] | undefined>()
+  })
+
+  it('should match [extends?: string]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('extends')
+      .toEqualTypeOf<string | undefined>()
+  })
+
+  it('should match [files?: string[]]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('files')
+      .toEqualTypeOf<string[] | undefined>()
+  })
+
+  it('should match [include?: string[]]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('include')
+      .toEqualTypeOf<string[] | undefined>()
+  })
+
+  it('should match [references?: ProjectReference[]]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('references')
+      .toEqualTypeOf<ProjectReference[] | undefined>()
+  })
+
+  it('should match [ts-node?: TsNodeOptions]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('ts-node')
+      .toEqualTypeOf<TsNodeOptions | undefined>()
+  })
+
+  it('should match [typeAcquisition?: TypeAcquisition]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('typeAcquisition')
+      .toEqualTypeOf<TypeAcquisition | undefined>()
+  })
+
+  it('should match [watchOptions?: WatchOptions]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('watchOptions')
+      .toEqualTypeOf<WatchOptions | undefined>()
   })
 })

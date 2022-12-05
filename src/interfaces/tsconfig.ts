@@ -6,28 +6,21 @@
 import type {
   BuildOptions,
   CompilerOptions,
-  CompilerOptionsValue,
   ProjectReference,
   TsNodeOptions,
   TypeAcquisition,
   WatchOptions
 } from '#src/types'
-import type { JsonValue } from '@flex-development/tutils'
+import type { JsonObject } from '@flex-development/tutils'
 
 /**
  * TypeScript configuration options.
  *
  * @see https://www.typescriptlang.org/tsconfig
+ *
+ * @extends {JsonObject}
  */
-interface TSConfig {
-  [option: string]:
-    | CompilerOptionsValue
-    | JsonValue
-    | ProjectReference[]
-    | TsNodeOptions
-    | TypeAcquisition
-    | WatchOptions
-
+interface TSConfig extends JsonObject {
   /**
    * Build options.
    *

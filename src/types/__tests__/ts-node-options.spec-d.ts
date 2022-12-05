@@ -3,15 +3,16 @@
  * @module tsconfig-types/types/tests/TsNodeOptions
  */
 
+import type { JsonObject } from '@flex-development/tutils'
 import type { TsConfigOptions } from 'ts-node'
 import type TestSubject from '../ts-node-options'
 
 describe('unit:interfaces/TsNodeOptions', () => {
-  it('should allow empty object', () => {
-    assertType<TestSubject>({})
+  it('should be json object', () => {
+    expectTypeOf<TestSubject>().toMatchTypeOf<JsonObject>()
   })
 
   it('should match ts-node options', () => {
-    assertType<Required<TsConfigOptions>>({} as Required<TestSubject>)
+    expectTypeOf<TestSubject>().toMatchTypeOf<TsConfigOptions>()
   })
 })

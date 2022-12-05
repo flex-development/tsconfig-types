@@ -3,472 +3,491 @@
  * @module tsconfig-types/types/tests/Lib
  */
 
+import type { JsonValue } from '@flex-development/tutils'
 import type TestSubject from '../lib'
 
 describe('unit:types/Lib', () => {
-  it('should allow "DOM.Iterable"', () => {
-    assertType<TestSubject>('DOM.Iterable')
+  it('should be json value', () => {
+    expectTypeOf<TestSubject>().toMatchTypeOf<JsonValue>()
   })
 
-  it('should allow "DOM"', () => {
-    assertType<TestSubject>('DOM')
+  it('should extract "DOM.Iterable"', () => {
+    expectTypeOf<TestSubject>().extract<'DOM.Iterable'>().toBeString()
   })
 
-  it('should allow "ES5"', () => {
-    assertType<TestSubject>('ES5')
+  it('should extract "DOM"', () => {
+    expectTypeOf<TestSubject>().extract<'DOM'>().toBeString()
   })
 
-  it('should allow "ES6"', () => {
-    assertType<TestSubject>('ES6')
+  it('should extract "ES5"', () => {
+    expectTypeOf<TestSubject>().extract<'ES5'>().toBeString()
   })
 
-  it('should allow "ES7"', () => {
-    assertType<TestSubject>('ES7')
+  it('should extract "ES6"', () => {
+    expectTypeOf<TestSubject>().extract<'ES6'>().toBeString()
   })
 
-  it('should allow "ES2015.Collection"', () => {
-    assertType<TestSubject>('ES2015.Collection')
+  it('should extract "ES7"', () => {
+    expectTypeOf<TestSubject>().extract<'ES7'>().toBeString()
   })
 
-  it('should allow "ES2015.Core"', () => {
-    assertType<TestSubject>('ES2015.Core')
+  it('should extract "ES2015.Collection"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2015.Collection'>().toBeString()
   })
 
-  it('should allow "ES2015.Generator"', () => {
-    assertType<TestSubject>('ES2015.Generator')
+  it('should extract "ES2015.Core"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2015.Core'>().toBeString()
   })
 
-  it('should allow "ES2015.Iterable"', () => {
-    assertType<TestSubject>('ES2015.Iterable')
+  it('should extract "ES2015.Generator"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2015.Generator'>().toBeString()
   })
 
-  it('should allow "ES2015.Promise"', () => {
-    assertType<TestSubject>('ES2015.Promise')
+  it('should extract "ES2015.Iterable"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2015.Iterable'>().toBeString()
   })
 
-  it('should allow "ES2015.Proxy"', () => {
-    assertType<TestSubject>('ES2015.Proxy')
+  it('should extract "ES2015.Promise"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2015.Promise'>().toBeString()
   })
 
-  it('should allow "ES2015.Reflect"', () => {
-    assertType<TestSubject>('ES2015.Reflect')
+  it('should extract "ES2015.Proxy"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2015.Proxy'>().toBeString()
   })
 
-  it('should allow "ES2015.Symbol.WellKnown"', () => {
-    assertType<TestSubject>('ES2015.Symbol.WellKnown')
+  it('should extract "ES2015.Reflect"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2015.Reflect'>().toBeString()
   })
 
-  it('should allow "ES2015.Symbol"', () => {
-    assertType<TestSubject>('ES2015.Symbol')
+  it('should extract "ES2015.Symbol.WellKnown"', () => {
+    expectTypeOf<TestSubject>()
+      .extract<'ES2015.Symbol.WellKnown'>()
+      .toBeString()
   })
 
-  it('should allow "ES2015"', () => {
-    assertType<TestSubject>('ES2015')
+  it('should extract "ES2015.Symbol"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2015.Symbol'>().toBeString()
   })
 
-  it('should allow "ES2016.Array.Include"', () => {
-    assertType<TestSubject>('ES2016.Array.Include')
+  it('should extract "ES2015"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2015'>().toBeString()
   })
 
-  it('should allow "ES2016"', () => {
-    assertType<TestSubject>('ES2016')
+  it('should extract "ES2016.Array.Include"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2016.Array.Include'>().toBeString()
   })
 
-  it('should allow "ES2017.Intl"', () => {
-    assertType<TestSubject>('ES2017.Intl')
+  it('should extract "ES2016"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2016'>().toBeString()
   })
 
-  it('should allow "ES2017.Object"', () => {
-    assertType<TestSubject>('ES2017.Object')
+  it('should extract "ES2017.Intl"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2017.Intl'>().toBeString()
   })
 
-  it('should allow "ES2017.SharedMemory"', () => {
-    assertType<TestSubject>('ES2017.SharedMemory')
+  it('should extract "ES2017.Object"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2017.Object'>().toBeString()
   })
 
-  it('should allow "ES2017.String"', () => {
-    assertType<TestSubject>('ES2017.String')
+  it('should extract "ES2017.SharedMemory"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2017.SharedMemory'>().toBeString()
   })
 
-  it('should allow "ES2017.TypedArrays"', () => {
-    assertType<TestSubject>('ES2017.TypedArrays')
+  it('should extract "ES2017.String"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2017.String'>().toBeString()
   })
 
-  it('should allow "ES2017"', () => {
-    assertType<TestSubject>('ES2017')
+  it('should extract "ES2017.TypedArrays"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2017.TypedArrays'>().toBeString()
   })
 
-  it('should allow "ES2018.AsyncGenerator"', () => {
-    assertType<TestSubject>('ES2018.AsyncGenerator')
+  it('should extract "ES2017"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2017'>().toBeString()
   })
 
-  it('should allow "ES2018.AsyncIterable"', () => {
-    assertType<TestSubject>('ES2018.AsyncIterable')
+  it('should extract "ES2018.AsyncGenerator"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2018.AsyncGenerator'>().toBeString()
   })
 
-  it('should allow "ES2018.Intl"', () => {
-    assertType<TestSubject>('ES2018.Intl')
+  it('should extract "ES2018.AsyncIterable"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2018.AsyncIterable'>().toBeString()
   })
 
-  it('should allow "ES2018.Promise"', () => {
-    assertType<TestSubject>('ES2018.Promise')
+  it('should extract "ES2018.Intl"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2018.Intl'>().toBeString()
   })
 
-  it('should allow "ES2018.Regexp"', () => {
-    assertType<TestSubject>('ES2018.Regexp')
+  it('should extract "ES2018.Promise"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2018.Promise'>().toBeString()
   })
 
-  it('should allow "ES2018"', () => {
-    assertType<TestSubject>('ES2018')
+  it('should extract "ES2018.Regexp"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2018.Regexp'>().toBeString()
   })
 
-  it('should allow "ES2019.Array"', () => {
-    assertType<TestSubject>('ES2019.Array')
+  it('should extract "ES2018"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2018'>().toBeString()
   })
 
-  it('should allow "ES2019.Object"', () => {
-    assertType<TestSubject>('ES2019.Object')
+  it('should extract "ES2019.Array"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2019.Array'>().toBeString()
   })
 
-  it('should allow "ES2019.String"', () => {
-    assertType<TestSubject>('ES2019.String')
+  it('should extract "ES2019.Object"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2019.Object'>().toBeString()
   })
 
-  it('should allow "ES2019.Symbol"', () => {
-    assertType<TestSubject>('ES2019.Symbol')
+  it('should extract "ES2019.String"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2019.String'>().toBeString()
   })
 
-  it('should allow "ES2019"', () => {
-    assertType<TestSubject>('ES2019')
+  it('should extract "ES2019.Symbol"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2019.Symbol'>().toBeString()
   })
 
-  it('should allow "ES2020.BigInt"', () => {
-    assertType<TestSubject>('ES2020.BigInt')
+  it('should extract "ES2019"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2019'>().toBeString()
   })
 
-  it('should allow "ES2020.Intl"', () => {
-    assertType<TestSubject>('ES2020.Intl')
+  it('should extract "ES2020.BigInt"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2020.BigInt'>().toBeString()
   })
 
-  it('should allow "ES2020.Promise"', () => {
-    assertType<TestSubject>('ES2020.Promise')
+  it('should extract "ES2020.Intl"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2020.Intl'>().toBeString()
   })
 
-  it('should allow "ES2020.SharedMemory"', () => {
-    assertType<TestSubject>('ES2020.SharedMemory')
+  it('should extract "ES2020.Promise"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2020.Promise'>().toBeString()
   })
 
-  it('should allow "ES2020.String"', () => {
-    assertType<TestSubject>('ES2020.String')
+  it('should extract "ES2020.SharedMemory"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2020.SharedMemory'>().toBeString()
   })
 
-  it('should allow "ES2020.Symbol.WellKnown"', () => {
-    assertType<TestSubject>('ES2020.Symbol.WellKnown')
+  it('should extract "ES2020.String"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2020.String'>().toBeString()
   })
 
-  it('should allow "ES2020"', () => {
-    assertType<TestSubject>('ES2020')
+  it('should extract "ES2020.Symbol.WellKnown"', () => {
+    expectTypeOf<TestSubject>()
+      .extract<'ES2020.Symbol.WellKnown'>()
+      .toBeString()
   })
 
-  it('should allow "ES2021.Promise"', () => {
-    assertType<TestSubject>('ES2021.Promise')
+  it('should extract "ES2020"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2020'>().toBeString()
   })
 
-  it('should allow "ES2021.String"', () => {
-    assertType<TestSubject>('ES2021.String')
+  it('should extract "ES2021.Promise"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2021.Promise'>().toBeString()
   })
 
-  it('should allow "ES2021.WeakRef"', () => {
-    assertType<TestSubject>('ES2021.WeakRef')
+  it('should extract "ES2021.String"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2021.String'>().toBeString()
   })
 
-  it('should allow "ES2021"', () => {
-    assertType<TestSubject>('ES2021')
+  it('should extract "ES2021.WeakRef"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2021.WeakRef'>().toBeString()
   })
 
-  it('should allow "ESNext.Array"', () => {
-    assertType<TestSubject>('ESNext.Array')
+  it('should extract "ES2021"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2021'>().toBeString()
   })
 
-  it('should allow "ESNext.AsyncIterable"', () => {
-    assertType<TestSubject>('ESNext.AsyncIterable')
+  it('should extract "ESNext.Array"', () => {
+    expectTypeOf<TestSubject>().extract<'ESNext.Array'>().toBeString()
   })
 
-  it('should allow "ESNext.BigInt"', () => {
-    assertType<TestSubject>('ESNext.BigInt')
+  it('should extract "ESNext.AsyncIterable"', () => {
+    expectTypeOf<TestSubject>().extract<'ESNext.AsyncIterable'>().toBeString()
   })
 
-  it('should allow "ESNext.Intl"', () => {
-    assertType<TestSubject>('ESNext.Intl')
+  it('should extract "ESNext.BigInt"', () => {
+    expectTypeOf<TestSubject>().extract<'ESNext.BigInt'>().toBeString()
   })
 
-  it('should allow "ESNext.Promise"', () => {
-    assertType<TestSubject>('ESNext.Promise')
+  it('should extract "ESNext.Intl"', () => {
+    expectTypeOf<TestSubject>().extract<'ESNext.Intl'>().toBeString()
   })
 
-  it('should allow "ESNext.String"', () => {
-    assertType<TestSubject>('ESNext.String')
+  it('should extract "ESNext.Promise"', () => {
+    expectTypeOf<TestSubject>().extract<'ESNext.Promise'>().toBeString()
   })
 
-  it('should allow "ESNext.Symbol"', () => {
-    assertType<TestSubject>('ESNext.Symbol')
+  it('should extract "ESNext.String"', () => {
+    expectTypeOf<TestSubject>().extract<'ESNext.String'>().toBeString()
   })
 
-  it('should allow "ESNext.WeakRef"', () => {
-    assertType<TestSubject>('ESNext.WeakRef')
+  it('should extract "ESNext.Symbol"', () => {
+    expectTypeOf<TestSubject>().extract<'ESNext.Symbol'>().toBeString()
   })
 
-  it('should allow "ESNext"', () => {
-    assertType<TestSubject>('ESNext')
+  it('should extract "ESNext.WeakRef"', () => {
+    expectTypeOf<TestSubject>().extract<'ESNext.WeakRef'>().toBeString()
   })
 
-  it('should allow "ScriptHost"', () => {
-    assertType<TestSubject>('ScriptHost')
+  it('should extract "ESNext"', () => {
+    expectTypeOf<TestSubject>().extract<'ESNext'>().toBeString()
   })
 
-  it('should allow "WebWorker.ImportScripts"', () => {
-    assertType<TestSubject>('WebWorker.ImportScripts')
+  it('should extract "ScriptHost"', () => {
+    expectTypeOf<TestSubject>().extract<'ScriptHost'>().toBeString()
   })
 
-  it('should allow "WebWorker.Iterable"', () => {
-    assertType<TestSubject>('WebWorker.Iterable')
+  it('should extract "WebWorker.ImportScripts"', () => {
+    expectTypeOf<TestSubject>()
+      .extract<'WebWorker.ImportScripts'>()
+      .toBeString()
   })
 
-  it('should allow "WebWorker"', () => {
-    assertType<TestSubject>('WebWorker')
+  it('should extract "WebWorker.Iterable"', () => {
+    expectTypeOf<TestSubject>().extract<'WebWorker.Iterable'>().toBeString()
+  })
+
+  it('should extract "WebWorker"', () => {
+    expectTypeOf<TestSubject>().extract<'WebWorker'>().toBeString()
   })
 
   describe('lowercase', () => {
-    it('should allow "dom.iterable"', () => {
-      assertType<TestSubject>('dom.iterable')
+    it('should extract "dom.iterable"', () => {
+      expectTypeOf<TestSubject>().extract<'dom.iterable'>().toBeString()
     })
 
-    it('should allow "dom"', () => {
-      assertType<TestSubject>('dom')
+    it('should extract "dom"', () => {
+      expectTypeOf<TestSubject>().extract<'dom'>().toBeString()
     })
 
-    it('should allow "es5"', () => {
-      assertType<TestSubject>('es5')
+    it('should extract "es5"', () => {
+      expectTypeOf<TestSubject>().extract<'es5'>().toBeString()
     })
 
-    it('should allow "es6"', () => {
-      assertType<TestSubject>('es6')
+    it('should extract "es6"', () => {
+      expectTypeOf<TestSubject>().extract<'es6'>().toBeString()
     })
 
-    it('should allow "es7"', () => {
-      assertType<TestSubject>('es7')
+    it('should extract "es7"', () => {
+      expectTypeOf<TestSubject>().extract<'es7'>().toBeString()
     })
 
-    it('should allow "es2015.collection"', () => {
-      assertType<TestSubject>('es2015.collection')
+    it('should extract "es2015.collection"', () => {
+      expectTypeOf<TestSubject>().extract<'es2015.collection'>().toBeString()
     })
 
-    it('should allow "es2015.core"', () => {
-      assertType<TestSubject>('es2015.core')
+    it('should extract "es2015.core"', () => {
+      expectTypeOf<TestSubject>().extract<'es2015.core'>().toBeString()
     })
 
-    it('should allow "es2015.generator"', () => {
-      assertType<TestSubject>('es2015.generator')
+    it('should extract "es2015.generator"', () => {
+      expectTypeOf<TestSubject>().extract<'es2015.generator'>().toBeString()
     })
 
-    it('should allow "es2015.iterable"', () => {
-      assertType<TestSubject>('es2015.iterable')
+    it('should extract "es2015.iterable"', () => {
+      expectTypeOf<TestSubject>().extract<'es2015.iterable'>().toBeString()
     })
 
-    it('should allow "es2015.promise"', () => {
-      assertType<TestSubject>('es2015.promise')
+    it('should extract "es2015.promise"', () => {
+      expectTypeOf<TestSubject>().extract<'es2015.promise'>().toBeString()
     })
 
-    it('should allow "es2015.proxy"', () => {
-      assertType<TestSubject>('es2015.proxy')
+    it('should extract "es2015.proxy"', () => {
+      expectTypeOf<TestSubject>().extract<'es2015.proxy'>().toBeString()
     })
 
-    it('should allow "es2015.reflect"', () => {
-      assertType<TestSubject>('es2015.reflect')
+    it('should extract "es2015.reflect"', () => {
+      expectTypeOf<TestSubject>().extract<'es2015.reflect'>().toBeString()
     })
 
-    it('should allow "es2015.symbol.wellknown"', () => {
-      assertType<TestSubject>('es2015.symbol.wellknown')
+    it('should extract "es2015.symbol.wellknown"', () => {
+      expectTypeOf<TestSubject>()
+        .extract<'es2015.symbol.wellknown'>()
+        .toBeString()
     })
 
-    it('should allow "es2015.symbol"', () => {
-      assertType<TestSubject>('es2015.symbol')
+    it('should extract "es2015.symbol"', () => {
+      expectTypeOf<TestSubject>().extract<'es2015.symbol'>().toBeString()
     })
 
-    it('should allow "es2015"', () => {
-      assertType<TestSubject>('es2015')
+    it('should extract "es2015"', () => {
+      expectTypeOf<TestSubject>().extract<'es2015'>().toBeString()
     })
 
-    it('should allow "es2016.array.include"', () => {
-      assertType<TestSubject>('es2016.array.include')
+    it('should extract "es2016.array.include"', () => {
+      expectTypeOf<TestSubject>().extract<'es2016.array.include'>().toBeString()
     })
 
-    it('should allow "es2016"', () => {
-      assertType<TestSubject>('es2016')
+    it('should extract "es2016"', () => {
+      expectTypeOf<TestSubject>().extract<'es2016'>().toBeString()
     })
 
-    it('should allow "es2017.intl"', () => {
-      assertType<TestSubject>('es2017.intl')
+    it('should extract "es2017.intl"', () => {
+      expectTypeOf<TestSubject>().extract<'es2017.intl'>().toBeString()
     })
 
-    it('should allow "es2017.object"', () => {
-      assertType<TestSubject>('es2017.object')
+    it('should extract "es2017.object"', () => {
+      expectTypeOf<TestSubject>().extract<'es2017.object'>().toBeString()
     })
 
-    it('should allow "es2017.sharedmemory"', () => {
-      assertType<TestSubject>('es2017.sharedmemory')
+    it('should extract "es2017.sharedmemory"', () => {
+      expectTypeOf<TestSubject>().extract<'es2017.sharedmemory'>().toBeString()
     })
 
-    it('should allow "es2017.string"', () => {
-      assertType<TestSubject>('es2017.string')
+    it('should extract "es2017.string"', () => {
+      expectTypeOf<TestSubject>().extract<'es2017.string'>().toBeString()
     })
 
-    it('should allow "es2017.typedarrays"', () => {
-      assertType<TestSubject>('es2017.typedarrays')
+    it('should extract "es2017.typedarrays"', () => {
+      expectTypeOf<TestSubject>().extract<'es2017.typedarrays'>().toBeString()
     })
 
-    it('should allow "es2017"', () => {
-      assertType<TestSubject>('es2017')
+    it('should extract "es2017"', () => {
+      expectTypeOf<TestSubject>().extract<'es2017'>().toBeString()
     })
 
-    it('should allow "es2018.asyncgenerator"', () => {
-      assertType<TestSubject>('es2018.asyncgenerator')
+    it('should extract "es2018.asyncgenerator"', () => {
+      expectTypeOf<TestSubject>()
+        .extract<'es2018.asyncgenerator'>()
+        .toBeString()
     })
 
-    it('should allow "es2018.asynciterable"', () => {
-      assertType<TestSubject>('es2018.asynciterable')
+    it('should extract "es2018.asynciterable"', () => {
+      expectTypeOf<TestSubject>().extract<'es2018.asynciterable'>().toBeString()
     })
 
-    it('should allow "es2018.intl"', () => {
-      assertType<TestSubject>('es2018.intl')
+    it('should extract "es2018.intl"', () => {
+      expectTypeOf<TestSubject>().extract<'es2018.intl'>().toBeString()
     })
 
-    it('should allow "es2018.promise"', () => {
-      assertType<TestSubject>('es2018.promise')
+    it('should extract "es2018.promise"', () => {
+      expectTypeOf<TestSubject>().extract<'es2018.promise'>().toBeString()
     })
 
-    it('should allow "es2018.regexp"', () => {
-      assertType<TestSubject>('es2018.regexp')
+    it('should extract "es2018.regexp"', () => {
+      expectTypeOf<TestSubject>().extract<'es2018.regexp'>().toBeString()
     })
 
-    it('should allow "es2018"', () => {
-      assertType<TestSubject>('es2018')
+    it('should extract "es2018"', () => {
+      expectTypeOf<TestSubject>().extract<'es2018'>().toBeString()
     })
 
-    it('should allow "es2019.array"', () => {
-      assertType<TestSubject>('es2019.array')
+    it('should extract "es2019.array"', () => {
+      expectTypeOf<TestSubject>().extract<'es2019.array'>().toBeString()
     })
 
-    it('should allow "es2019.object"', () => {
-      assertType<TestSubject>('es2019.object')
+    it('should extract "es2019.object"', () => {
+      expectTypeOf<TestSubject>().extract<'es2019.object'>().toBeString()
     })
 
-    it('should allow "es2019.string"', () => {
-      assertType<TestSubject>('es2019.string')
+    it('should extract "es2019.string"', () => {
+      expectTypeOf<TestSubject>().extract<'es2019.string'>().toBeString()
     })
 
-    it('should allow "es2019.symbol"', () => {
-      assertType<TestSubject>('es2019.symbol')
+    it('should extract "es2019.symbol"', () => {
+      expectTypeOf<TestSubject>().extract<'es2019.symbol'>().toBeString()
     })
 
-    it('should allow "es2019"', () => {
-      assertType<TestSubject>('es2019')
+    it('should extract "es2019"', () => {
+      expectTypeOf<TestSubject>().extract<'es2019'>().toBeString()
     })
 
-    it('should allow "es2020.bigint"', () => {
-      assertType<TestSubject>('es2020.bigint')
+    it('should extract "es2020.bigint"', () => {
+      expectTypeOf<TestSubject>().extract<'es2020.bigint'>().toBeString()
     })
 
-    it('should allow "es2020.intl"', () => {
-      assertType<TestSubject>('es2020.intl')
+    it('should extract "es2020.intl"', () => {
+      expectTypeOf<TestSubject>().extract<'es2020.intl'>().toBeString()
     })
 
-    it('should allow "es2020.promise"', () => {
-      assertType<TestSubject>('es2020.promise')
+    it('should extract "es2020.promise"', () => {
+      expectTypeOf<TestSubject>().extract<'es2020.promise'>().toBeString()
     })
 
-    it('should allow "es2020.sharedmemory"', () => {
-      assertType<TestSubject>('es2020.sharedmemory')
+    it('should extract "es2020.sharedmemory"', () => {
+      expectTypeOf<TestSubject>().extract<'es2020.sharedmemory'>().toBeString()
     })
 
-    it('should allow "es2020.string"', () => {
-      assertType<TestSubject>('es2020.string')
+    it('should extract "es2020.string"', () => {
+      expectTypeOf<TestSubject>().extract<'es2020.string'>().toBeString()
     })
 
-    it('should allow "es2020.symbol.wellknown"', () => {
-      assertType<TestSubject>('es2020.symbol.wellknown')
+    it('should extract "es2020.symbol.wellknown"', () => {
+      expectTypeOf<TestSubject>()
+        .extract<'es2020.symbol.wellknown'>()
+        .toBeString()
     })
 
-    it('should allow "es2020"', () => {
-      assertType<TestSubject>('es2020')
+    it('should extract "es2020"', () => {
+      expectTypeOf<TestSubject>().extract<'es2020'>().toBeString()
     })
 
-    it('should allow "es2021.promise"', () => {
-      assertType<TestSubject>('es2021.promise')
+    it('should extract "es2021.promise"', () => {
+      expectTypeOf<TestSubject>().extract<'es2021.promise'>().toBeString()
     })
 
-    it('should allow "es2021.string"', () => {
-      assertType<TestSubject>('es2021.string')
+    it('should extract "es2021.string"', () => {
+      expectTypeOf<TestSubject>().extract<'es2021.string'>().toBeString()
     })
 
-    it('should allow "es2021.weakref"', () => {
-      assertType<TestSubject>('es2021.weakref')
+    it('should extract "es2021.weakref"', () => {
+      expectTypeOf<TestSubject>().extract<'es2021.weakref'>().toBeString()
     })
 
-    it('should allow "es2021"', () => {
-      assertType<TestSubject>('es2021')
+    it('should extract "es2021"', () => {
+      expectTypeOf<TestSubject>().extract<'es2021'>().toBeString()
     })
 
-    it('should allow "esnext.array"', () => {
-      assertType<TestSubject>('esnext.array')
+    it('should extract "esnext.array"', () => {
+      expectTypeOf<TestSubject>().extract<'esnext.array'>().toBeString()
     })
 
-    it('should allow "esnext.asynciterable"', () => {
-      assertType<TestSubject>('esnext.asynciterable')
+    it('should extract "esnext.asynciterable"', () => {
+      expectTypeOf<TestSubject>().extract<'esnext.asynciterable'>().toBeString()
     })
 
-    it('should allow "esnext.bigint"', () => {
-      assertType<TestSubject>('esnext.bigint')
+    it('should extract "esnext.bigint"', () => {
+      expectTypeOf<TestSubject>().extract<'esnext.bigint'>().toBeString()
     })
 
-    it('should allow "esnext.intl"', () => {
-      assertType<TestSubject>('esnext.intl')
+    it('should extract "esnext.intl"', () => {
+      expectTypeOf<TestSubject>().extract<'esnext.intl'>().toBeString()
     })
 
-    it('should allow "esnext.promise"', () => {
-      assertType<TestSubject>('esnext.promise')
+    it('should extract "esnext.promise"', () => {
+      expectTypeOf<TestSubject>().extract<'esnext.promise'>().toBeString()
     })
 
-    it('should allow "esnext.string"', () => {
-      assertType<TestSubject>('esnext.string')
+    it('should extract "esnext.string"', () => {
+      expectTypeOf<TestSubject>().extract<'esnext.string'>().toBeString()
     })
 
-    it('should allow "esnext.symbol"', () => {
-      assertType<TestSubject>('esnext.symbol')
+    it('should extract "esnext.symbol"', () => {
+      expectTypeOf<TestSubject>().extract<'esnext.symbol'>().toBeString()
     })
 
-    it('should allow "esnext.weakref"', () => {
-      assertType<TestSubject>('esnext.weakref')
+    it('should extract "esnext.weakref"', () => {
+      expectTypeOf<TestSubject>().extract<'esnext.weakref'>().toBeString()
     })
 
-    it('should allow "esnext"', () => {
-      assertType<TestSubject>('esnext')
+    it('should extract "esnext"', () => {
+      expectTypeOf<TestSubject>().extract<'esnext'>().toBeString()
     })
 
-    it('should allow "scripthost"', () => {
-      assertType<TestSubject>('scripthost')
+    it('should extract "scripthost"', () => {
+      expectTypeOf<TestSubject>().extract<'scripthost'>().toBeString()
     })
 
-    it('should allow "webworker.importscripts"', () => {
-      assertType<TestSubject>('webworker.importscripts')
+    it('should extract "webworker.importscripts"', () => {
+      expectTypeOf<TestSubject>()
+        .extract<'webworker.importscripts'>()
+        .toBeString()
     })
 
-    it('should allow "webworker.iterable"', () => {
-      assertType<TestSubject>('webworker.iterable')
+    it('should extract "webworker.iterable"', () => {
+      expectTypeOf<TestSubject>().extract<'webworker.iterable'>().toBeString()
     })
 
-    it('should allow "webworker"', () => {
-      assertType<TestSubject>('webworker')
+    it('should extract "webworker"', () => {
+      expectTypeOf<TestSubject>().extract<'webworker'>().toBeString()
     })
   })
 })

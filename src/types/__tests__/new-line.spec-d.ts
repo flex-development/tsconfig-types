@@ -3,25 +3,29 @@
  * @module tsconfig-types/types/tests/NewLine
  */
 
-import { NewLineKind } from '#src/enums'
+import type { JsonValue } from '@flex-development/tutils'
 import type TestSubject from '../new-line'
 
 describe('unit:types/NewLine', () => {
-  it('should allow "CRLF"', () => {
-    assertType<TestSubject>('CRLF')
+  it('should be json value', () => {
+    expectTypeOf<TestSubject>().toMatchTypeOf<JsonValue>()
   })
 
-  it('should allow "LF"', () => {
-    assertType<TestSubject>('LF')
+  it('should extract "CRLF"', () => {
+    expectTypeOf<TestSubject>().extract<'CRLF'>().toBeString()
+  })
+
+  it('should extract "LF"', () => {
+    expectTypeOf<TestSubject>().extract<'LF'>().toBeString()
   })
 
   describe('lowercase', () => {
-    it('should allow "crlf"', () => {
-      assertType<TestSubject>(NewLineKind.CarriageReturnLineFeed)
+    it('should extract "crlf"', () => {
+      expectTypeOf<TestSubject>().extract<'crlf'>().toBeString()
     })
 
-    it('should allow "lf"', () => {
-      assertType<TestSubject>(NewLineKind.LineFeed)
+    it('should extract "lf"', () => {
+      expectTypeOf<TestSubject>().extract<'lf'>().toBeString()
     })
   })
 })

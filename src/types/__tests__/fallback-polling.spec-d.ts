@@ -3,41 +3,47 @@
  * @module tsconfig-types/types/tests/FallbackPolling
  */
 
-import { PollingWatchKind } from '#src/enums'
+import type { JsonValue } from '@flex-development/tutils'
 import type TestSubject from '../fallback-polling'
 
 describe('unit:types/FallbackPolling', () => {
-  it('should allow "dynamicPriorityPolling"', () => {
-    assertType<TestSubject>(PollingWatchKind.DynamicPriority)
+  it('should be json value', () => {
+    expectTypeOf<TestSubject>().toMatchTypeOf<JsonValue>()
   })
 
-  it('should allow "fixedChunkSize"', () => {
-    assertType<TestSubject>(PollingWatchKind.FixedChunkSize)
+  it('should extract "dynamicPriorityPolling"', () => {
+    expectTypeOf<TestSubject>().extract<'dynamicPriorityPolling'>().toBeString()
   })
 
-  it('should allow "fixedPollingInterval"', () => {
-    assertType<TestSubject>(PollingWatchKind.FixedInterval)
+  it('should extract "fixedChunkSize"', () => {
+    expectTypeOf<TestSubject>().extract<'fixedChunkSize'>().toBeString()
   })
 
-  it('should allow "priorityPollingInterval"', () => {
-    assertType<TestSubject>(PollingWatchKind.PriorityInterval)
+  it('should extract "fixedPollingInterval"', () => {
+    expectTypeOf<TestSubject>().extract<'fixedPollingInterval'>().toBeString()
+  })
+
+  it('should extract "priorityPollingInterval"', () => {
+    expectTypeOf<TestSubject>()
+      .extract<'priorityPollingInterval'>()
+      .toBeString()
   })
 
   describe('lowercase', () => {
-    it('should allow "dynamicpriority"', () => {
-      assertType<TestSubject>('dynamicpriority')
+    it('should extract "dynamicpriority"', () => {
+      expectTypeOf<TestSubject>().extract<'dynamicpriority'>().toBeString()
     })
 
-    it('should allow "fixedchunksize"', () => {
-      assertType<TestSubject>('fixedchunksize')
+    it('should extract "fixedchunksize"', () => {
+      expectTypeOf<TestSubject>().extract<'fixedchunksize'>().toBeString()
     })
 
-    it('should allow "fixedinterval"', () => {
-      assertType<TestSubject>('fixedinterval')
+    it('should extract "fixedinterval"', () => {
+      expectTypeOf<TestSubject>().extract<'fixedinterval'>().toBeString()
     })
 
-    it('should allow "priorityinterval"', () => {
-      assertType<TestSubject>('priorityinterval')
+    it('should extract "priorityinterval"', () => {
+      expectTypeOf<TestSubject>().extract<'priorityinterval'>().toBeString()
     })
   })
 })

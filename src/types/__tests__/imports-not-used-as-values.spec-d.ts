@@ -3,19 +3,23 @@
  * @module tsconfig-types/types/tests/ImportsNotUsedAsValues
  */
 
-import { ImportsNotUsedKind } from '#src/enums'
+import type { JsonValue } from '@flex-development/tutils'
 import type TestSubject from '../imports-not-used-as-values'
 
 describe('unit:types/ImportsNotUsedAsValues', () => {
-  it('should allow "error"', () => {
-    assertType<TestSubject>(ImportsNotUsedKind.Error)
+  it('should be json value', () => {
+    expectTypeOf<TestSubject>().toMatchTypeOf<JsonValue>()
   })
 
-  it('should allow "preserve"', () => {
-    assertType<TestSubject>(ImportsNotUsedKind.Preserve)
+  it('should extract "error"', () => {
+    expectTypeOf<TestSubject>().extract<'error'>().toBeString()
   })
 
-  it('should allow "remove"', () => {
-    assertType<TestSubject>(ImportsNotUsedKind.Remove)
+  it('should extract "preserve"', () => {
+    expectTypeOf<TestSubject>().extract<'preserve'>().toBeString()
+  })
+
+  it('should extract "remove"', () => {
+    expectTypeOf<TestSubject>().extract<'remove'>().toBeString()
   })
 })

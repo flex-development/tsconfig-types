@@ -3,19 +3,23 @@
  * @module tsconfig-types/types/tests/ModuleDetection
  */
 
-import { ModuleDetectionKind } from '#src/enums'
+import type { JsonValue } from '@flex-development/tutils'
 import type TestSubject from '../module-detection'
 
 describe('unit:types/ModuleDetection', () => {
-  it('should allow "auto"', () => {
-    assertType<TestSubject>(ModuleDetectionKind.Auto)
+  it('should be json value', () => {
+    expectTypeOf<TestSubject>().toMatchTypeOf<JsonValue>()
   })
 
-  it('should allow "force"', () => {
-    assertType<TestSubject>(ModuleDetectionKind.Force)
+  it('should extract "auto"', () => {
+    expectTypeOf<TestSubject>().extract<'auto'>().toBeString()
   })
 
-  it('should allow "legacy"', () => {
-    assertType<TestSubject>(ModuleDetectionKind.Legacy)
+  it('should extract "force"', () => {
+    expectTypeOf<TestSubject>().extract<'force'>().toBeString()
+  })
+
+  it('should extract "legacy"', () => {
+    expectTypeOf<TestSubject>().extract<'legacy'>().toBeString()
   })
 })

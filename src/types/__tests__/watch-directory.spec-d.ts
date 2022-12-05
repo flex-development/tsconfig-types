@@ -3,41 +3,49 @@
  * @module tsconfig-types/types/tests/WatchDirectory
  */
 
-import { WatchDirectoryKind } from '#src/enums'
+import type { JsonValue } from '@flex-development/tutils'
 import type TestSubject from '../watch-directory'
 
 describe('unit:types/WatchDirectory', () => {
-  it('should allow "dynamicPriorityPolling"', () => {
-    assertType<TestSubject>('dynamicPriorityPolling')
+  it('should be json value', () => {
+    expectTypeOf<TestSubject>().toMatchTypeOf<JsonValue>()
   })
 
-  it('should allow "fixedChunkSizePolling"', () => {
-    assertType<TestSubject>('fixedChunkSizePolling')
+  it('should extract "dynamicPriorityPolling"', () => {
+    expectTypeOf<TestSubject>().extract<'dynamicPriorityPolling'>().toBeString()
   })
 
-  it('should allow "fixedPollingInterval"', () => {
-    assertType<TestSubject>('fixedPollingInterval')
+  it('should extract "fixedChunkSizePolling"', () => {
+    expectTypeOf<TestSubject>().extract<'fixedChunkSizePolling'>().toBeString()
   })
 
-  it('should allow "useFsEvents"', () => {
-    assertType<TestSubject>('useFsEvents')
+  it('should extract "fixedPollingInterval"', () => {
+    expectTypeOf<TestSubject>().extract<'fixedPollingInterval'>().toBeString()
+  })
+
+  it('should extract "useFsEvents"', () => {
+    expectTypeOf<TestSubject>().extract<'useFsEvents'>().toBeString()
   })
 
   describe('lowercase', () => {
-    it('should allow "dynamicprioritypolling"', () => {
-      assertType<TestSubject>(WatchDirectoryKind.DynamicPriorityPolling)
+    it('should extract "dynamicprioritypolling"', () => {
+      expectTypeOf<TestSubject>()
+        .extract<'dynamicprioritypolling'>()
+        .toBeString()
     })
 
-    it('should allow "fixedchunksizepolling"', () => {
-      assertType<TestSubject>(WatchDirectoryKind.FixedChunkSizePolling)
+    it('should extract "fixedchunksizepolling"', () => {
+      expectTypeOf<TestSubject>()
+        .extract<'fixedchunksizepolling'>()
+        .toBeString()
     })
 
-    it('should allow "fixedpollinginterval"', () => {
-      assertType<TestSubject>(WatchDirectoryKind.FixedPollingInterval)
+    it('should extract "fixedpollinginterval"', () => {
+      expectTypeOf<TestSubject>().extract<'fixedpollinginterval'>().toBeString()
     })
 
-    it('should allow "usefsevents"', () => {
-      assertType<TestSubject>(WatchDirectoryKind.UseFsEvents)
+    it('should extract "usefsevents"', () => {
+      expectTypeOf<TestSubject>().extract<'usefsevents'>().toBeString()
     })
   })
 })

@@ -3,28 +3,33 @@
  * @module tsconfig-types/types/tests/ProjectReference
  */
 
-import { resolve } from 'node:path'
+import type { JsonObject } from '@flex-development/tutils'
 import type TestSubject from '../project-reference'
 
 describe('unit:interfaces/ProjectReference', () => {
-  let originalPath: string
-  let path: string
-
-  beforeEach(() => {
-    originalPath = './packages/sdk/tsconfig.json'
-    path = resolve(originalPath)
+  it('should be json object', () => {
+    expectTypeOf<TestSubject>().toMatchTypeOf<JsonObject>()
   })
 
-  it('should allow object with all properties defined', () => {
-    assertType<TestSubject>({
-      circular: true,
-      originalPath,
-      path,
-      prepend: true
-    })
+  it('should match [circular?: boolean]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('circular')
+      .toEqualTypeOf<boolean | undefined>()
   })
 
-  it('should allow object with path property only', () => {
-    assertType<TestSubject>({ path })
+  it('should match [originalPath?: string]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('originalPath')
+      .toEqualTypeOf<string | undefined>()
+  })
+
+  it('should match [path: string]', () => {
+    expectTypeOf<TestSubject>().toHaveProperty('path').toBeString()
+  })
+
+  it('should match [prepend?: boolean]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('prepend')
+      .toEqualTypeOf<boolean | undefined>()
   })
 })

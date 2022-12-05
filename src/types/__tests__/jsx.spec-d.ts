@@ -3,27 +3,31 @@
  * @module tsconfig-types/types/tests/Jsx
  */
 
-import { JsxEmit } from '#src/enums'
+import type { JsonValue } from '@flex-development/tutils'
 import type TestSubject from '../jsx'
 
 describe('unit:types/Jsx', () => {
-  it('should allow "preserve"', () => {
-    assertType<TestSubject>(JsxEmit.Preserve)
+  it('should be json value', () => {
+    expectTypeOf<TestSubject>().toMatchTypeOf<JsonValue>()
   })
 
-  it('should allow "react-jsx"', () => {
-    assertType<TestSubject>(JsxEmit.ReactJSX)
+  it('should extract "preserve"', () => {
+    expectTypeOf<TestSubject>().extract<'preserve'>().toBeString()
   })
 
-  it('should allow "react-jsxdev"', () => {
-    assertType<TestSubject>(JsxEmit.ReactJSXDev)
+  it('should extract "react-jsx"', () => {
+    expectTypeOf<TestSubject>().extract<'react-jsx'>().toBeString()
   })
 
-  it('should allow "react-native"', () => {
-    assertType<TestSubject>(JsxEmit.ReactNative)
+  it('should extract "react-jsxdev"', () => {
+    expectTypeOf<TestSubject>().extract<'react-jsxdev'>().toBeString()
   })
 
-  it('should allow "react"', () => {
-    assertType<TestSubject>(JsxEmit.React)
+  it('should extract "react-native"', () => {
+    expectTypeOf<TestSubject>().extract<'react-native'>().toBeString()
+  })
+
+  it('should extract "react"', () => {
+    expectTypeOf<TestSubject>().extract<'react'>().toBeString()
   })
 })

@@ -3,58 +3,49 @@
  * @module tsconfig-types/types/tests/CompilerOptionsValue
  */
 
-import path from 'node:path'
-import tsconfig from '../../../tsconfig.json' assert { type: 'json' }
+import type { Plugin } from '#src/interfaces'
+import type { JsonValue, MapLike } from '@flex-development/tutils'
 import type TestSubject from '../compiler-options-value'
+import type ProjectReference from '../project-reference'
 
 describe('unit:types/CompilerOptionsValue', () => {
-  it('should allow (number | string)[]', () => {
-    assertType<TestSubject>([1, '1', 2, '3', 5, '8', 13])
+  it('should be json value', () => {
+    expectTypeOf<TestSubject>().toMatchTypeOf<JsonValue>()
   })
 
-  it('should allow MapLike<string[]>', () => {
-    assertType<TestSubject>(tsconfig.compilerOptions.paths)
+  it('should extract (number | string)[]', () => {
+    expectTypeOf<TestSubject>().extract<(number | string)[]>().not.toBeNever()
   })
 
-  it('should allow Plugin[]', () => {
-    assertType<TestSubject>([{ name: 'plugin-name' }])
+  it('should extract MapLike<string[]>', () => {
+    expectTypeOf<TestSubject>().extract<MapLike<string[]>>().not.toBeNever()
   })
 
-  it('should allow ProjectReference[]', () => {
-    assertType<TestSubject>([
-      {
-        originalPath: 'packages/ui',
-        path: path.resolve('packages/ui')
-      }
-    ])
+  it('should extract Plugin[]', () => {
+    expectTypeOf<TestSubject>().extract<Plugin[]>().not.toBeNever()
   })
 
-  it('should allow boolean', () => {
-    assertType<TestSubject>(tsconfig.compilerOptions.allowUnreachableCode)
-    assertType<TestSubject>(tsconfig.compilerOptions.pretty)
+  it('should extract ProjectReference[]', () => {
+    expectTypeOf<TestSubject>().extract<ProjectReference[]>().not.toBeNever()
   })
 
-  it('should allow number', () => {
-    assertType<TestSubject>(0)
+  it('should extract boolean', () => {
+    expectTypeOf<TestSubject>().extract<boolean>().not.toBeNever()
   })
 
-  it('should allow number[]', () => {
-    assertType<TestSubject>([1, 1, 2, 3, 5, 8, 13])
+  it('should extract number', () => {
+    expectTypeOf<TestSubject>().extract<number>().not.toBeNever()
   })
 
-  it('should allow string', () => {
-    assertType<TestSubject>(tsconfig.compilerOptions.rootDir)
+  it('should extract string', () => {
+    expectTypeOf<TestSubject>().extract<string>().not.toBeNever()
   })
 
-  it('should allow string[]', () => {
-    assertType<TestSubject>(tsconfig.compilerOptions.lib)
+  it('should extract string[]', () => {
+    expectTypeOf<TestSubject>().extract<string[]>().not.toBeNever()
   })
 
-  it('should allow null', () => {
-    assertType<TestSubject>(null)
-  })
-
-  it('should allow undefined', () => {
-    assertType<TestSubject>(undefined)
+  it('should extract null', () => {
+    expectTypeOf<TestSubject>().extract<null>().not.toBeNever()
   })
 })

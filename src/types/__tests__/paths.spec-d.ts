@@ -3,7 +3,7 @@
  * @module tsconfig-types/types/tests/Paths
  */
 
-import tsconfig from '../../../tsconfig.json' assert { type: 'json' }
+import type { JsonObject } from '@flex-development/tutils'
 import type TestSubject from '../paths'
 
 describe('unit:types/Paths', () => {
@@ -11,7 +11,11 @@ describe('unit:types/Paths', () => {
     assertType<TestSubject>({})
   })
 
-  it('should allow object with path aliases', () => {
-    assertType<TestSubject>(tsconfig.compilerOptions.paths)
+  it('should be json object', () => {
+    expectTypeOf<TestSubject>().toMatchTypeOf<JsonObject>()
+  })
+
+  it('should only have string[] values', () => {
+    expectTypeOf<TestSubject[string]>().toEqualTypeOf<string[]>()
   })
 })

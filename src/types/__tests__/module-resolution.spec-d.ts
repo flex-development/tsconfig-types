@@ -3,41 +3,45 @@
  * @module tsconfig-types/types/tests/ModuleResolution
  */
 
-import { ModuleResolutionKind } from '#src/enums'
+import type { JsonValue } from '@flex-development/tutils'
 import type TestSubject from '../module-resolution'
 
 describe('unit:types/ModuleResolution', () => {
-  it('should allow "Classic"', () => {
-    assertType<TestSubject>('Classic')
+  it('should be json value', () => {
+    expectTypeOf<TestSubject>().toMatchTypeOf<JsonValue>()
   })
 
-  it('should allow "Node"', () => {
-    assertType<TestSubject>('Node')
+  it('should extract "Classic"', () => {
+    expectTypeOf<TestSubject>().extract<'Classic'>().toBeString()
   })
 
-  it('should allow "Node16"', () => {
-    assertType<TestSubject>('Node16')
+  it('should extract "Node"', () => {
+    expectTypeOf<TestSubject>().extract<'Node'>().toBeString()
   })
 
-  it('should allow "NodeNext"', () => {
-    assertType<TestSubject>('NodeNext')
+  it('should extract "Node16"', () => {
+    expectTypeOf<TestSubject>().extract<'Node16'>().toBeString()
+  })
+
+  it('should extract "NodeNext"', () => {
+    expectTypeOf<TestSubject>().extract<'NodeNext'>().toBeString()
   })
 
   describe('lowercase', () => {
-    it('should allow "classic"', () => {
-      assertType<TestSubject>(ModuleResolutionKind.Classic)
+    it('should extract "classic"', () => {
+      expectTypeOf<TestSubject>().extract<'classic'>().toBeString()
     })
 
-    it('should allow "node"', () => {
-      assertType<TestSubject>(ModuleResolutionKind.NodeJs)
+    it('should extract "node"', () => {
+      expectTypeOf<TestSubject>().extract<'node'>().toBeString()
     })
 
-    it('should allow "node16"', () => {
-      assertType<TestSubject>(ModuleResolutionKind.Node16)
+    it('should extract "node16"', () => {
+      expectTypeOf<TestSubject>().extract<'node16'>().toBeString()
     })
 
-    it('should allow "nodenext"', () => {
-      assertType<TestSubject>(ModuleResolutionKind.NodeNext)
+    it('should extract "nodenext"', () => {
+      expectTypeOf<TestSubject>().extract<'nodenext'>().toBeString()
     })
   })
 })

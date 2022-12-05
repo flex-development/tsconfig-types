@@ -19,6 +19,5 @@ type CompilerOptionsValue =
   | Plugin[]
   | ProjectReference[]
   | string[]
-  | undefined
 
 export type { CompilerOptionsValue as default }

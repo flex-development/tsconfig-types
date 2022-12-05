@@ -3,105 +3,109 @@
  * @module tsconfig-types/types/tests/Module
  */
 
-import { ModuleKind } from '#src/enums'
+import type { JsonValue } from '@flex-development/tutils'
 import type TestSubject from '../module'
 
 describe('unit:types/Module', () => {
-  it('should allow "AMD"', () => {
-    assertType<TestSubject>('AMD')
+  it('should be json value', () => {
+    expectTypeOf<TestSubject>().toMatchTypeOf<JsonValue>()
   })
 
-  it('should allow "CommonJS"', () => {
-    assertType<TestSubject>('CommonJS')
+  it('should extract "AMD"', () => {
+    expectTypeOf<TestSubject>().extract<'AMD'>().toBeString()
   })
 
-  it('should allow "ES6"', () => {
-    assertType<TestSubject>('ES6')
+  it('should extract "CommonJS"', () => {
+    expectTypeOf<TestSubject>().extract<'CommonJS'>().toBeString()
   })
 
-  it('should allow "ES2015"', () => {
-    assertType<TestSubject>('ES2015')
+  it('should extract "ES6"', () => {
+    expectTypeOf<TestSubject>().extract<'ES6'>().toBeString()
   })
 
-  it('should allow "ES2020"', () => {
-    assertType<TestSubject>('ES2020')
+  it('should extract "ES2015"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2015'>().toBeString()
   })
 
-  it('should allow "ES2022"', () => {
-    assertType<TestSubject>('ES2022')
+  it('should extract "ES2020"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2020'>().toBeString()
   })
 
-  it('should allow "ESNext"', () => {
-    assertType<TestSubject>('ESNext')
+  it('should extract "ES2022"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2022'>().toBeString()
   })
 
-  it('should allow "Node16"', () => {
-    assertType<TestSubject>('Node16')
+  it('should extract "ESNext"', () => {
+    expectTypeOf<TestSubject>().extract<'ESNext'>().toBeString()
   })
 
-  it('should allow "NodeNext"', () => {
-    assertType<TestSubject>('NodeNext')
+  it('should extract "Node16"', () => {
+    expectTypeOf<TestSubject>().extract<'Node16'>().toBeString()
   })
 
-  it('should allow "None"', () => {
-    assertType<TestSubject>('None')
+  it('should extract "NodeNext"', () => {
+    expectTypeOf<TestSubject>().extract<'NodeNext'>().toBeString()
   })
 
-  it('should allow "System"', () => {
-    assertType<TestSubject>('System')
+  it('should extract "None"', () => {
+    expectTypeOf<TestSubject>().extract<'None'>().toBeString()
   })
 
-  it('should allow "UMD"', () => {
-    assertType<TestSubject>('UMD')
+  it('should extract "System"', () => {
+    expectTypeOf<TestSubject>().extract<'System'>().toBeString()
+  })
+
+  it('should extract "UMD"', () => {
+    expectTypeOf<TestSubject>().extract<'UMD'>().toBeString()
   })
 
   describe('lowercase', () => {
-    it('should allow "amd"', () => {
-      assertType<TestSubject>(ModuleKind.AMD)
+    it('should extract "amd"', () => {
+      assertType<TestSubject>('amd')
     })
 
-    it('should allow "commonjs"', () => {
-      assertType<TestSubject>(ModuleKind.CommonJS)
+    it('should extract "commonjs"', () => {
+      assertType<TestSubject>('commonjs')
     })
 
-    it('should allow "es6"', () => {
-      assertType<TestSubject>(ModuleKind.ES6)
+    it('should extract "es6"', () => {
+      assertType<TestSubject>('es6')
     })
 
-    it('should allow "es2015"', () => {
-      assertType<TestSubject>(ModuleKind.ES2015)
+    it('should extract "es2015"', () => {
+      assertType<TestSubject>('es2015')
     })
 
-    it('should allow "es2020"', () => {
-      assertType<TestSubject>(ModuleKind.ES2020)
+    it('should extract "es2020"', () => {
+      assertType<TestSubject>('es2020')
     })
 
-    it('should allow "es2022"', () => {
-      assertType<TestSubject>(ModuleKind.ES2022)
+    it('should extract "es2022"', () => {
+      assertType<TestSubject>('es2022')
     })
 
-    it('should allow "esnext"', () => {
-      assertType<TestSubject>(ModuleKind.ESNext)
+    it('should extract "esnext"', () => {
+      assertType<TestSubject>('esnext')
     })
 
-    it('should allow "node16"', () => {
-      assertType<TestSubject>(ModuleKind.Node16)
+    it('should extract "node16"', () => {
+      assertType<TestSubject>('node16')
     })
 
-    it('should allow "nodenext"', () => {
-      assertType<TestSubject>(ModuleKind.NodeNext)
+    it('should extract "nodenext"', () => {
+      assertType<TestSubject>('nodenext')
     })
 
-    it('should allow "none"', () => {
-      assertType<TestSubject>(ModuleKind.None)
+    it('should extract "none"', () => {
+      assertType<TestSubject>('none')
     })
 
-    it('should allow "system"', () => {
-      assertType<TestSubject>(ModuleKind.System)
+    it('should extract "system"', () => {
+      assertType<TestSubject>('system')
     })
 
-    it('should allow "umd"', () => {
-      assertType<TestSubject>(ModuleKind.UMD)
+    it('should extract "umd"', () => {
+      assertType<TestSubject>('umd')
     })
   })
 })

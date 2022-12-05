@@ -3,105 +3,109 @@
  * @module tsconfig-types/types/tests/Target
  */
 
-import { ScriptTarget } from '#src/enums'
+import type { JsonValue } from '@flex-development/tutils'
 import type TestSubject from '../target'
 
 describe('unit:types/Target', () => {
-  it('should allow "ES3"', () => {
-    assertType<TestSubject>('ES3')
+  it('should be json value', () => {
+    expectTypeOf<TestSubject>().toMatchTypeOf<JsonValue>()
   })
 
-  it('should allow "ES5"', () => {
-    assertType<TestSubject>('ES5')
+  it('should extract "ES3"', () => {
+    expectTypeOf<TestSubject>().extract<'ES3'>().toBeString()
   })
 
-  it('should allow "ES6"', () => {
-    assertType<TestSubject>('ES6')
+  it('should extract "ES5"', () => {
+    expectTypeOf<TestSubject>().extract<'ES5'>().toBeString()
   })
 
-  it('should allow "ES2015"', () => {
-    assertType<TestSubject>('ES2015')
+  it('should extract "ES6"', () => {
+    expectTypeOf<TestSubject>().extract<'ES6'>().toBeString()
   })
 
-  it('should allow "ES2016"', () => {
-    assertType<TestSubject>('ES2016')
+  it('should extract "ES2015"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2015'>().toBeString()
   })
 
-  it('should allow "ES2017"', () => {
-    assertType<TestSubject>('ES2017')
+  it('should extract "ES2016"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2016'>().toBeString()
   })
 
-  it('should allow "ES2018"', () => {
-    assertType<TestSubject>('ES2018')
+  it('should extract "ES2017"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2017'>().toBeString()
   })
 
-  it('should allow "ES2019"', () => {
-    assertType<TestSubject>('ES2019')
+  it('should extract "ES2018"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2018'>().toBeString()
   })
 
-  it('should allow "ES2020"', () => {
-    assertType<TestSubject>('ES2020')
+  it('should extract "ES2019"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2019'>().toBeString()
   })
 
-  it('should allow "ES2021"', () => {
-    assertType<TestSubject>('ES2021')
+  it('should extract "ES2020"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2020'>().toBeString()
   })
 
-  it('should allow "ES2022"', () => {
-    assertType<TestSubject>('ES2022')
+  it('should extract "ES2021"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2021'>().toBeString()
   })
 
-  it('should allow "ESNext"', () => {
-    assertType<TestSubject>('ESNext')
+  it('should extract "ES2022"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2022'>().toBeString()
+  })
+
+  it('should extract "ESNext"', () => {
+    expectTypeOf<TestSubject>().extract<'ESNext'>().toBeString()
   })
 
   describe('lowercase', () => {
-    it('should allow "es3"', () => {
-      assertType<TestSubject>(ScriptTarget.ES3)
+    it('should extract "es3"', () => {
+      expectTypeOf<TestSubject>().extract<'es3'>().toBeString()
     })
 
-    it('should allow "es5"', () => {
-      assertType<TestSubject>(ScriptTarget.ES5)
+    it('should extract "es5"', () => {
+      expectTypeOf<TestSubject>().extract<'es5'>().toBeString()
     })
 
-    it('should allow "es6"', () => {
-      assertType<TestSubject>(ScriptTarget.ES6)
+    it('should extract "es6"', () => {
+      expectTypeOf<TestSubject>().extract<'es6'>().toBeString()
     })
 
-    it('should allow "es2015"', () => {
-      assertType<TestSubject>(ScriptTarget.ES2015)
+    it('should extract "es2015"', () => {
+      expectTypeOf<TestSubject>().extract<'es2015'>().toBeString()
     })
 
-    it('should allow "es2016"', () => {
-      assertType<TestSubject>(ScriptTarget.ES2016)
+    it('should extract "es2016"', () => {
+      expectTypeOf<TestSubject>().extract<'es2016'>().toBeString()
     })
 
-    it('should allow "es2017"', () => {
-      assertType<TestSubject>(ScriptTarget.ES2017)
+    it('should extract "es2017"', () => {
+      expectTypeOf<TestSubject>().extract<'es2017'>().toBeString()
     })
 
-    it('should allow "es2018"', () => {
-      assertType<TestSubject>(ScriptTarget.ES2018)
+    it('should extract "es2018"', () => {
+      expectTypeOf<TestSubject>().extract<'es2018'>().toBeString()
     })
 
-    it('should allow "es2019"', () => {
-      assertType<TestSubject>(ScriptTarget.ES2019)
+    it('should extract "es2019"', () => {
+      expectTypeOf<TestSubject>().extract<'es2019'>().toBeString()
     })
 
-    it('should allow "es2020"', () => {
-      assertType<TestSubject>(ScriptTarget.ES2020)
+    it('should extract "es2020"', () => {
+      expectTypeOf<TestSubject>().extract<'es2020'>().toBeString()
     })
 
-    it('should allow "es2021"', () => {
-      assertType<TestSubject>(ScriptTarget.ES2021)
+    it('should extract "es2021"', () => {
+      expectTypeOf<TestSubject>().extract<'es2021'>().toBeString()
     })
 
-    it('should allow "es2022"', () => {
-      assertType<TestSubject>(ScriptTarget.ES2022)
+    it('should extract "es2022"', () => {
+      expectTypeOf<TestSubject>().extract<'es2022'>().toBeString()
     })
 
-    it('should allow "esnext"', () => {
-      assertType<TestSubject>(ScriptTarget.ESNext)
+    it('should extract "esnext"', () => {
+      expectTypeOf<TestSubject>().extract<'esnext'>().toBeString()
     })
   })
 })

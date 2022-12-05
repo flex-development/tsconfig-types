@@ -3,7 +3,7 @@
  * @module tsconfig-types/types/TsNodeOptions
  */
 
-import type { LiteralUnion } from '@flex-development/tutils'
+import type { JsonObject, LiteralUnion } from '@flex-development/tutils'
 import type CompilerOptions from './compiler-options'
 
 /**
@@ -201,7 +201,7 @@ type TsNodeOptions = {
   /**
    * Custom transpiler for use with {@linkcode transpileOnly}
    */
-  transpiler?: string | [string, object]
+  transpiler?: string | [string, JsonObject]
 
   /**
    * Specify type checking is enabled.

@@ -1,3 +1,15 @@
+## [2.0.1](https://github.com/flex-development/tsconfig-types/compare/2.0.0...2.0.1) (2022-12-20)
+
+
+### :robot: Continuous Integration
+
+* **deps:** Bump actions/checkout from 3.1.0 to 3.2.0 ([#4](https://github.com/flex-development/tsconfig-types/issues/4)) ([310c2dd](https://github.com/flex-development/tsconfig-types/commit/310c2dde4b32d1c90593c1bc9fde30e5373f3479))
+
+
+### :bug: Fixes
+
+* **types:** [`WatchOptions`] same-directory import statements ([#6](https://github.com/flex-development/tsconfig-types/issues/6)) ([aa1940a](https://github.com/flex-development/tsconfig-types/commit/aa1940a5c5a2598d400d9d1403d12cf856a9977e))
+
 ## [2.0.0](https://github.com/flex-development/tsconfig-types/compare/1.0.0...2.0.0) (2022-12-04)
 
 

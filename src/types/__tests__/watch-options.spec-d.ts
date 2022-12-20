@@ -8,8 +8,10 @@ import type {
   WatchDirectoryKind,
   WatchFileKind
 } from '#src/enums'
-import type { PollingWatch, WatchDirectory, WatchFile } from '#src/types'
 import type { JsonObject, KeysRequired } from '@flex-development/tutils'
+import type PollingWatch from '../polling-watch'
+import type WatchDirectory from '../watch-directory'
+import type WatchFile from '../watch-file'
 import type TestSubject from '../watch-options'
 
 describe('unit:interfaces/WatchOptions', () => {

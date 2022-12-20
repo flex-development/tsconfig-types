@@ -8,7 +8,9 @@ import type {
   WatchDirectoryKind,
   WatchFileKind
 } from '#src/enums'
-import type { PollingWatch, WatchDirectory, WatchFile } from '#src/types'
+import type PollingWatch from './polling-watch'
+import type WatchDirectory from './watch-directory'
+import type WatchFile from './watch-file'
 
 /**
  * File and directory watching options.

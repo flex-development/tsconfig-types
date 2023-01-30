@@ -1,7 +1,7 @@
 {
   "name": "@flex-development/tsconfig-types",
   "description": "TypeScript definitions for tsconfig.json",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "keywords": [
     "tsconfig",
     "tsconfig.json",
@@ -89,6 +89,7 @@
     "add-stream": "1.0.0",
     "chai": "4.3.7",
     "conventional-changelog": "3.1.25",
+    "conventional-changelog-conventionalcommits": "5.0.0",
     "conventional-changelog-core": "4.2.4",
     "conventional-changelog-writer": "5.0.1",
     "conventional-commits-parser": "3.2.4",

@@ -1,3 +1,51 @@
+## [2.0.2](https://github.com/flex-development/tsconfig-types/compare/2.0.1...2.0.2) (2023-01-30)
+
+
+### :robot: Continuous Integration
+
+* fix [@dependabot](https://github.com/dependabot) npm package-ecosystem x yarn integration ([a74dc23](https://github.com/flex-development/tsconfig-types/commit/a74dc239d90787c13adc68ca0381992e08563d96))
+* **deps:** Bump actions/checkout from 3.2.0 to 3.3.0 ([#9](https://github.com/flex-development/tsconfig-types/issues/9)) ([bc477a5](https://github.com/flex-development/tsconfig-types/commit/bc477a51ef5edbf7319597ec980d724cb6ecc65c))
+* **deps:** Bump actions/github-script from 6.3.3 to 6.4.0 ([#12](https://github.com/flex-development/tsconfig-types/issues/12)) ([3b3350b](https://github.com/flex-development/tsconfig-types/commit/3b3350b7e2ff3a0c15885cc4d8e7b38f8adf8e5d))
+* **deps:** Bump actions/setup-node from 3.5.1 to 3.6.0 ([#8](https://github.com/flex-development/tsconfig-types/issues/8)) ([115d74e](https://github.com/flex-development/tsconfig-types/commit/115d74e007cd60703a0c9189e1b11d03bfec6f1e))
+* **deps:** Bump actions/upload-artifact from 3.1.1 to 3.1.2 ([#10](https://github.com/flex-development/tsconfig-types/issues/10)) ([bfd3c39](https://github.com/flex-development/tsconfig-types/commit/bfd3c398ebbdbb4f7b388db7c7a031f9ce138eca))
+* **deps:** Bump dependabot/fetch-metadata from 1.3.5 to 1.3.6 ([#11](https://github.com/flex-development/tsconfig-types/issues/11)) ([78a4c6c](https://github.com/flex-development/tsconfig-types/commit/78a4c6c6d107161b77bfad99aaf939fea9ce5a08))
+* **workflows:** [`add-to-project`] add items from repo admin account ([ebec812](https://github.com/flex-development/tsconfig-types/commit/ebec8128cf86229a12663f6348adbc0b99751cc3))
+* **workflows:** [`add-to-project`] run workflow when pr is synchronized ([3dd2630](https://github.com/flex-development/tsconfig-types/commit/3dd2630369533216342b342fff2e91391a585d1e))
+* **workflows:** [`approve-pr`] refactor approval step conditional ([2e64c28](https://github.com/flex-development/tsconfig-types/commit/2e64c2863bd665822a8b758e8b58713f2d3c43c4))
+* **workflows:** [`ci`] split ci job into multiple jobs ([a047589](https://github.com/flex-development/tsconfig-types/commit/a047589c39b186b7ec459ad36d27931b9a27e222))
+* **workflows:** [`dependabot-auto`] sign lockfile fix commit ([00c1a45](https://github.com/flex-development/tsconfig-types/commit/00c1a45593ac31c4ec1af986cf3b785b1b6ee263))
+* **workflows:** [`integrity`] update `pull_request` event activity types ([a71fd97](https://github.com/flex-development/tsconfig-types/commit/a71fd97b7325dd78c1d61b3a539b12497d89cef6))
+* **workflows:** add `typescript-canary` ([d61a336](https://github.com/flex-development/tsconfig-types/commit/d61a336345e3c46f46905b98d91a6ceaa05ca571))
+
+
+### :pencil: Documentation
+
+* add "contributor covenant code of conduct" ([f7e3115](https://github.com/flex-development/tsconfig-types/commit/f7e311510385927809c650658229ad560bef4a43))
+
+
+### :bug: Fixes
+
+* **install:** [git] make `postinstall` script work with git install ([c7b0a64](https://github.com/flex-development/tsconfig-types/commit/c7b0a640b60d6047bc5160fc9734c0b758c5544b))
+
+
+### :house_with_garden: Housekeeping
+
+* update project architecture ([6a3f959](https://github.com/flex-development/tsconfig-types/commit/6a3f9595236e498bcd7f4ecf3a48256fd607f868))
+* **github:** add "package manager" dropdown to bug report template ([caba16a](https://github.com/flex-development/tsconfig-types/commit/caba16aed34de63e1c56cd9c3809993685625dbb))
+* **github:** add "typescript version" input to bug report template ([9411923](https://github.com/flex-development/tsconfig-types/commit/941192320bdf56f10c038248c137757df2efe623))
+* **github:** add commit scope `install` ([3f9a968](https://github.com/flex-development/tsconfig-types/commit/3f9a9680c67c55c0dc7c869b81b13a2bf3bd1b40))
+* **github:** add commit scope `loader` ([8e72f09](https://github.com/flex-development/tsconfig-types/commit/8e72f09139a5515a7ef585a1a76919a7ac1d9366))
+* **github:** add commit scope `nvm` ([c920faf](https://github.com/flex-development/tsconfig-types/commit/c920faf903ab5a0e54ba4ee1f63eba35c71884b9))
+* **github:** add label `scope:install` ([89f85be](https://github.com/flex-development/tsconfig-types/commit/89f85be7dd7a0dfc1d06ffc7c68d38f310d4fe65))
+* **github:** add label `status:triaged` ([33683db](https://github.com/flex-development/tsconfig-types/commit/33683db66224ddf068428c20feeb5bc4782db6ea))
+* **github:** configure sponsor button ([731cbaa](https://github.com/flex-development/tsconfig-types/commit/731cbaa503d11d10e61b3d12de75397c4d7abf60))
+* **github:** remove "tests" section from pull request template ([be79239](https://github.com/flex-development/tsconfig-types/commit/be7923929e721867b23d10a7cb93cf1c50843a69))
+
+
+### :zap: Refactors
+
+* **ts:** allow declaration merging ([13e1407](https://github.com/flex-development/tsconfig-types/commit/13e1407e6e82f3470955f8f579b860b286a6a2b7))
+
 ## [2.0.1](https://github.com/flex-development/tsconfig-types/compare/2.0.0...2.0.1) (2022-12-20)
 
 

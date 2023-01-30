@@ -1,5 +1,5 @@
 /**
- * @file Unit Tests - ScriptTarget
+ * @file Type Tests - ScriptTarget
  * @module tsconfig-types/enums/tests/ScriptTarget
  */
 

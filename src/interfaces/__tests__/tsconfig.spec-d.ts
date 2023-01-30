@@ -1,18 +1,16 @@
 /**
- * @file Unit Tests - TSConfig
+ * @file Type Tests - TSConfig
  * @module tsconfig-types/interfaces/tests/TSConfig
  */
 
-import type {
-  BuildOptions,
-  CompilerOptions,
-  ProjectReference,
-  TsNodeOptions,
-  TypeAcquisition,
-  WatchOptions
-} from '#src/types'
 import type { JsonObject } from '@flex-development/tutils'
+import type BuildOptions from '../build-options'
+import type CompilerOptions from '../compiler-options'
+import type ProjectReference from '../project-reference'
+import type TsNodeOptions from '../ts-node-options'
 import type TestSubject from '../tsconfig'
+import type TypeAcquisition from '../type-acquisition'
+import type WatchOptions from '../watch-options'
 
 describe('unit:interfaces/TSConfig', () => {
   it('should allow empty object', () => {

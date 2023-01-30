@@ -1,5 +1,5 @@
 /**
- * @file Unit Tests - JsxEmit
+ * @file Type Tests - JsxEmit
  * @module tsconfig-types/enums/tests/JsxEmit
  */
 

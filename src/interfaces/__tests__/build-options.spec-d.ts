@@ -1,14 +1,14 @@
 /**
- * @file Unit Tests - BuildOptions
- * @module tsconfig-types/types/tests/BuildOptions
+ * @file Type Tests - BuildOptions
+ * @module tsconfig-types/interfaces/tests/BuildOptions
  */
 
-import type { JsonObject, KeysRequired } from '@flex-development/tutils'
+import type { JsonObject } from '@flex-development/tutils'
 import type TestSubject from '../build-options'
 
-describe('unit:types/BuildOptions', () => {
+describe('unit:interfaces/BuildOptions', () => {
   it('should allow empty object', () => {
-    expectTypeOf<KeysRequired<TestSubject>>().toBeNever()
+    assertType<TestSubject>({})
   })
 
   it('should be json object', () => {

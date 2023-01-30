@@ -1,6 +1,6 @@
 /**
- * @file Type Definitions - TsNodeOptions
- * @module tsconfig-types/types/TsNodeOptions
+ * @file Interfaces - TsNodeOptions
+ * @module tsconfig-types/interfaces/TsNodeOptions
  */
 
 import type { JsonObject, LiteralUnion } from '@flex-development/tutils'
@@ -12,8 +12,10 @@ import type CompilerOptions from './compiler-options'
  * [1]: https://github.com/TypeStrong/ts-node
  *
  * @see https://typestrong.org/ts-node/docs/options
+ *
+ * @extends {JsonObject}
  */
-type TsNodeOptions = {
+interface TsNodeOptions extends JsonObject {
   /**
    * Custom TypeScript compiler.
    *

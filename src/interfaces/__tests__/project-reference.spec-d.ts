@@ -1,6 +1,6 @@
 /**
- * @file Unit Tests - ProjectReference
- * @module tsconfig-types/types/tests/ProjectReference
+ * @file Interfaces - ProjectReference
+ * @module tsconfig-types/interfaces/tests/ProjectReference
  */
 
 import type { JsonObject } from '@flex-development/tutils'

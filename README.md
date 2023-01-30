@@ -272,14 +272,18 @@ export default compilerOptionsForProgram
 
 ### Interfaces
 
+- [`BuildOptions`](src/interfaces/build-options.ts)
+- [`CompilerOptions`](src/interfaces/compiler-options.ts)
 - [`Plugin`](src/interfaces/plugin.ts)
+- [`ProjectReference`](src/interfaces/project-reference.ts)
 - [`TSConfig`](src/interfaces/tsconfig.ts)
+- [`TsNodeOptions`](src/interfaces/ts-node-options.ts)
+- [`TypeAcquisition`](src/interfaces/type-acquisition.ts)
+- [`WatchOptions`](src/interfaces/watch-options.ts)
 
 ### Types
 
-- [`BuildOptions`](src/types/build-options.ts)
 - [`CompilerOptionsValue`](src/types/compiler-options-value.ts)
-- [`CompilerOptions`](src/types/compiler-options.ts)
 - [`FallbackPolling`](src/types/fallback-polling.ts)
 - [`ImportsNotUsedAsValues`](src/types/imports-not-used-as-values.ts)
 - [`Jsx`](src/types/jsx.ts)
@@ -290,13 +294,9 @@ export default compilerOptionsForProgram
 - [`NewLine`](src/types/new-line.ts)
 - [`Paths`](src/types/paths.ts)
 - [`PollingWatch`](src/types/polling-watch.ts)
-- [`ProjectReference`](src/types/project-reference.ts)
 - [`Target`](src/types/target.ts)
-- [`TsNodeOptions`](src/types/ts-node-options.ts)
-- [`TypeAcquisition`](src/types/type-acquisition.ts)
 - [`WatchDirectory`](src/types/watch-directory.ts)
 - [`WatchFile`](src/types/watch-file.ts)
-- [`WatchOptions`](src/types/watch-options.ts)
 
 ## Related
 

@@ -1,6 +1,6 @@
 /**
- * @file Unit Tests - CompilerOptions
- * @module tsconfig-types/types/tests/CompilerOptions
+ * @file Type Tests - CompilerOptions
+ * @module tsconfig-types/interfaces/tests/CompilerOptions
  */
 
 import type {
@@ -16,27 +16,25 @@ import type {
 } from '#src/enums'
 import type { Plugin } from '#src/interfaces'
 import type {
-  JsonObject,
-  KeysRequired,
-  LiteralUnion
-} from '@flex-development/tutils'
+  FallbackPolling,
+  ImportsNotUsedAsValues,
+  Jsx,
+  Lib,
+  Module,
+  ModuleDetection,
+  ModuleResolution,
+  NewLine,
+  Paths,
+  Target,
+  WatchDirectory,
+  WatchFile
+} from '#src/types'
+import type { JsonObject, LiteralUnion } from '@flex-development/tutils'
 import type TestSubject from '../compiler-options'
-import type FallbackPolling from '../fallback-polling'
-import type ImportsNotUsedAsValues from '../imports-not-used-as-values'
-import type Jsx from '../jsx'
-import type Lib from '../lib'
-import type Module from '../module'
-import type ModuleDetection from '../module-detection'
-import type ModuleResolution from '../module-resolution'
-import type NewLine from '../new-line'
-import type Paths from '../paths'
-import type Target from '../target'
-import type WatchDirectory from '../watch-directory'
-import type WatchFile from '../watch-file'
 
 describe('unit:interfaces/CompilerOptions', () => {
   it('should allow empty object', () => {
-    expectTypeOf<KeysRequired<TestSubject>>().toBeNever()
+    assertType<TestSubject>({})
   })
 
   it('should be json object', () => {

@@ -1,5 +1,5 @@
 /**
- * @file Unit Tests - ModuleResolution
+ * @file Type Tests - ModuleResolution
  * @module tsconfig-types/types/tests/ModuleResolution
  */
 

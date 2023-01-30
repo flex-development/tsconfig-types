@@ -1,5 +1,5 @@
 /**
- * @file Unit Tests - ModuleDetection
+ * @file Type Tests - ModuleDetection
  * @module tsconfig-types/types/tests/ModuleDetection
  */
 

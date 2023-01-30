@@ -1,5 +1,5 @@
 /**
- * @file Unit Tests - PollingWatchKind
+ * @file Type Tests - PollingWatchKind
  * @module tsconfig-types/enums/tests/PollingWatchKind
  */
 

@@ -1,5 +1,5 @@
 /**
- * @file Unit Tests - FallbackPolling
+ * @file Type Tests - FallbackPolling
  * @module tsconfig-types/types/tests/FallbackPolling
  */
 

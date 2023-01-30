@@ -1,5 +1,5 @@
 /**
- * @file Unit Tests - ModuleResolutionKind
+ * @file Type Tests - ModuleResolutionKind
  * @module tsconfig-types/enums/tests/ModuleResolutionKind
  */
 

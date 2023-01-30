@@ -1,5 +1,5 @@
 /**
- * @file Unit Tests - PollingWatch
+ * @file Type Tests - PollingWatch
  * @module tsconfig-types/types/tests/PollingWatch
  */
 

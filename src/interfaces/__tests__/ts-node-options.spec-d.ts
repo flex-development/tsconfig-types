@@ -1,6 +1,6 @@
 /**
- * @file Unit Tests - TsNodeOptions
- * @module tsconfig-types/types/tests/TsNodeOptions
+ * @file Type Tests - TsNodeOptions
+ * @module tsconfig-types/interfaces/tests/TsNodeOptions
  */
 
 import type { JsonObject } from '@flex-development/tutils'

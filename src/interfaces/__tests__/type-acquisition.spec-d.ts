@@ -1,14 +1,14 @@
 /**
- * @file Unit Tests - TypeAcquisition
- * @module tsconfig-types/types/tests/TypeAcquisition
+ * @file Type Tests - TypeAcquisition
+ * @module tsconfig-types/interfaces/tests/TypeAcquisition
  */
 
-import type { JsonObject, KeysRequired } from '@flex-development/tutils'
+import type { JsonObject } from '@flex-development/tutils'
 import type TestSubject from '../type-acquisition'
 
 describe('unit:interfaces/TypeAcquisition', () => {
   it('should allow empty object', () => {
-    expectTypeOf<KeysRequired<TestSubject>>().toBeNever()
+    assertType<TestSubject>({})
   })
 
   it('should be json object', () => {

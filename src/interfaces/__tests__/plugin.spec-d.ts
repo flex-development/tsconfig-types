@@ -1,5 +1,5 @@
 /**
- * @file Unit Tests - Plugin
+ * @file Type Tests - Plugin
  * @module tsconfig-types/interfaces/tests/Plugin
  */
 

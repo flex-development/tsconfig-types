@@ -1,5 +1,5 @@
 /**
- * @file Unit Tests - Paths
+ * @file Type Tests - Paths
  * @module tsconfig-types/types/tests/Paths
  */
 

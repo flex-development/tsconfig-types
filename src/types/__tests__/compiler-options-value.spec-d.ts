@@ -1,12 +1,12 @@
 /**
- * @file Unit Tests - CompilerOptionsValue
+ * @file Type Tests - CompilerOptionsValue
  * @module tsconfig-types/types/tests/CompilerOptionsValue
  */
 
 import type { Plugin } from '#src/interfaces'
 import type { JsonValue, MapLike } from '@flex-development/tutils'
+import type ProjectReference from '../../interfaces/project-reference'
 import type TestSubject from '../compiler-options-value'
-import type ProjectReference from '../project-reference'
 
 describe('unit:types/CompilerOptionsValue', () => {
   it('should be json value', () => {

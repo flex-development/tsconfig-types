@@ -1,5 +1,5 @@
 /**
- * @file Unit Tests - ImportsNotUsedKind
+ * @file Type Tests - ImportsNotUsedKind
  * @module tsconfig-types/enums/tests/ImportsNotUsedKind
  */
 

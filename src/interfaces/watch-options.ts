@@ -1,6 +1,6 @@
 /**
- * @file Type Definitions - WatchOptions
- * @module tsconfig-types/types/WatchOptions
+ * @file Interfaces - WatchOptions
+ * @module tsconfig-types/interfaces/WatchOptions
  */
 
 import type {
@@ -8,16 +8,21 @@ import type {
   WatchDirectoryKind,
   WatchFileKind
 } from '#src/enums'
-import type PollingWatch from './polling-watch'
-import type WatchDirectory from './watch-directory'
-import type WatchFile from './watch-file'
+import type {
+  CompilerOptionsValue,
+  PollingWatch,
+  WatchDirectory,
+  WatchFile
+} from '#src/types'
 
 /**
  * File and directory watching options.
  *
  * @see https://www.typescriptlang.org/tsconfig#watch-options
  */
-type WatchOptions = {
+interface WatchOptions {
+  [option: string]: CompilerOptionsValue
+
   /**
    * Specifies a list of directories to exclude from watch.
    */

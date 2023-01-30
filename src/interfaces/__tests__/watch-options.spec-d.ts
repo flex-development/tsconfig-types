@@ -1,6 +1,6 @@
 /**
- * @file Unit Tests - WatchOptions
- * @module tsconfig-types/types/tests/WatchOptions
+ * @file Type Tests - WatchOptions
+ * @module tsconfig-types/interfaces/tests/WatchOptions
  */
 
 import type {
@@ -8,15 +8,13 @@ import type {
   WatchDirectoryKind,
   WatchFileKind
 } from '#src/enums'
-import type { JsonObject, KeysRequired } from '@flex-development/tutils'
-import type PollingWatch from '../polling-watch'
-import type WatchDirectory from '../watch-directory'
-import type WatchFile from '../watch-file'
+import type { PollingWatch, WatchDirectory, WatchFile } from '#src/types'
+import type { JsonObject } from '@flex-development/tutils'
 import type TestSubject from '../watch-options'
 
 describe('unit:interfaces/WatchOptions', () => {
   it('should allow empty object', () => {
-    expectTypeOf<KeysRequired<TestSubject>>().toBeNever()
+    assertType<TestSubject>({})
   })
 
   it('should be json object', () => {

@@ -1,5 +1,5 @@
 /**
- * @file Unit Tests - NewLineKind
+ * @file Type Tests - NewLineKind
  * @module tsconfig-types/enums/tests/NewLineKind
  */
 

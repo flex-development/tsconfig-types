@@ -3,8 +3,6 @@
  * @module tsconfig-types/types
  */
 
-export type { default as BuildOptions } from './build-options'
-export type { default as CompilerOptions } from './compiler-options'
 export type { default as CompilerOptionsValue } from './compiler-options-value'
 export type { default as FallbackPolling } from './fallback-polling'
 export type { default as ImportsNotUsedAsValues } from './imports-not-used-as-values'
@@ -16,10 +14,6 @@ export type { default as ModuleResolution } from './module-resolution'
 export type { default as NewLine } from './new-line'
 export type { default as Paths } from './paths'
 export type { default as PollingWatch } from './polling-watch'
-export type { default as ProjectReference } from './project-reference'
 export type { default as Target } from './target'
-export type { default as TsNodeOptions } from './ts-node-options'
-export type { default as TypeAcquisition } from './type-acquisition'
 export type { default as WatchDirectory } from './watch-directory'
 export type { default as WatchFile } from './watch-file'
-export type { default as WatchOptions } from './watch-options'

@@ -1,5 +1,5 @@
 /**
- * @file Unit Tests - WatchDirectory
+ * @file Type Tests - WatchDirectory
  * @module tsconfig-types/types/tests/WatchDirectory
  */
 

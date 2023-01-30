@@ -1,12 +1,16 @@
 /**
- * @file Type Definitions - BuildOptions
- * @module tsconfig-types/types/BuildOptions
+ * @file Interfaces - BuildOptions
+ * @module tsconfig-types/interfaces/BuildOptions
  */
+
+import type { CompilerOptionsValue } from '#src/types'
 
 /**
  * Program build options.
  */
-type BuildOptions = {
+interface BuildOptions {
+  [option: string]: CompilerOptionsValue
+
   /**
    * Have recompiles in projects that use {@linkcode incremental} assume that
    * changes within a file will only affect files directly depending on it.

@@ -1,5 +1,5 @@
 /**
- * @file Unit Tests - Lib
+ * @file Type Tests - Lib
  * @module tsconfig-types/types/tests/Lib
  */
 

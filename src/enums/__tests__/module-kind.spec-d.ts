@@ -1,5 +1,5 @@
 /**
- * @file Unit Tests - ModuleKind
+ * @file Type Tests - ModuleKind
  * @module tsconfig-types/enums/tests/ModuleKind
  */
 

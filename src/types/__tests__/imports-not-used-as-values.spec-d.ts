@@ -1,5 +1,5 @@
 /**
- * @file Unit Tests - ImportsNotUsedAsValues
+ * @file Type Tests - ImportsNotUsedAsValues
  * @module tsconfig-types/types/tests/ImportsNotUsedAsValues
  */
 

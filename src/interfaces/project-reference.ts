@@ -3,14 +3,18 @@
  * @module tsconfig-types/types/ProjectReference
  */
 
+import type { JsonObject } from '@flex-development/tutils'
+
 /**
  * A project to reference.
  *
  * Allows TypeScript programs to be structured into smaller pieces.
  *
  * @see https://www.typescriptlang.org/docs/handbook/project-references.html
+ *
+ * @extends {JsonObject}
  */
-type ProjectReference = {
+interface ProjectReference extends JsonObject {
   /**
    * Indicates if the reference forms a circularity.
    */

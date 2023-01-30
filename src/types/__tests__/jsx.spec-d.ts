@@ -1,5 +1,5 @@
 /**
- * @file Unit Tests - Jsx
+ * @file Type Tests - Jsx
  * @module tsconfig-types/types/tests/Jsx
  */
 

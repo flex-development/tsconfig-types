@@ -1,5 +1,5 @@
 /**
- * @file Unit Tests - WatchDirectoryKind
+ * @file Type Tests - WatchDirectoryKind
  * @module tsconfig-types/enums/tests/WatchDirectoryKind
  */
 

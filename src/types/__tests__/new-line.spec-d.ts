@@ -1,5 +1,5 @@
 /**
- * @file Unit Tests - NewLine
+ * @file Type Tests - NewLine
  * @module tsconfig-types/types/tests/NewLine
  */
 

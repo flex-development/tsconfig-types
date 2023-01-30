@@ -19,6 +19,7 @@
         "github",
         "install",
         "interfaces",
+        "nvm",
         "patches",
         "pkg",
         "release",

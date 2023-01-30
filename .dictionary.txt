@@ -23,6 +23,7 @@ nocheck
 npmrc
 nvmrc
 pkgs
+pnpm
 preid
 recompiles
 syncer

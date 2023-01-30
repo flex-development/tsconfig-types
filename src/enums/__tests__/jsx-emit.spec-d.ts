@@ -8,9 +8,9 @@ import type TestSubject from '../jsx-emit'
 
 describe('unit:enums/JsxEmit', () => {
   it('should have members match Lowercase<Jsx>', () => {
-    expectTypeOf<typeof TestSubject[keyof typeof TestSubject]>().toMatchTypeOf<
-      Lowercase<Jsx>
-    >()
+    expectTypeOf<
+      (typeof TestSubject)[keyof typeof TestSubject]
+    >().toMatchTypeOf<Lowercase<Jsx>>()
   })
 
   it('should match [Preserve = "preserve"]', () => {

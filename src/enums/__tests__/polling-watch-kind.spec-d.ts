@@ -8,9 +8,9 @@ import type TestSubject from '../polling-watch-kind'
 
 describe('unit:enums/PollingWatchKind', () => {
   it('should have members match Exclude<PollingWatch, Lowercase<string>>', () => {
-    expectTypeOf<typeof TestSubject[keyof typeof TestSubject]>().toMatchTypeOf<
-      Exclude<PollingWatch, Lowercase<string>>
-    >()
+    expectTypeOf<
+      (typeof TestSubject)[keyof typeof TestSubject]
+    >().toMatchTypeOf<Exclude<PollingWatch, Lowercase<string>>>()
   })
 
   it('should match [DynamicPriority = "dynamicPriorityPolling"]', () => {

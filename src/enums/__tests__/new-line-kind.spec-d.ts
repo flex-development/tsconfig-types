@@ -8,9 +8,9 @@ import type TestSubject from '../new-line-kind'
 
 describe('unit:enums/NewLineKind', () => {
   it('should have members match Lowercase<NewLine>', () => {
-    expectTypeOf<typeof TestSubject[keyof typeof TestSubject]>().toMatchTypeOf<
-      Lowercase<NewLine>
-    >()
+    expectTypeOf<
+      (typeof TestSubject)[keyof typeof TestSubject]
+    >().toMatchTypeOf<Lowercase<NewLine>>()
   })
 
   it('should match [CarriageReturnLineFeed = "crlf"]', () => {

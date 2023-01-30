@@ -8,9 +8,9 @@ import type TestSubject from '../module-kind'
 
 describe('unit:enums/ModuleKind', () => {
   it('should have members match Lowercase<Module>', () => {
-    expectTypeOf<typeof TestSubject[keyof typeof TestSubject]>().toMatchTypeOf<
-      Lowercase<Module>
-    >()
+    expectTypeOf<
+      (typeof TestSubject)[keyof typeof TestSubject]
+    >().toMatchTypeOf<Lowercase<Module>>()
   })
 
   it('should match [AMD = "amd"]', () => {

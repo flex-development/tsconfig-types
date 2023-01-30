@@ -8,9 +8,9 @@ import type TestSubject from '../imports-not-used-kind'
 
 describe('unit:enums/ImportsNotUsedKind', () => {
   it('should have members match Lowercase<ImportsNotUsedAsValues>', () => {
-    expectTypeOf<typeof TestSubject[keyof typeof TestSubject]>().toMatchTypeOf<
-      Lowercase<ImportsNotUsedAsValues>
-    >()
+    expectTypeOf<
+      (typeof TestSubject)[keyof typeof TestSubject]
+    >().toMatchTypeOf<Lowercase<ImportsNotUsedAsValues>>()
   })
 
   it('should match [Error = "error"]', () => {

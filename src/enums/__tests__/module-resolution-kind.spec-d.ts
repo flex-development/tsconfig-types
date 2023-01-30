@@ -8,9 +8,9 @@ import type TestSubject from '../module-resolution-kind'
 
 describe('unit:enums/ModuleResolutionKind', () => {
   it('should have members match Lowercase<ModuleResolution>', () => {
-    expectTypeOf<typeof TestSubject[keyof typeof TestSubject]>().toMatchTypeOf<
-      Lowercase<ModuleResolution>
-    >()
+    expectTypeOf<
+      (typeof TestSubject)[keyof typeof TestSubject]
+    >().toMatchTypeOf<Lowercase<ModuleResolution>>()
   })
 
   it('should match [Classic = "classic"]', () => {

@@ -8,9 +8,9 @@ import type TestSubject from '../script-target'
 
 describe('unit:enums/ScriptTarget', () => {
   it('should have members match Lowercase<Target>', () => {
-    expectTypeOf<typeof TestSubject[keyof typeof TestSubject]>().toMatchTypeOf<
-      Lowercase<Target>
-    >()
+    expectTypeOf<
+      (typeof TestSubject)[keyof typeof TestSubject]
+    >().toMatchTypeOf<Lowercase<Target>>()
   })
 
   it('should match [ES3 = "es3"]', () => {

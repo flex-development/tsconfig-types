@@ -8,9 +8,9 @@ import type TestSubject from '../watch-directory-kind'
 
 describe('unit:enums/WatchDirectoryKind', () => {
   it('should have members match Lowercase<WatchDirectory>', () => {
-    expectTypeOf<typeof TestSubject[keyof typeof TestSubject]>().toMatchTypeOf<
-      Lowercase<WatchDirectory>
-    >()
+    expectTypeOf<
+      (typeof TestSubject)[keyof typeof TestSubject]
+    >().toMatchTypeOf<Lowercase<WatchDirectory>>()
   })
 
   it('should match [DynamicPriorityPolling = "dynamicprioritypolling"]', () => {

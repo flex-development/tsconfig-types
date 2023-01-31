@@ -1,3 +1,15 @@
+## [2.0.3](https://github.com/flex-development/tsconfig-types/compare/2.0.2...2.0.3) (2023-01-30)
+
+
+### :bug: Fixes
+
+* **build:** barrel files ([be9aef3](https://github.com/flex-development/tsconfig-types/commit/be9aef392dcd83a9189376695a23e757e87a5045))
+
+
+### :house_with_garden: Housekeeping
+
+* **github:** add commit scope `build` ([8adb9ec](https://github.com/flex-development/tsconfig-types/commit/8adb9ec786ece1ff3c5f20942c38d5e5e221813c))
+
 ## [2.0.2](https://github.com/flex-development/tsconfig-types/compare/2.0.1...2.0.2) (2023-01-30)
 
 

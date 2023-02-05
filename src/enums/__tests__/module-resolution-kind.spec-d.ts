@@ -31,6 +31,12 @@ describe('unit:enums/ModuleResolutionKind', () => {
       .toMatchTypeOf<'node'>()
   })
 
+  it('should match [Node10 = "node10"]', () => {
+    expectTypeOf<typeof TestSubject>()
+      .toHaveProperty('Node10')
+      .toMatchTypeOf<'node10'>()
+  })
+
   it('should match [Node16 = "node16"]', () => {
     expectTypeOf<typeof TestSubject>()
       .toHaveProperty('Node16')

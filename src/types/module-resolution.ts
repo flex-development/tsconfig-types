@@ -11,7 +11,7 @@ import type { OrLowercase } from '@flex-development/tutils'
  * @see https://www.typescriptlang.org/tsconfig#moduleResolution
  */
 type ModuleResolution = OrLowercase<
-  'Bundler' | 'Classic' | 'Node' | 'Node16' | 'NodeNext'
+  'Bundler' | 'Classic' | 'Node' | 'Node10' | 'Node16' | 'NodeNext'
 >
 
 export type { ModuleResolution as default }

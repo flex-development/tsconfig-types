@@ -23,6 +23,10 @@ describe('unit:types/ModuleResolution', () => {
     expectTypeOf<TestSubject>().extract<'Node'>().toBeString()
   })
 
+  it('should extract "Node10"', () => {
+    expectTypeOf<TestSubject>().extract<'Node10'>().toBeString()
+  })
+
   it('should extract "Node16"', () => {
     expectTypeOf<TestSubject>().extract<'Node16'>().toBeString()
   })
@@ -42,6 +46,10 @@ describe('unit:types/ModuleResolution', () => {
 
     it('should extract "node"', () => {
       expectTypeOf<TestSubject>().extract<'node'>().toBeString()
+    })
+
+    it('should extract "node10"', () => {
+      expectTypeOf<TestSubject>().extract<'node10'>().toBeString()
     })
 
     it('should extract "node16"', () => {

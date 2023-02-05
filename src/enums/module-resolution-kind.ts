@@ -15,8 +15,9 @@ import type { ModuleResolution } from '#src/types'
 enum ModuleResolutionKind {
   Bundler = 'bundler',
   Classic = 'classic',
-  NodeJs = 'node',
+  Node10 = 'node10',
   Node16 = 'node16',
+  NodeJs = 'node',
   NodeNext = 'nodenext'
 }
 

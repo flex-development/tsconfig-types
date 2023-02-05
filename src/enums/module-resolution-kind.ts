@@ -13,6 +13,7 @@ import type { ModuleResolution } from '#src/types'
  * @enum {Lowercase<ModuleResolution>}
  */
 enum ModuleResolutionKind {
+  Bundler = 'bundler',
   Classic = 'classic',
   NodeJs = 'node',
   Node16 = 'node16',

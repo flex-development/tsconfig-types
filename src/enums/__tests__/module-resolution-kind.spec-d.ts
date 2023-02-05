@@ -13,6 +13,12 @@ describe('unit:enums/ModuleResolutionKind', () => {
     >().toMatchTypeOf<Lowercase<ModuleResolution>>()
   })
 
+  it('should match [Bundler = "bundler"]', () => {
+    expectTypeOf<typeof TestSubject>()
+      .toHaveProperty('Bundler')
+      .toMatchTypeOf<'bundler'>()
+  })
+
   it('should match [Classic = "classic"]', () => {
     expectTypeOf<typeof TestSubject>()
       .toHaveProperty('Classic')

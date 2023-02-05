@@ -11,6 +11,10 @@ describe('unit:types/ModuleResolution', () => {
     expectTypeOf<TestSubject>().toMatchTypeOf<JsonValue>()
   })
 
+  it('should extract "Bundler"', () => {
+    expectTypeOf<TestSubject>().extract<'Bundler'>().toBeString()
+  })
+
   it('should extract "Classic"', () => {
     expectTypeOf<TestSubject>().extract<'Classic'>().toBeString()
   })
@@ -28,6 +32,10 @@ describe('unit:types/ModuleResolution', () => {
   })
 
   describe('lowercase', () => {
+    it('should extract "bundler"', () => {
+      expectTypeOf<TestSubject>().extract<'bundler'>().toBeString()
+    })
+
     it('should extract "classic"', () => {
       expectTypeOf<TestSubject>().extract<'classic'>().toBeString()
     })

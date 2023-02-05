@@ -3,6 +3,7 @@
  * @module tsconfig-types/types
  */
 
+export type { default as CompilerOption } from './compiler-option'
 export type { default as CompilerOptionsValue } from './compiler-options-value'
 export type { default as FallbackPolling } from './fallback-polling'
 export type { default as ImportsNotUsedAsValues } from './imports-not-used-as-values'

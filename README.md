@@ -283,6 +283,7 @@ export default compilerOptionsForProgram
 
 ### Types
 
+- [`CompilerOption`](src/types/compiler-option.ts)
 - [`CompilerOptionsValue`](src/types/compiler-options-value.ts)
 - [`FallbackPolling`](src/types/fallback-polling.ts)
 - [`ImportsNotUsedAsValues`](src/types/imports-not-used-as-values.ts)

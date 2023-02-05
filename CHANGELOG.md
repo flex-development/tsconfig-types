@@ -1,3 +1,30 @@
+## [2.2.0](https://github.com/flex-development/tsconfig-types/compare/2.1.0...2.2.0) (2023-02-05)
+
+
+### :robot: Continuous Integration
+
+* **workflows:** [`ci`] set `env.TYPESCRIPT_VERSION` ([9303602](https://github.com/flex-development/tsconfig-types/commit/9303602f53ab93cd3559297138adb897fab80e51))
+
+
+### :sparkles: Features
+
+* **ts-next:** support `--allowArbitraryExtensions` ([fec45a6](https://github.com/flex-development/tsconfig-types/commit/fec45a625dd3d04980acff6dd0dc8b3b58c29952))
+* **ts-next:** support `--allowImportingTsExtensions` ([21764ff](https://github.com/flex-development/tsconfig-types/commit/21764ff81931b37e4bb37b46f809ce419995fa1c))
+* **ts-next:** support `--customConditions` ([1b1fe39](https://github.com/flex-development/tsconfig-types/commit/1b1fe398c5943df22f5865c0dc000e9b67c58cd2))
+* **ts-next:** support `--ignoreDeprecations` ([2efbb22](https://github.com/flex-development/tsconfig-types/commit/2efbb226866ac1e25d0d14050efc3f99eca2c2c5))
+* **ts-next:** support `--moduleResolution bundler` ([632b71c](https://github.com/flex-development/tsconfig-types/commit/632b71ccb643e63e342cf171101d67ff5f3f5018))
+* **ts-next:** support `--moduleResolution node` ([1c10334](https://github.com/flex-development/tsconfig-types/commit/1c10334d06faf8ed7204127db9c063680492c9e1))
+* **ts-next:** support `--resolvePackageJsonExports` ([749f486](https://github.com/flex-development/tsconfig-types/commit/749f486deb1d69810395823189e7b9739c8f3f8f))
+* **ts-next:** support `--resolvePackageJsonImports` ([b39af82](https://github.com/flex-development/tsconfig-types/commit/b39af82d265cd105ebe69301166b9e6872297b3b))
+* **ts-next:** support `--verbatimModuleSyntax` ([aa86276](https://github.com/flex-development/tsconfig-types/commit/aa86276d469935a2086991a56e637e263c7d679f))
+
+
+### :house_with_garden: Housekeeping
+
+* **github:** add commit scope `ts-next` ([8cb1210](https://github.com/flex-development/tsconfig-types/commit/8cb1210b8e93374e66bb4373f9b697587e8bcf03))
+* **github:** add label `scope:ts-next` ([9d084ae](https://github.com/flex-development/tsconfig-types/commit/9d084ae7479544d1da5927fc049cbf42ee57825a))
+* **ts:** switch tsconfig based on typescript version ([f280fcb](https://github.com/flex-development/tsconfig-types/commit/f280fcb921f59c147d66c2a2d94ac3949b673c6e))
+
 ## [2.1.0](https://github.com/flex-development/tsconfig-types/compare/2.0.3...2.1.0) (2023-02-05)
 
 

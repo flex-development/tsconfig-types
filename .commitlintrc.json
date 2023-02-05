@@ -28,6 +28,7 @@
         "scripts",
         "tests",
         "ts",
+        "ts-next",
         "types",
         "vscode",
         "workflows",

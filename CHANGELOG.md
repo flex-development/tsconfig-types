@@ -1,3 +1,48 @@
+## [2.1.0](https://github.com/flex-development/tsconfig-types/compare/2.0.3...2.1.0) (2023-02-05)
+
+
+### :package: Build
+
+* **deps-dev:** bump @flex-development/mlly from 1.0.0-alpha.7 to 1.0.0-alpha.9 ([fc8333e](https://github.com/flex-development/tsconfig-types/commit/fc8333eaa9c8fd400bfe3b8ae0d41be26867fca1))
+* **deps-dev:** Bump @types/eslint from 8.4.10 to 8.21.0 ([#26](https://github.com/flex-development/tsconfig-types/issues/26)) ([55bbbc3](https://github.com/flex-development/tsconfig-types/commit/55bbbc3f8095009de096a4b7c258d09b5eefccca))
+* **deps-dev:** Bump @typescript-eslint/eslint-plugin from 5.49.0 to 5.50.0 ([#18](https://github.com/flex-development/tsconfig-types/issues/18)) ([ecb39a9](https://github.com/flex-development/tsconfig-types/commit/ecb39a9ae7e9b6ef30424ff5dfee26554618a820))
+* **deps-dev:** Bump @typescript-eslint/parser from 5.49.0 to 5.50.0 ([#19](https://github.com/flex-development/tsconfig-types/issues/19)) ([40567ae](https://github.com/flex-development/tsconfig-types/commit/40567ae6a0902e41753a13992587e6ec8a4cdad6))
+* **deps-dev:** Bump cspell from 6.19.2 to 6.20.1 ([#22](https://github.com/flex-development/tsconfig-types/issues/22)) ([17e98d6](https://github.com/flex-development/tsconfig-types/commit/17e98d6f20faf51bcb80ce635d5c34cab56fae8c))
+* **deps-dev:** Bump eslint-plugin-jsdoc from 39.7.4 to 39.7.5 ([#20](https://github.com/flex-development/tsconfig-types/issues/20)) ([c7fd57c](https://github.com/flex-development/tsconfig-types/commit/c7fd57c9eeeed13869ec50b3df3cf29e76c26574))
+* **deps-dev:** Bump graphql-config from 4.4.0 to 4.4.1 ([#21](https://github.com/flex-development/tsconfig-types/issues/21)) ([86c43af](https://github.com/flex-development/tsconfig-types/commit/86c43af3b21abc66e8b6a53ae62c84aca1ca8f46))
+* **deps-dev:** Bump typescript from 5.0.0-dev.20230129 to 5.0.0-dev.20230202 ([#24](https://github.com/flex-development/tsconfig-types/issues/24)) ([8207046](https://github.com/flex-development/tsconfig-types/commit/8207046a9af94509ee36982edefede406a0fb34f))
+* **deps-dev:** Bump vite from 4.0.4 to 4.1.1 ([#25](https://github.com/flex-development/tsconfig-types/issues/25)) ([dc37eb4](https://github.com/flex-development/tsconfig-types/commit/dc37eb40c24b8b33a495099a1115b28eb12a4fbb))
+* **deps-peer:** remove @flex-development/tutils ([070f3f3](https://github.com/flex-development/tsconfig-types/commit/070f3f31ba7c8861ecf3372f9b20170fb6a94be6))
+* **deps:** bump @flex-development/tutils from 6.0.0-alpha.9 to 6.0.0-alpha.10 ([a1d73d8](https://github.com/flex-development/tsconfig-types/commit/a1d73d818151f3091d66dfa9ad08d1dec5719f44))
+* **deps:** move @flex-development/tutils to `dependencies` ([cee546c](https://github.com/flex-development/tsconfig-types/commit/cee546c5e07f079b89159a72ddb3b4410bf1e467))
+
+
+### :robot: Continuous Integration
+
+* **deps:** Bump actions/cache from 3.2.3 to 3.2.4 ([#15](https://github.com/flex-development/tsconfig-types/issues/15)) ([57ee1ab](https://github.com/flex-development/tsconfig-types/commit/57ee1ab695d16caf130a915f2dc32eb9ca955e78))
+* **workflows:** [`ci`] add `gitguardian` job ([c7b9690](https://github.com/flex-development/tsconfig-types/commit/c7b9690d9a827c790a98f14636ba8b8877d7d366))
+
+
+### :pencil: Documentation
+
+* [related] add `tsconfig-utils` ([8fdcb8a](https://github.com/flex-development/tsconfig-types/commit/8fdcb8aae832e8b7121334b5ccb2e1a4d0352d8a))
+
+
+### :sparkles: Features
+
+* **types:** `CompilerOption` ([ee674eb](https://github.com/flex-development/tsconfig-types/commit/ee674eb1b98832016aac98fe70eab60c51ca6122))
+
+
+### :bug: Fixes
+
+* **pkg:** `engines.yarn` requirement ([f18ad11](https://github.com/flex-development/tsconfig-types/commit/f18ad11cd698c315ff217fb3ba30db57bfd58acb))
+* **pkg:** `packageManager` version ([6fae0de](https://github.com/flex-development/tsconfig-types/commit/6fae0de89e5d17c03208c26fdba705df882a0be9))
+
+
+### :white_check_mark: Testing
+
+* **types:** [`CompilerOptionsValue`] fix `ProjectReference` import ([58375c0](https://github.com/flex-development/tsconfig-types/commit/58375c0a95615f6b3f4079734a7878fa29db655e))
+
 ## [2.0.3](https://github.com/flex-development/tsconfig-types/compare/2.0.2...2.0.3) (2023-01-30)
 
 

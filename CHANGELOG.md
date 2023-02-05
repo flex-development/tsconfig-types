@@ -1,3 +1,14 @@
+## [3.0.0](https://github.com/flex-development/tsconfig-types/compare/2.2.0...3.0.0) (2023-02-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* **ts-next:** multiple configuration files in `extends`
+
+### :sparkles: Features
+
+* **ts-next:** multiple configuration files in `extends` ([de15f9b](https://github.com/flex-development/tsconfig-types/commit/de15f9bbf82ac06e991718f39966de383399d4e8))
+
 ## [2.2.0](https://github.com/flex-development/tsconfig-types/compare/2.1.0...2.2.0) (2023-02-05)
 
 

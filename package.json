@@ -134,9 +134,6 @@
     "vitest": "0.28.3",
     "yaml-eslint-parser": "1.1.0"
   },
-  "peerDependencies": {
-    "@flex-development/tutils": ">=6.0.0-alpha.7"
-  },
   "resolutions": {
     "@ardatan/sync-fetch": "larsgw/sync-fetch#head=worker_threads",
     "@flex-development/tutils": "6.0.0-alpha.9"

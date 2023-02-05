@@ -1319,8 +1319,6 @@ __metadata:
     vite-tsconfig-paths: "npm:4.0.5"
     vitest: "npm:0.28.3"
     yaml-eslint-parser: "npm:1.1.0"
-  peerDependencies:
-    "@flex-development/tutils": ">=6.0.0-alpha.7"
   languageName: unknown
   linkType: soft
 

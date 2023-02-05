@@ -302,6 +302,7 @@ export default compilerOptionsForProgram
 ## Related
 
 - [`pkg-types`][4] &mdash; TypeScript definitions for `package.json`
+- [`tsconfig-utils`][5] &mdash; Utilities for working with [`tsconfig`][6] files
 
 ## Contribute
 
@@ -311,3 +312,5 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 [2]: https://www.typescriptlang.org/tsconfig
 [3]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
 [4]: https://github.com/flex-development/pkg-types
+[5]: https://github.com/flex-development/tsconfig-utils
+[6]: https://www.typescriptlang.org/tsconfig

@@ -246,6 +246,12 @@ describe('unit:interfaces/CompilerOptions', () => {
       .toEqualTypeOf<LiteralUnion<'profile.cpuprofile', string> | undefined>()
   })
 
+  it('should match [ignoreDeprecations?: "5.0"]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('ignoreDeprecations')
+      .toEqualTypeOf<'5.0' | undefined>()
+  })
+
   it('should match [importHelpers?: boolean]', () => {
     expectTypeOf<TestSubject>()
       .toHaveProperty('importHelpers')

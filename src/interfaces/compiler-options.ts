@@ -308,6 +308,14 @@ interface CompilerOptions {
   generateCpuProfile?: LiteralUnion<'profile.cpuprofile', string>
 
   /**
+   * Ignore errors generated from deprecated compiler options.
+   *
+   * @see https://github.com/microsoft/TypeScript/issues/51000
+   * @see https://github.com/microsoft/TypeScript/issues/51909
+   */
+  ignoreDeprecations?: '5.0'
+
+  /**
    * Allow importing helper functions from [`tslib`][1] once per project,
    * instead of including them per-file.
    *

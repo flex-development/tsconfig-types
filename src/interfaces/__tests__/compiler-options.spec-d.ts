@@ -568,6 +568,12 @@ describe('unit:interfaces/CompilerOptions', () => {
       .toEqualTypeOf<boolean | undefined>()
   })
 
+  it('should match [resolvePackageJsonImports?: boolean]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('resolvePackageJsonImports')
+      .toEqualTypeOf<boolean | undefined>()
+  })
+
   it('should match [rootDir?: LiteralUnion<"." | "./", string>]', () => {
     expectTypeOf<TestSubject>()
       .toHaveProperty('rootDir')

@@ -3,9 +3,8 @@
  * @module tsconfig-types/types/tests/CompilerOptionsValue
  */
 
-import type { Plugin } from '#src/interfaces'
+import type { Plugin, ProjectReference } from '#src/interfaces'
 import type { JsonValue, MapLike } from '@flex-development/tutils'
-import type ProjectReference from '../../interfaces/project-reference'
 import type TestSubject from '../compiler-options-value'
 
 describe('unit:types/CompilerOptionsValue', () => {

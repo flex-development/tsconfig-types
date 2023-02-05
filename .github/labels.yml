@@ -46,6 +46,10 @@
   description: typescript support
   color: 74cefc
 
+- name: scope:ts-next
+  description: typescript@next support
+  color: 74cefc
+
 - name: scope:tsconfig
   description: tsconfig.json
   color: 74cefc

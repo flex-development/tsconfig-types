@@ -672,6 +672,21 @@ interface CompilerOptions {
   resolveJsonModule?: boolean
 
   /**
+   * Force TypeScript to consult the `package.json` [`exports`][1] field if it
+   * ever reads from a package in `node_modules`.
+   *
+   * This field is only valid under the `bundler`, `node16`, and `nodenext`
+   * options for {@linkcode moduleResolution}.
+   *
+   * [1]: https://nodejs.org/api/packages.html#exports
+   *
+   * @see https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-beta/#resolvepackagejsonexports
+   *
+   * @default ['bundler','node16','nodenext'].includes(moduleResolution)
+   */
+  resolvePackageJsonExports?: boolean
+
+  /**
    * Root project directory.
    */
   rootDir?: LiteralUnion<'.' | './', string>

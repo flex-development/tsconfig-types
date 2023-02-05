@@ -29,6 +29,7 @@ import type {
   WatchDirectory,
   WatchFile
 } from '#src/types'
+import type { ExportCondition } from '@flex-development/pkg-types'
 import type { JsonObject, LiteralUnion } from '@flex-development/tutils'
 import type TestSubject from '../compiler-options'
 
@@ -117,6 +118,12 @@ describe('unit:interfaces/CompilerOptions', () => {
     expectTypeOf<TestSubject>()
       .toHaveProperty('composite')
       .toEqualTypeOf<boolean | undefined>()
+  })
+
+  it('should match [customConditions?: ExportCondition[]]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('customConditions')
+      .toEqualTypeOf<ExportCondition[] | undefined>()
   })
 
   it('should match [declaration?: boolean]', () => {

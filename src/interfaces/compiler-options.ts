@@ -29,6 +29,7 @@ import type {
   WatchDirectory,
   WatchFile
 } from '#src/types'
+import type { ExportCondition } from '@flex-development/pkg-types'
 import type { LiteralUnion } from '@flex-development/tutils'
 import type Plugin from './plugin'
 
@@ -143,6 +144,22 @@ interface CompilerOptions {
    * @default false
    */
   composite?: boolean
+
+  /**
+   * List of additional export conditions that should succeed when TypeScript
+   * resolves from a `package.json` [`exports`][1] or [`imports`][2] field.
+   *
+   * This field is only valid under the `bundler`, `node16`, and `nodenext`
+   * options for {@linkcode moduleResolution}.
+   *
+   * [1]: https://nodejs.org/api/packages.html#exports
+   * [2]: https://nodejs.org/api/packages.html#imports
+   *
+   * @see https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-beta/#customconditions
+   * @see https://nodejs.org/api/packages.html#conditional-exports
+   * @see https://nodejs.org/api/packages.html#community-conditions-definitions
+   */
+  customConditions?: ExportCondition[]
 
   /**
    * Generate `.d.ts` files.

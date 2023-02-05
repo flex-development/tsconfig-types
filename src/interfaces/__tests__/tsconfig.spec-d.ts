@@ -3,7 +3,7 @@
  * @module tsconfig-types/interfaces/tests/TSConfig
  */
 
-import type { JsonObject } from '@flex-development/tutils'
+import type { JsonObject, OneOrMany } from '@flex-development/tutils'
 import type BuildOptions from '../build-options'
 import type CompilerOptions from '../compiler-options'
 import type ProjectReference from '../project-reference'
@@ -45,10 +45,10 @@ describe('unit:interfaces/TSConfig', () => {
       .toEqualTypeOf<string[] | undefined>()
   })
 
-  it('should match [extends?: string]', () => {
+  it('should match [extends?: OneOrMany<string>]', () => {
     expectTypeOf<TestSubject>()
       .toHaveProperty('extends')
-      .toEqualTypeOf<string | undefined>()
+      .toEqualTypeOf<OneOrMany<string> | undefined>()
   })
 
   it('should match [files?: string[]]', () => {

@@ -3,7 +3,7 @@
  * @module tsconfig-types/interfaces/TSConfig
  */
 
-import type { JsonObject } from '@flex-development/tutils'
+import type { JsonObject, OneOrMany } from '@flex-development/tutils'
 import type BuildOptions from './build-options'
 import type CompilerOptions from './compiler-options'
 import type ProjectReference from './project-reference'
@@ -45,9 +45,11 @@ interface TSConfig extends JsonObject {
   exclude?: string[]
 
   /**
-   * Path to configuration file to inherit from.
+   * Configuration file(s) to inherit from.
+   *
+   * @see https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-beta/#supporting-multiple-configuration-files-in-extends
    */
-  extends?: string
+  extends?: OneOrMany<string>
 
   /**
    * Files to include in the program.

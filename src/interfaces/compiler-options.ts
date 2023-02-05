@@ -320,6 +320,8 @@ interface CompilerOptions {
   /**
    * Emit/checking behavior for imports that are only used for types.
    *
+   * Deprecated in TypeScript 5.0 in favor of {@linkcode verbatimModuleSyntax}.
+   *
    * @default 'remove'
    */
   importsNotUsedAsValues?: ImportsNotUsedAsValues | ImportsNotUsedKind
@@ -631,6 +633,8 @@ interface CompilerOptions {
    * Preserve unused imported values in the JavaScript output that would
    * otherwise be removed.
    *
+   * Deprecated in TypeScript 5.0 in favor of {@linkcode verbatimModuleSyntax}.
+   *
    * @default false
    */
   preserveValueImports?: boolean
@@ -845,6 +849,20 @@ interface CompilerOptions {
    * @default strict
    */
   useUnknownInCatchVariables?: boolean
+
+  /**
+   * Do not transform or elide any imports or exports not marked as type-only,
+   * ensuring they are written in the output file's format based on the
+   * {@linkcode module} setting.
+   *
+   * **Note**: Replaces {@linkcode importsNotUsedAsValues} and
+   * {@linkcode preserveValueImports}.
+   *
+   * @see https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-beta/#verbatimmodulesyntax
+   *
+   * @default false
+   */
+  verbatimModuleSyntax?: boolean
 
   /**
    * Watch input files.

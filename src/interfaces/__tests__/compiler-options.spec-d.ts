@@ -700,6 +700,12 @@ describe('unit:interfaces/CompilerOptions', () => {
       .toEqualTypeOf<boolean | undefined>()
   })
 
+  it('should match [verbatimModuleSyntax?: boolean]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('verbatimModuleSyntax')
+      .toEqualTypeOf<boolean | undefined>()
+  })
+
   it('should match [watch?: boolean]', () => {
     expectTypeOf<TestSubject>()
       .toHaveProperty('watch')

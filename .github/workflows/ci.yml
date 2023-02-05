@@ -216,12 +216,6 @@ jobs:
       - id: debug
         name: Print environment variables and event payload
         uses: hmarr/debug-action@v2.1.0
-      - id: tsconfig
-        name: Prepare tsconfig.json
-        if: matrix.typescript-version != needs.metadata.outputs.version-typescript
-        run: echo $(jq 'del(.compilerOptions.ignoreDeprecations)' $TSCONFIG) > $TSCONFIG
-        env:
-          TSCONFIG: tsconfig.json
       - id: typecheck
         name: Run typecheck
         run: yarn typecheck

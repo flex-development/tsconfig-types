@@ -51,6 +51,18 @@ interface CompilerOptions {
   allowArbitraryExtensions?: boolean
 
   /**
+   * Allow imports to include TypeScript file extensions.
+   *
+   * Requires {@linkcode moduleResolution} to be set to `bundler` and either
+   * {@linkcode emitDeclarationOnly} or {@linkcode noEmit} to be set.
+   *
+   * @see https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-beta/#allowimportingtsextensions
+   *
+   * @default false
+   */
+  allowImportingTsExtensions?: boolean
+
+  /**
    * Allow JavaScript files to be a part of the program.
    *
    * Use {@linkcode checkJS} to get errors from these files.

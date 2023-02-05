@@ -47,6 +47,12 @@ describe('unit:interfaces/CompilerOptions', () => {
       .toEqualTypeOf<boolean | undefined>()
   })
 
+  it('should match [allowImportingTsExtensions?: boolean]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('allowImportingTsExtensions')
+      .toEqualTypeOf<boolean | undefined>()
+  })
+
   it('should match [allowJs?: boolean]', () => {
     expectTypeOf<TestSubject>()
       .toHaveProperty('allowJs')

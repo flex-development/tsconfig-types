@@ -41,6 +41,12 @@ describe('unit:interfaces/CompilerOptions', () => {
     expectTypeOf<TestSubject>().toMatchTypeOf<JsonObject>()
   })
 
+  it('should match [allowArbitraryExtensions?: boolean]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('allowArbitraryExtensions')
+      .toEqualTypeOf<boolean | undefined>()
+  })
+
   it('should match [allowJs?: boolean]', () => {
     expectTypeOf<TestSubject>()
       .toHaveProperty('allowJs')

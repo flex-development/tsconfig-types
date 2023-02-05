@@ -41,6 +41,16 @@ interface CompilerOptions {
   [option: string]: CompilerOptionsValue
 
   /**
+   * Enable importing files with any extension, provided a declaration file is
+   * present.
+   *
+   * @see https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-beta/#allowarbitraryextensions
+   *
+   * @default false
+   */
+  allowArbitraryExtensions?: boolean
+
+  /**
    * Allow JavaScript files to be a part of the program.
    *
    * Use {@linkcode checkJS} to get errors from these files.

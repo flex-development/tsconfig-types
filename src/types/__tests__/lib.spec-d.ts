@@ -129,6 +129,10 @@ describe('unit:types/Lib', () => {
     expectTypeOf<TestSubject>().extract<'ES2018.AsyncIterable'>().toBeString()
   })
 
+  it('should extract "ES2018.Full"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2018.Full'>().toBeString()
+  })
+
   it('should extract "ES2018.Intl"', () => {
     expectTypeOf<TestSubject>().extract<'ES2018.Intl'>().toBeString()
   })
@@ -384,6 +388,10 @@ describe('unit:types/Lib', () => {
 
     it('should extract "es2018.asynciterable"', () => {
       expectTypeOf<TestSubject>().extract<'es2018.asynciterable'>().toBeString()
+    })
+
+    it('should extract "es2018.full"', () => {
+      expectTypeOf<TestSubject>().extract<'es2018.full'>().toBeString()
     })
 
     it('should extract "es2018.intl"', () => {

@@ -40,6 +40,7 @@ type Lib = OrLowercase<
   | 'ES2017'
   | 'ES2018.AsyncGenerator'
   | 'ES2018.AsyncIterable'
+  | 'ES2018.Full'
   | 'ES2018.Intl'
   | 'ES2018.Promise'
   | 'ES2018.Regexp'

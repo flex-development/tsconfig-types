@@ -15,6 +15,10 @@ describe('unit:types/Lib', () => {
     expectTypeOf<TestSubject>().extract<'Decorators.Legacy'>().toBeString()
   })
 
+  it('should extract "Decorators"', () => {
+    expectTypeOf<TestSubject>().extract<'Decorators'>().toBeString()
+  })
+
   it('should extract "DOM.Iterable"', () => {
     expectTypeOf<TestSubject>().extract<'DOM.Iterable'>().toBeString()
   })
@@ -256,6 +260,10 @@ describe('unit:types/Lib', () => {
   describe('lowercase', () => {
     it('should extract "decorators.legacy"', () => {
       expectTypeOf<TestSubject>().extract<'decorators.legacy'>().toBeString()
+    })
+
+    it('should extract "decorators"', () => {
+      expectTypeOf<TestSubject>().extract<'decorators'>().toBeString()
     })
 
     it('should extract "dom.iterable"', () => {

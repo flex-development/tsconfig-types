@@ -12,6 +12,7 @@ import type { OrLowercase } from '@flex-development/tutils'
  */
 type Lib = OrLowercase<
   | 'Decorators.Legacy'
+  | 'Decorators'
   | 'DOM.Iterable'
   | 'DOM'
   | 'ES5'

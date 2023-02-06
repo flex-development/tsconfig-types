@@ -1,3 +1,59 @@
+## [3.1.0](https://github.com/flex-development/tsconfig-types/compare/3.0.0...3.1.0) (2023-02-06)
+
+
+### :package: Build
+
+* **deps-dev:** Bump @vitest/coverage-c8 from 0.28.3 to 0.28.4 ([#34](https://github.com/flex-development/tsconfig-types/issues/34)) ([85a9d6d](https://github.com/flex-development/tsconfig-types/commit/85a9d6d56568cb47a5ed888b7f8693a8abf66f58))
+* **deps-dev:** Bump @vitest/ui from 0.28.3 to 0.28.4 ([#31](https://github.com/flex-development/tsconfig-types/issues/31)) ([5cd143f](https://github.com/flex-development/tsconfig-types/commit/5cd143fad5960a7e9899300cf5110869d157d1b4))
+* **deps-dev:** Bump cspell from 6.20.1 to 6.22.0 ([#32](https://github.com/flex-development/tsconfig-types/issues/32)) ([8325cab](https://github.com/flex-development/tsconfig-types/commit/8325cab789d5d09b8547aeb57d368f0a74c9d817))
+* **deps-dev:** Bump eslint-plugin-jsdoc from 39.7.5 to 39.8.0 ([#35](https://github.com/flex-development/tsconfig-types/issues/35)) ([942f078](https://github.com/flex-development/tsconfig-types/commit/942f078065e3f4822a9cad8377d5c13042996983))
+* **deps-dev:** Bump typescript from 5.0.0-dev.20230202 to 5.0.0-dev.20230205 ([#33](https://github.com/flex-development/tsconfig-types/issues/33)) ([79b1ed0](https://github.com/flex-development/tsconfig-types/commit/79b1ed0cf3d00200fe95c3ddaa5e18e50f52a001))
+* **deps-dev:** Bump vitest from 0.28.3 to 0.28.4 ([#30](https://github.com/flex-development/tsconfig-types/issues/30)) ([21036f1](https://github.com/flex-development/tsconfig-types/commit/21036f1f8321a7ba0c3d039283324e6401a73eec))
+
+
+### :pencil: Documentation
+
+* **pkg:** fix changelog entry for flex-development/tsconfig-types@1c10334d06faf8ed7204127db9c063680492c9e1 ([a1b4fb3](https://github.com/flex-development/tsconfig-types/commit/a1b4fb3be0451840139b0e1b6b75364218182f79))
+
+
+### :sparkles: Features
+
+* **types:** [`Lib`] add `Decorators.Legacy` ([5452709](https://github.com/flex-development/tsconfig-types/commit/5452709b8967c913a80f510bf9b487409fc6af50))
+* **types:** [`Lib`] add `Decorators` ([6317dce](https://github.com/flex-development/tsconfig-types/commit/6317dcefada40df721b42f4d0726602acbd0d4fa))
+* **types:** [`Lib`] add `ES2016.Full` ([6b12f41](https://github.com/flex-development/tsconfig-types/commit/6b12f41057dc8cee889e49100720dec8c8cf25cc))
+* **types:** [`Lib`] add `ES2017.Full` ([95ede7f](https://github.com/flex-development/tsconfig-types/commit/95ede7f1b0f846d2318189caf552fa881504a78b))
+* **types:** [`Lib`] add `ES2018.Full` ([79be841](https://github.com/flex-development/tsconfig-types/commit/79be8413f9db51fdd84505b81dcde422db2bb667))
+* **types:** [`Lib`] add `ES2019.Full` ([1f6c8a6](https://github.com/flex-development/tsconfig-types/commit/1f6c8a6097894111618950956bda8b71d34b2143))
+* **types:** [`Lib`] add `ES2019.Intl` ([365b309](https://github.com/flex-development/tsconfig-types/commit/365b309fd2c41918814996b489af35c77e29fca0))
+* **types:** [`Lib`] add `ES2020.Date` ([c7b8473](https://github.com/flex-development/tsconfig-types/commit/c7b84731d643f53c6ec901d014df45acb2cdfbad))
+* **types:** [`Lib`] add `ES2020.Full` ([f512457](https://github.com/flex-development/tsconfig-types/commit/f512457d0e9d7d9e0f3b37af33a51063c9866b0d))
+* **types:** [`Lib`] add `ES2020.Number` ([7bcb7c9](https://github.com/flex-development/tsconfig-types/commit/7bcb7c9bfc6c3ee837be1fe993e1f4a61cd7d794))
+* **types:** [`Lib`] add `ES2021.Full` ([89dabf1](https://github.com/flex-development/tsconfig-types/commit/89dabf1fd2d97fc0e230029be3660bd85c64bbdd))
+* **types:** [`Lib`] add `ES2021.Intl` ([d386e2f](https://github.com/flex-development/tsconfig-types/commit/d386e2f33df228ce5a9944e698ae5c7f77606a78))
+* **types:** [`Lib`] add `ES2022.Array` ([a74ba20](https://github.com/flex-development/tsconfig-types/commit/a74ba20aa25f37d142efd25064ca5d24cd1a4559))
+* **types:** [`Lib`] add `ES2022.Error` ([dcc41bc](https://github.com/flex-development/tsconfig-types/commit/dcc41bcf32978489b2dec8416f36feac6ef14a1f))
+* **types:** [`Lib`] add `ES2022.Full` ([1a837db](https://github.com/flex-development/tsconfig-types/commit/1a837db3c51f86553a8c65a8acdbe896431ef53c))
+* **types:** [`Lib`] add `ES2022.Intl` ([c1c3685](https://github.com/flex-development/tsconfig-types/commit/c1c36859e25bdfa47dd672699aa1de23223f13ee))
+* **types:** [`Lib`] add `ES2022.Object` ([2bdfb57](https://github.com/flex-development/tsconfig-types/commit/2bdfb5705f7994de7fa2abfafecb3de0d994a0be))
+* **types:** [`Lib`] add `ES2022.Regexp` ([1cffe29](https://github.com/flex-development/tsconfig-types/commit/1cffe298ba4afc1f3270a689e3034cf84395e342))
+* **types:** [`Lib`] add `ES2022.SharedMemory` ([41f3a71](https://github.com/flex-development/tsconfig-types/commit/41f3a714f636d14258d2016d13f1e290387c992f))
+* **types:** [`Lib`] add `ES2022.String` ([c38efbe](https://github.com/flex-development/tsconfig-types/commit/c38efbe8334f07775d61639cea7c232b38447b85))
+* **types:** [`Lib`] add `ES2022` ([fc43f28](https://github.com/flex-development/tsconfig-types/commit/fc43f28462bf44996078595be877c3cd2171757e))
+* **types:** [`Lib`] add `ES2023.Array` ([a1560a3](https://github.com/flex-development/tsconfig-types/commit/a1560a356de1ed75ae8887b5c2453bbcf2212c8f))
+* **types:** [`Lib`] add `ES2023.Full` ([e97572b](https://github.com/flex-development/tsconfig-types/commit/e97572b56eabcbb0180502e2d5e29f003a2ba5e0))
+* **types:** [`Lib`] add `ES2023` ([5fd8558](https://github.com/flex-development/tsconfig-types/commit/5fd85585d7733343d14242500b7bd3ac622a86b0))
+* **types:** [`Lib`] add `ESNext.Full` ([87cde73](https://github.com/flex-development/tsconfig-types/commit/87cde73f449861dc6a4e907a7467a00920658d44))
+
+
+### :bug: Fixes
+
+* **interfaces:** [`Plugin`] require `name` ([4968c92](https://github.com/flex-development/tsconfig-types/commit/4968c92f5dbb20ba39127e5f56e1fb8e1e4a0dfb))
+
+
+### :white_check_mark: Testing
+
+* **types:** reformat alternate casing tests ([83672c5](https://github.com/flex-development/tsconfig-types/commit/83672c51f16d4215df0e4234452de5f6f7e92196))
+
 ## [3.0.0](https://github.com/flex-development/tsconfig-types/compare/2.2.0...3.0.0) (2023-02-05)
 
 

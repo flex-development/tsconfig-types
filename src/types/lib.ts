@@ -78,6 +78,7 @@ type Lib = OrLowercase<
   | 'ES2022.String'
   | 'ES2022'
   | 'ES2023.Array'
+  | 'ES2023.Full'
   | 'ESNext.Array'
   | 'ESNext.AsyncIterable'
   | 'ESNext.BigInt'

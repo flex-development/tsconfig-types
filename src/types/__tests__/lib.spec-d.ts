@@ -283,6 +283,10 @@ describe('unit:types/Lib', () => {
     expectTypeOf<TestSubject>().extract<'ES2023.Array'>().toBeString()
   })
 
+  it('should extract "ES2023.Full"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2023.Full'>().toBeString()
+  })
+
   it('should extract "ESNext.Array"', () => {
     expectTypeOf<TestSubject>().extract<'ESNext.Array'>().toBeString()
   })
@@ -610,6 +614,10 @@ describe('unit:types/Lib', () => {
 
     it('should extract "es2023.array"', () => {
       expectTypeOf<TestSubject>().extract<'es2023.array'>().toBeString()
+    })
+
+    it('should extract "es2023.full"', () => {
+      expectTypeOf<TestSubject>().extract<'es2023.full'>().toBeString()
     })
 
     it('should extract "esnext.array"', () => {

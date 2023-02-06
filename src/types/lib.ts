@@ -76,6 +76,7 @@ type Lib = OrLowercase<
   | 'ES2022.Regexp'
   | 'ES2022.SharedMemory'
   | 'ES2022.String'
+  | 'ES2022'
   | 'ESNext.Array'
   | 'ESNext.AsyncIterable'
   | 'ESNext.BigInt'

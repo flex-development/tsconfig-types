@@ -157,6 +157,10 @@ describe('unit:types/Lib', () => {
     expectTypeOf<TestSubject>().extract<'ES2019.Full'>().toBeString()
   })
 
+  it('should extract "ES2019.Intl"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2019.Intl'>().toBeString()
+  })
+
   it('should extract "ES2019.Object"', () => {
     expectTypeOf<TestSubject>().extract<'ES2019.Object'>().toBeString()
   })
@@ -420,6 +424,10 @@ describe('unit:types/Lib', () => {
 
     it('should extract "es2019.full"', () => {
       expectTypeOf<TestSubject>().extract<'es2019.full'>().toBeString()
+    })
+
+    it('should extract "es2019.intl"', () => {
+      expectTypeOf<TestSubject>().extract<'es2019.intl'>().toBeString()
     })
 
     it('should extract "es2019.object"', () => {

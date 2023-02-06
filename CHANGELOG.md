@@ -24,7 +24,7 @@
 * **ts-next:** support `--customConditions` ([1b1fe39](https://github.com/flex-development/tsconfig-types/commit/1b1fe398c5943df22f5865c0dc000e9b67c58cd2))
 * **ts-next:** support `--ignoreDeprecations` ([2efbb22](https://github.com/flex-development/tsconfig-types/commit/2efbb226866ac1e25d0d14050efc3f99eca2c2c5))
 * **ts-next:** support `--moduleResolution bundler` ([632b71c](https://github.com/flex-development/tsconfig-types/commit/632b71ccb643e63e342cf171101d67ff5f3f5018))
-* **ts-next:** support `--moduleResolution node` ([1c10334](https://github.com/flex-development/tsconfig-types/commit/1c10334d06faf8ed7204127db9c063680492c9e1))
+* **ts-next:** support `--moduleResolution node10` ([1c10334](https://github.com/flex-development/tsconfig-types/commit/1c10334d06faf8ed7204127db9c063680492c9e1))
 * **ts-next:** support `--resolvePackageJsonExports` ([749f486](https://github.com/flex-development/tsconfig-types/commit/749f486deb1d69810395823189e7b9739c8f3f8f))
 * **ts-next:** support `--resolvePackageJsonImports` ([b39af82](https://github.com/flex-development/tsconfig-types/commit/b39af82d265cd105ebe69301166b9e6872297b3b))
 * **ts-next:** support `--verbatimModuleSyntax` ([aa86276](https://github.com/flex-development/tsconfig-types/commit/aa86276d469935a2086991a56e637e263c7d679f))

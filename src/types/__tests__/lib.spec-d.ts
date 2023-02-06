@@ -303,6 +303,10 @@ describe('unit:types/Lib', () => {
     expectTypeOf<TestSubject>().extract<'ESNext.BigInt'>().toBeString()
   })
 
+  it('should extract "ESNext.Full"', () => {
+    expectTypeOf<TestSubject>().extract<'ESNext.Full'>().toBeString()
+  })
+
   it('should extract "ESNext.Intl"', () => {
     expectTypeOf<TestSubject>().extract<'ESNext.Intl'>().toBeString()
   })
@@ -638,6 +642,10 @@ describe('unit:types/Lib', () => {
 
     it('should extract "esnext.bigint"', () => {
       expectTypeOf<TestSubject>().extract<'esnext.bigint'>().toBeString()
+    })
+
+    it('should extract "esnext.full"', () => {
+      expectTypeOf<TestSubject>().extract<'esnext.full'>().toBeString()
     })
 
     it('should extract "esnext.intl"', () => {

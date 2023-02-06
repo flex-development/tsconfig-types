@@ -83,6 +83,7 @@ type Lib = OrLowercase<
   | 'ESNext.Array'
   | 'ESNext.AsyncIterable'
   | 'ESNext.BigInt'
+  | 'ESNext.Full'
   | 'ESNext.Intl'
   | 'ESNext.Promise'
   | 'ESNext.String'

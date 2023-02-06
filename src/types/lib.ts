@@ -46,6 +46,7 @@ type Lib = OrLowercase<
   | 'ES2018.Regexp'
   | 'ES2018'
   | 'ES2019.Array'
+  | 'ES2019.Full'
   | 'ES2019.Object'
   | 'ES2019.String'
   | 'ES2019.Symbol'

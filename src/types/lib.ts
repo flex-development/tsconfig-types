@@ -6,7 +6,7 @@
 import type { OrLowercase } from '@flex-development/tutils'
 
 /**
- * Default set of type definitions to include.
+ * Type definition library names.
  *
  * @see https://www.typescriptlang.org/tsconfig#lib
  */

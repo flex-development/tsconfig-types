@@ -288,6 +288,7 @@ export default compilerOptionsForProgram
 - [`FallbackPolling`](src/types/fallback-polling.ts)
 - [`ImportsNotUsedAsValues`](src/types/imports-not-used-as-values.ts)
 - [`Jsx`](src/types/jsx.ts)
+- [`LibFile`](src/types/lib-file.ts)
 - [`Lib`](src/types/lib.ts)
 - [`ModuleDetection`](src/types/module-detection.ts)
 - [`ModuleResolution`](src/types/module-resolution.ts)

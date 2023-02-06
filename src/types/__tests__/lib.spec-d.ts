@@ -271,6 +271,10 @@ describe('unit:types/Lib', () => {
     expectTypeOf<TestSubject>().extract<'ES2022.SharedMemory'>().toBeString()
   })
 
+  it('should extract "ES2022.String"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2022.String'>().toBeString()
+  })
+
   it('should extract "ESNext.Array"', () => {
     expectTypeOf<TestSubject>().extract<'ESNext.Array'>().toBeString()
   })
@@ -586,6 +590,10 @@ describe('unit:types/Lib', () => {
 
     it('should extract "es2022.sharedmemory"', () => {
       expectTypeOf<TestSubject>().extract<'es2022.sharedmemory'>().toBeString()
+    })
+
+    it('should extract "es2022.string"', () => {
+      expectTypeOf<TestSubject>().extract<'es2022.string'>().toBeString()
     })
 
     it('should extract "esnext.array"', () => {

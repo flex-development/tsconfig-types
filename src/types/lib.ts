@@ -72,6 +72,7 @@ type Lib = OrLowercase<
   | 'ES2022.Error'
   | 'ES2022.Full'
   | 'ES2022.Intl'
+  | 'ES2022.Object'
   | 'ESNext.Array'
   | 'ESNext.AsyncIterable'
   | 'ESNext.BigInt'

@@ -259,6 +259,10 @@ describe('unit:types/Lib', () => {
     expectTypeOf<TestSubject>().extract<'ES2022.Intl'>().toBeString()
   })
 
+  it('should extract "ES2022.Object"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2022.Object'>().toBeString()
+  })
+
   it('should extract "ESNext.Array"', () => {
     expectTypeOf<TestSubject>().extract<'ESNext.Array'>().toBeString()
   })
@@ -562,6 +566,10 @@ describe('unit:types/Lib', () => {
 
     it('should extract "es2022.intl"', () => {
       expectTypeOf<TestSubject>().extract<'es2022.intl'>().toBeString()
+    })
+
+    it('should extract "es2022.object"', () => {
+      expectTypeOf<TestSubject>().extract<'es2022.object'>().toBeString()
     })
 
     it('should extract "esnext.array"', () => {

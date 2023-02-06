@@ -11,6 +11,7 @@ import type { OrLowercase } from '@flex-development/tutils'
  * @see https://www.typescriptlang.org/tsconfig#lib
  */
 type Lib = OrLowercase<
+  | 'Decorators.Legacy'
   | 'DOM.Iterable'
   | 'DOM'
   | 'ES5'

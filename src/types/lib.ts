@@ -62,6 +62,7 @@ type Lib = OrLowercase<
   | 'ES2020.String'
   | 'ES2020.Symbol.WellKnown'
   | 'ES2020'
+  | 'ES2021.Full'
   | 'ES2021.Promise'
   | 'ES2021.String'
   | 'ES2021.WeakRef'

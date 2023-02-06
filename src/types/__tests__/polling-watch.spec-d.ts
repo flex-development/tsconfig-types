@@ -3,7 +3,7 @@
  * @module tsconfig-types/types/tests/PollingWatch
  */
 
-import type { JsonValue } from '@flex-development/tutils'
+import type { JsonValue, OrLowercase } from '@flex-development/tutils'
 import type TestSubject from '../polling-watch'
 
 describe('unit:types/PollingWatch', () => {
@@ -11,45 +11,33 @@ describe('unit:types/PollingWatch', () => {
     expectTypeOf<TestSubject>().toMatchTypeOf<JsonValue>()
   })
 
-  it('should extract "dynamicPriorityPolling"', () => {
-    expectTypeOf<TestSubject>().extract<'dynamicPriorityPolling'>().toBeString()
-  })
-
-  it('should extract "fixedChunkSize"', () => {
-    expectTypeOf<TestSubject>().extract<'fixedChunkSize'>().toBeString()
-  })
-
-  it('should extract "fixedPollingInterval"', () => {
-    expectTypeOf<TestSubject>().extract<'fixedPollingInterval'>().toBeString()
-  })
-
-  it('should extract "priorityPollingInterval"', () => {
+  it('should extract OrLowercase<"dynamicPriorityPolling">', () => {
     expectTypeOf<TestSubject>()
-      .extract<'priorityPollingInterval'>()
+      .extract<OrLowercase<'dynamicPriorityPolling'>>()
       .toBeString()
   })
 
-  it('should extract "synchronousWatchDirectory"', () => {
+  it('should extract OrLowercase<"fixedChunkSize">', () => {
     expectTypeOf<TestSubject>()
-      .extract<'synchronousWatchDirectory'>()
+      .extract<OrLowercase<'fixedChunkSize'>>()
       .toBeString()
   })
 
-  describe('lowercase', () => {
-    it('should extract "dynamicpriority"', () => {
-      expectTypeOf<TestSubject>().extract<'dynamicpriority'>().toBeString()
-    })
+  it('should extract OrLowercase<"fixedPollingInterval">', () => {
+    expectTypeOf<TestSubject>()
+      .extract<OrLowercase<'fixedPollingInterval'>>()
+      .toBeString()
+  })
 
-    it('should extract "fixedchunksize"', () => {
-      expectTypeOf<TestSubject>().extract<'fixedchunksize'>().toBeString()
-    })
+  it('should extract OrLowercase<"priorityPollingInterval">', () => {
+    expectTypeOf<TestSubject>()
+      .extract<OrLowercase<'priorityPollingInterval'>>()
+      .toBeString()
+  })
 
-    it('should extract "fixedinterval"', () => {
-      expectTypeOf<TestSubject>().extract<'fixedinterval'>().toBeString()
-    })
-
-    it('should extract "priorityinterval"', () => {
-      expectTypeOf<TestSubject>().extract<'priorityinterval'>().toBeString()
-    })
+  it('should extract OrLowercase<"synchronousWatchDirectory">', () => {
+    expectTypeOf<TestSubject>()
+      .extract<OrLowercase<'synchronousWatchDirectory'>>()
+      .toBeString()
   })
 })

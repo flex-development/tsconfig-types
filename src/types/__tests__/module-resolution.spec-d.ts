@@ -3,7 +3,7 @@
  * @module tsconfig-types/types/tests/ModuleResolution
  */
 
-import type { JsonValue } from '@flex-development/tutils'
+import type { JsonValue, OrLowercase } from '@flex-development/tutils'
 import type TestSubject from '../module-resolution'
 
 describe('unit:types/ModuleResolution', () => {
@@ -11,53 +11,27 @@ describe('unit:types/ModuleResolution', () => {
     expectTypeOf<TestSubject>().toMatchTypeOf<JsonValue>()
   })
 
-  it('should extract "Bundler"', () => {
-    expectTypeOf<TestSubject>().extract<'Bundler'>().toBeString()
+  it('should extract OrLowercase<"Bundler">', () => {
+    expectTypeOf<TestSubject>().extract<OrLowercase<'Bundler'>>().toBeString()
   })
 
-  it('should extract "Classic"', () => {
-    expectTypeOf<TestSubject>().extract<'Classic'>().toBeString()
+  it('should extract OrLowercase<"Classic">', () => {
+    expectTypeOf<TestSubject>().extract<OrLowercase<'Classic'>>().toBeString()
   })
 
-  it('should extract "Node"', () => {
-    expectTypeOf<TestSubject>().extract<'Node'>().toBeString()
+  it('should extract OrLowercase<"Node">', () => {
+    expectTypeOf<TestSubject>().extract<OrLowercase<'Node'>>().toBeString()
   })
 
-  it('should extract "Node10"', () => {
-    expectTypeOf<TestSubject>().extract<'Node10'>().toBeString()
+  it('should extract OrLowercase<"Node10">', () => {
+    expectTypeOf<TestSubject>().extract<OrLowercase<'Node10'>>().toBeString()
   })
 
-  it('should extract "Node16"', () => {
-    expectTypeOf<TestSubject>().extract<'Node16'>().toBeString()
+  it('should extract OrLowercase<"Node16">', () => {
+    expectTypeOf<TestSubject>().extract<OrLowercase<'Node16'>>().toBeString()
   })
 
-  it('should extract "NodeNext"', () => {
-    expectTypeOf<TestSubject>().extract<'NodeNext'>().toBeString()
-  })
-
-  describe('lowercase', () => {
-    it('should extract "bundler"', () => {
-      expectTypeOf<TestSubject>().extract<'bundler'>().toBeString()
-    })
-
-    it('should extract "classic"', () => {
-      expectTypeOf<TestSubject>().extract<'classic'>().toBeString()
-    })
-
-    it('should extract "node"', () => {
-      expectTypeOf<TestSubject>().extract<'node'>().toBeString()
-    })
-
-    it('should extract "node10"', () => {
-      expectTypeOf<TestSubject>().extract<'node10'>().toBeString()
-    })
-
-    it('should extract "node16"', () => {
-      expectTypeOf<TestSubject>().extract<'node16'>().toBeString()
-    })
-
-    it('should extract "nodenext"', () => {
-      expectTypeOf<TestSubject>().extract<'nodenext'>().toBeString()
-    })
+  it('should extract OrLowercase<"NodeNext">', () => {
+    expectTypeOf<TestSubject>().extract<OrLowercase<'NodeNext'>>().toBeString()
   })
 })

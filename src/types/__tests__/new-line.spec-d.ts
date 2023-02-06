@@ -3,7 +3,7 @@
  * @module tsconfig-types/types/tests/NewLine
  */
 
-import type { JsonValue } from '@flex-development/tutils'
+import type { JsonValue, OrLowercase } from '@flex-development/tutils'
 import type TestSubject from '../new-line'
 
 describe('unit:types/NewLine', () => {
@@ -11,21 +11,11 @@ describe('unit:types/NewLine', () => {
     expectTypeOf<TestSubject>().toMatchTypeOf<JsonValue>()
   })
 
-  it('should extract "CRLF"', () => {
-    expectTypeOf<TestSubject>().extract<'CRLF'>().toBeString()
+  it('should extract OrLowercase<"CRLF">', () => {
+    expectTypeOf<TestSubject>().extract<OrLowercase<'CRLF'>>().toBeString()
   })
 
-  it('should extract "LF"', () => {
-    expectTypeOf<TestSubject>().extract<'LF'>().toBeString()
-  })
-
-  describe('lowercase', () => {
-    it('should extract "crlf"', () => {
-      expectTypeOf<TestSubject>().extract<'crlf'>().toBeString()
-    })
-
-    it('should extract "lf"', () => {
-      expectTypeOf<TestSubject>().extract<'lf'>().toBeString()
-    })
+  it('should extract OrLowercase<"LF">', () => {
+    expectTypeOf<TestSubject>().extract<OrLowercase<'LF'>>().toBeString()
   })
 })

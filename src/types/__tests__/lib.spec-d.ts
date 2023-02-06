@@ -185,6 +185,10 @@ describe('unit:types/Lib', () => {
     expectTypeOf<TestSubject>().extract<'ES2020.Date'>().toBeString()
   })
 
+  it('should extract "ES2020.Full"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2020.Full'>().toBeString()
+  })
+
   it('should extract "ES2020.Intl"', () => {
     expectTypeOf<TestSubject>().extract<'ES2020.Intl'>().toBeString()
   })
@@ -456,6 +460,10 @@ describe('unit:types/Lib', () => {
 
     it('should extract "es2020.date"', () => {
       expectTypeOf<TestSubject>().extract<'es2020.date'>().toBeString()
+    })
+
+    it('should extract "es2020.full"', () => {
+      expectTypeOf<TestSubject>().extract<'es2020.full'>().toBeString()
     })
 
     it('should extract "es2020.intl"', () => {

@@ -29,6 +29,7 @@ type Lib = OrLowercase<
   | 'ES2015.Symbol'
   | 'ES2015'
   | 'ES2016.Array.Include'
+  | 'ES2016.Full'
   | 'ES2016'
   | 'ES2017.Intl'
   | 'ES2017.Object'

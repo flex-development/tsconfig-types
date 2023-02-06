@@ -85,6 +85,10 @@ describe('unit:types/Lib', () => {
     expectTypeOf<TestSubject>().extract<'ES2016.Array.Include'>().toBeString()
   })
 
+  it('should extract "ES2016.Full"', () => {
+    expectTypeOf<TestSubject>().extract<'ES2016.Full'>().toBeString()
+  })
+
   it('should extract "ES2016"', () => {
     expectTypeOf<TestSubject>().extract<'ES2016'>().toBeString()
   })
@@ -330,6 +334,10 @@ describe('unit:types/Lib', () => {
 
     it('should extract "es2016.array.include"', () => {
       expectTypeOf<TestSubject>().extract<'es2016.array.include'>().toBeString()
+    })
+
+    it('should extract "es2016.full"', () => {
+      expectTypeOf<TestSubject>().extract<'es2016.full'>().toBeString()
     })
 
     it('should extract "es2016"', () => {

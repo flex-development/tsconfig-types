@@ -1,3 +1,10 @@
+## [3.2.0](https://github.com/flex-development/tsconfig-types/compare/3.1.0...3.2.0) (2023-02-06)
+
+
+### :sparkles: Features
+
+* **types:** `LibFile` ([7d0a8d1](https://github.com/flex-development/tsconfig-types/commit/7d0a8d102506ac2fdf64628577dbdf58085663e2))
+
 ## [3.1.0](https://github.com/flex-development/tsconfig-types/compare/3.0.0...3.1.0) (2023-02-06)
 
 

@@ -56,6 +56,7 @@ type Lib = OrLowercase<
   | 'ES2020.Date'
   | 'ES2020.Full'
   | 'ES2020.Intl'
+  | 'ES2020.Number'
   | 'ES2020.Promise'
   | 'ES2020.SharedMemory'
   | 'ES2020.String'

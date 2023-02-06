@@ -16,7 +16,7 @@ interface Plugin extends JsonObject {
   /**
    * Plugin name.
    */
-  name?: string
+  name: string
 }
 
 export type { Plugin as default }

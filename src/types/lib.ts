@@ -31,6 +31,7 @@ type Lib = OrLowercase<
   | 'ES2016.Array.Include'
   | 'ES2016.Full'
   | 'ES2016'
+  | 'ES2017.Full'
   | 'ES2017.Intl'
   | 'ES2017.Object'
   | 'ES2017.SharedMemory'

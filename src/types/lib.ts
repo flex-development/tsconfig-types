@@ -69,6 +69,7 @@ type Lib = OrLowercase<
   | 'ES2021.WeakRef'
   | 'ES2021'
   | 'ES2022.Array'
+  | 'ES2022.Error'
   | 'ESNext.Array'
   | 'ESNext.AsyncIterable'
   | 'ESNext.BigInt'

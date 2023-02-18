@@ -15,7 +15,7 @@ import pkg from './package.json' assert { type: 'json' }
 const config: Config = defineBuildConfig({
   entries: [
     { dts: 'only' },
-    { dts: false, pattern: ['enums/', '**/index.ts'] }
+    { dts: false, pattern: ['**/index.ts', 'enums/*'] }
   ],
   sourcemap: false,
   target: 'node' + pkg.engines.node.replace(/^\D+/, ''),

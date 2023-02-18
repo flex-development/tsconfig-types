@@ -1278,6 +1278,7 @@ __metadata:
     "@commitlint/config-conventional": "npm:17.4.2"
     "@flex-development/mkbuild": "npm:1.0.0-alpha.9"
     "@flex-development/mlly": "npm:1.0.0-alpha.9"
+    "@flex-development/pathe": "npm:1.0.3"
     "@flex-development/pkg-types": "npm:2.0.0"
     "@flex-development/tutils": "npm:6.0.0-alpha.10"
     "@graphql-eslint/eslint-plugin": "npm:3.15.0"

@@ -19,9 +19,12 @@ larsgw
 lcov
 lintstagedrc
 micnncim
+mkbuild
+mlly
 nocheck
 npmrc
 nvmrc
+pathe
 pkgs
 pnpm
 preid
@@ -29,5 +32,6 @@ recompiles
 syncer
 ttypescript
 unstub
+usefseventsonparentdirectory
 vates
 yarnrc

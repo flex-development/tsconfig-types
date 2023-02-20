@@ -9,17 +9,17 @@
  * @const config - ESLint configuration object
  */
 const config = {
-  root: true,
   extends: ['./.eslintrc.base.cjs'],
   overrides: [
     ...require('./.eslintrc.base.cjs').overrides,
     {
-      files: ['./scratch.ts'],
+      files: ['scratch.ts'],
       rules: {
         'unicorn/prefer-module': 0
       }
     }
-  ]
+  ],
+  root: true
 }
 
 module.exports = config

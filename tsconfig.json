@@ -29,8 +29,7 @@
     "outDir": "dist",
     "paths": {
       "#src": ["src/index"],
-      "#src/*": ["src/*"],
-      "#tests/*": ["__tests__/*"]
+      "#src/*": ["src/*"]
     },
     "preserveConstEnums": true,
     "preserveSymlinks": false,
@@ -51,5 +50,5 @@
     "verbatimModuleSyntax": true
   },
   "exclude": ["**/coverage", "**/dist", "**/node_modules"],
-  "include": ["**/**.cjs", "**/**.mjs", "**/**.ts", "**/.*.cjs"]
+  "include": ["**/**.cjs", "**/**.mjs", "**/**.mts", "**/**.ts", "**/.*.cjs"]
 }

@@ -16,7 +16,6 @@
     "isolatedModules": true,
     "lib": ["es2020"],
     "module": "esnext",
-    "moduleDetection": "force",
     "moduleResolution": "node",
     "newLine": "lf",
     "noEmit": true,
@@ -31,14 +30,14 @@
     "outDir": "../../../dist",
     "paths": {
       "#src": ["src/index"],
-      "#src/*": ["src/*"],
-      "#tests/*": ["__tests__/*"]
+      "#src/*": ["src/*"]
     },
     "preserveConstEnums": true,
-    "preserveSymlinks": true,
+    "preserveSymlinks": false,
     "pretty": true,
     "resolveJsonModule": true,
     "rootDir": "../../..",
+    "skipDefaultLibCheck": false,
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
@@ -49,5 +48,5 @@
     "useUnknownInCatchVariables": true
   },
   "exclude": ["**/coverage", "**/dist", "**/node_modules"],
-  "include": ["**/**.cjs", "**/**.mjs", "**/**.ts", "**/.*.cjs"]
+  "include": ["**/**.cjs", "**/**.mjs", "**/**.mts", "**/**.ts", "**/.*.cjs"]
 }

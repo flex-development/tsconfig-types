@@ -125,7 +125,7 @@ const config: UserConfigExport = defineConfig((): UserConfig => {
         min: false,
         printFunctionName: true
       },
-      testTimeout: 15 * 1000,
+      testTimeout: 10 * 1000,
       typecheck: {
         allowJs: false,
         checker: 'tsc',

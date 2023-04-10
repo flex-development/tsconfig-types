@@ -18,6 +18,7 @@
 - [Install](#install)
 - [Use](#use)
 - [API](#api)
+- [Related](#related)
 - [Contribute](#contribute)
 
 ## What is this?

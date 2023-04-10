@@ -181,6 +181,7 @@ repository:
     - tsconfig
     - tsconfig-json
     - typescript
+    - typescript-definitions
   visibility: public
   vulnerability_alerts: true
   web_commit_signoff_required: true

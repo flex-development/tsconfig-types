@@ -2,11 +2,9 @@ ardatan
 bdougie
 cefc
 commitlintrc
-dawidd
 dedupe
 dessant
 dohm
-esbuild
 fbca
 ggshield
 gpgsign
@@ -18,7 +16,6 @@ keyid
 larsgw
 lcov
 lintstagedrc
-micnncim
 mkbuild
 mlly
 nocheck
@@ -26,10 +23,9 @@ npmrc
 nvmrc
 pathe
 pkgs
-pnpm
 preid
 recompiles
-syncer
+tscu
 ttypescript
 unstub
 usefseventsonparentdirectory

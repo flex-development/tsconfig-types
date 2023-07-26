@@ -30,4 +30,5 @@ ttypescript
 unstub
 usefseventsonparentdirectory
 vates
+vitest
 yarnrc

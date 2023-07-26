@@ -30,9 +30,9 @@ branches:
           - context: gitguardian
           - context: lint
           - context: spelling
-          - context: typescript (5.1.0-dev.20230301)
+          - context: typescript (5.0.4)
+          - context: typescript (5.1.6)
           - context: typescript (latest)
-          - context: typescript (~4.9.0)
         strict: true
       restrictions: null
 # https://docs.github.com/rest/deployments/environments#create-or-update-an-environment

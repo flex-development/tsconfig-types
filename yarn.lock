@@ -267,7 +267,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/types@npm:^19.5.0":
+"@commitlint/types@npm:19.5.0, @commitlint/types@npm:^19.5.0":
   version: 19.5.0
   resolution: "@commitlint/types@npm:19.5.0"
   dependencies:
@@ -1752,6 +1752,7 @@ __metadata:
   dependencies:
     "@arethetypeswrong/cli": "npm:0.16.4"
     "@commitlint/cli": "npm:19.5.0"
+    "@commitlint/types": "npm:19.5.0"
     "@flex-development/commitlint-config": "npm:1.0.1"
     "@flex-development/grease": "npm:3.0.0-alpha.9"
     "@flex-development/mkbuild": "npm:1.0.0-alpha.23"

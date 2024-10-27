@@ -1,3 +1,84 @@
+## [5.0.0](https://github.com/flex-development/tsconfig-types/compare/4.0.0...5.0.0) (2024-10-27)
+
+### ⚠ BREAKING CHANGES
+
+- project rewrite
+
+### :package: Build
+
+- [[`2f51889`](https://github.com/flex-development/tsconfig-types/commit/2f51889a2845fb7c835c4d3f7f24c28c55c38ec5)] **deps-dev:** Bump @arethetypeswrong/cli from 0.7.0 to 0.7.1 ([#288](https://github.com/flex-development/tsconfig-types/issues/288))
+- [[`8437f9d`](https://github.com/flex-development/tsconfig-types/commit/8437f9dcff60a1d16bec616b4b30f63bba863d9a)] **deps-dev:** Bump @commitlint/cli from 17.6.7 to 17.7.0 ([#303](https://github.com/flex-development/tsconfig-types/issues/303))
+- [[`cdd07ca`](https://github.com/flex-development/tsconfig-types/commit/cdd07ca438bc18c919ba1bfe6f25208c6c674d90)] **deps-dev:** Bump @commitlint/cli from 17.7.0 to 17.7.1 ([#315](https://github.com/flex-development/tsconfig-types/issues/315))
+- [[`f10051d`](https://github.com/flex-development/tsconfig-types/commit/f10051d4a5dfc93069da2b540eb693dcf3021002)] **deps-dev:** Bump @flex-development/decorator-regex from 1.0.0 to 2.0.0 ([#287](https://github.com/flex-development/tsconfig-types/issues/287))
+- [[`2541fdd`](https://github.com/flex-development/tsconfig-types/commit/2541fdd69963d007dd99dd170cd107d80e0e6886)] **deps-dev:** Bump @flex-development/mkbuild from 1.0.0-alpha.20 to 1.0.0-alpha.21 ([#306](https://github.com/flex-development/tsconfig-types/issues/306))
+- [[`d03c208`](https://github.com/flex-development/tsconfig-types/commit/d03c2081ec3dfa31d75186fdef68aa8fabdd1cd4)] **deps-dev:** Bump @flex-development/mkbuild from 1.0.0-alpha.21 to 1.0.0-alpha.23 ([#342](https://github.com/flex-development/tsconfig-types/issues/342))
+- [[`b7ed0f6`](https://github.com/flex-development/tsconfig-types/commit/b7ed0f66f5167abb2dc1f92fdb1317add0ab9e06)] **deps-dev:** Bump @flex-development/mlly from 1.0.0-alpha.15 to 1.0.0-alpha.16 ([#297](https://github.com/flex-development/tsconfig-types/issues/297))
+- [[`58c3901`](https://github.com/flex-development/tsconfig-types/commit/58c39012f34ca177a8ede98f57514cc0ae9ce0a3)] **deps-dev:** Bump @flex-development/mlly from 1.0.0-alpha.16 to 1.0.0-alpha.17 ([#307](https://github.com/flex-development/tsconfig-types/issues/307))
+- [[`fefb45e`](https://github.com/flex-development/tsconfig-types/commit/fefb45ed8d42e2b26eb459b75da78c3fd2c9e274)] **deps-dev:** Bump @flex-development/mlly from 1.0.0-alpha.17 to 1.0.0-alpha.18 ([#316](https://github.com/flex-development/tsconfig-types/issues/316))
+- [[`30b7a06`](https://github.com/flex-development/tsconfig-types/commit/30b7a06e794ea661952a43468c349d919a2542e0)] **deps-dev:** Bump @flex-development/pathe from 1.0.3 to 2.0.0 ([#281](https://github.com/flex-development/tsconfig-types/issues/281))
+- [[`dbe2c76`](https://github.com/flex-development/tsconfig-types/commit/dbe2c7605af7aa445fb2fe08ed5c5a582d03b504)] **deps-dev:** Bump @flex-development/tsconfig-utils from 1.1.2 to 2.0.1 ([#301](https://github.com/flex-development/tsconfig-types/issues/301))
+- [[`ea0c55e`](https://github.com/flex-development/tsconfig-types/commit/ea0c55e7365592aabeebfc533751a313ac9934ed)] **deps-dev:** Bump @flex-development/tsconfig-utils from 2.0.1 to 2.0.2 ([#314](https://github.com/flex-development/tsconfig-types/issues/314))
+- [[`605518c`](https://github.com/flex-development/tsconfig-types/commit/605518c3ad0cdb5242c1fdfbd2597f78f570cd6c)] **deps-dev:** Bump cspell from 6.31.2 to 6.31.3 ([#300](https://github.com/flex-development/tsconfig-types/issues/300))
+- [[`d229209`](https://github.com/flex-development/tsconfig-types/commit/d229209136d64c63a2c7e3c830b366421126539a)] **deps-dev:** Bump esbuild from 0.18.17 to 0.18.18 ([#294](https://github.com/flex-development/tsconfig-types/issues/294))
+- [[`73587c1`](https://github.com/flex-development/tsconfig-types/commit/73587c161deea3a1ee939a5ea5814c4f7e530b03)] **deps-dev:** Bump esbuild from 0.18.18 to 0.19.0 ([#299](https://github.com/flex-development/tsconfig-types/issues/299))
+- [[`473bcb8`](https://github.com/flex-development/tsconfig-types/commit/473bcb85a8d0e65f1e2d2591365729f4a862ddde)] **deps-dev:** Bump esbuild from 0.19.0 to 0.19.1 ([#309](https://github.com/flex-development/tsconfig-types/issues/309))
+- [[`d871d42`](https://github.com/flex-development/tsconfig-types/commit/d871d42d5b38e1ab4c3e7afa26202592539fba96)] **deps-dev:** Bump esbuild from 0.19.1 to 0.19.2 ([#311](https://github.com/flex-development/tsconfig-types/issues/311))
+- [[`a20ada2`](https://github.com/flex-development/tsconfig-types/commit/a20ada25d2af463971556d09dcf0f891a0e0beda)] **deps-dev:** Bump eslint from 8.45.0 to 8.46.0 ([#279](https://github.com/flex-development/tsconfig-types/issues/279))
+- [[`df68eb3`](https://github.com/flex-development/tsconfig-types/commit/df68eb349c0a1cfea9a1c901dae182636aaef179)] **deps-dev:** Bump eslint from 8.46.0 to 8.47.0 ([#313](https://github.com/flex-development/tsconfig-types/issues/313))
+- [[`e96661a`](https://github.com/flex-development/tsconfig-types/commit/e96661a8abcc4bdb8decd0a764fd79bcfaf95f4e)] **deps-dev:** Bump eslint-config-prettier from 8.10.0 to 9.0.0 ([#293](https://github.com/flex-development/tsconfig-types/issues/293))
+- [[`ce1950a`](https://github.com/flex-development/tsconfig-types/commit/ce1950adb141748a5c9896f84d3167ef9abed267)] **deps-dev:** Bump eslint-config-prettier from 8.8.0 to 8.9.0 ([#276](https://github.com/flex-development/tsconfig-types/issues/276))
+- [[`b8c48e0`](https://github.com/flex-development/tsconfig-types/commit/b8c48e0c737c2644a338087991d00230b15fc274)] **deps-dev:** Bump eslint-config-prettier from 8.9.0 to 8.10.0 ([#289](https://github.com/flex-development/tsconfig-types/issues/289))
+- [[`ca4b318`](https://github.com/flex-development/tsconfig-types/commit/ca4b31804e1f2af098feb671ccf76efdb8f05d07)] **deps-dev:** Bump eslint-import-resolver-typescript from 3.5.5 to 3.6.0 ([#302](https://github.com/flex-development/tsconfig-types/issues/302))
+- [[`c985fab`](https://github.com/flex-development/tsconfig-types/commit/c985fab92e86cf8bf9f393b049a8efc6c617f027)] **deps-dev:** Bump eslint-plugin-import from 2.27.5 to 2.28.0 ([#283](https://github.com/flex-development/tsconfig-types/issues/283))
+- [[`38ca839`](https://github.com/flex-development/tsconfig-types/commit/38ca839320c561174ceb3cf3e6bc8bdd115fe0af)] **deps-dev:** Bump eslint-plugin-markdown from 3.0.0 to 3.0.1 ([#280](https://github.com/flex-development/tsconfig-types/issues/280))
+- [[`be1879c`](https://github.com/flex-development/tsconfig-types/commit/be1879cc3caf5c2202c9063154142142836f0194)] **deps-dev:** Bump eslint-plugin-markdownlint from 0.4.1 to 0.5.0 ([#319](https://github.com/flex-development/tsconfig-types/issues/319))
+- [[`01259ed`](https://github.com/flex-development/tsconfig-types/commit/01259ed41cdff358b7707b0a0c06a705273bbca2)] **deps-dev:** Bump graphql from 16.7.1 to 16.8.0 ([#322](https://github.com/flex-development/tsconfig-types/issues/322))
+- [[`de0ef59`](https://github.com/flex-development/tsconfig-types/commit/de0ef59646485b3dbddab29a6228597e0d96b3e8)] **deps-dev:** Bump graphql from 16.8.0 to 16.8.1 ([#348](https://github.com/flex-development/tsconfig-types/issues/348))
+- [[`e9101fa`](https://github.com/flex-development/tsconfig-types/commit/e9101fa9935cf146c0388e549b311cb04e758ddb)] **deps-dev:** Bump prettier from 3.0.0 to 3.0.1 ([#290](https://github.com/flex-development/tsconfig-types/issues/290))
+- [[`b12800e`](https://github.com/flex-development/tsconfig-types/commit/b12800e0bc87b9a00970aac81609e0ee530403e1)] **deps-dev:** Bump prettier from 3.0.1 to 3.0.2 ([#317](https://github.com/flex-development/tsconfig-types/issues/317))
+- [[`4d54c94`](https://github.com/flex-development/tsconfig-types/commit/4d54c9495742fabf29796548494189949f718161)] **deps-dev:** Bump the typescript-eslint group with 2 updates ([#282](https://github.com/flex-development/tsconfig-types/issues/282))
+- [[`c13821b`](https://github.com/flex-development/tsconfig-types/commit/c13821b8256c7f87924ee7b1fea1779661982661)] **deps-dev:** Bump the typescript-eslint group with 2 updates ([#295](https://github.com/flex-development/tsconfig-types/issues/295))
+- [[`bd3eeba`](https://github.com/flex-development/tsconfig-types/commit/bd3eebabe6a0ec47d7dc7074de06a3aee391a08c)] **deps-dev:** Bump the typescript-eslint group with 2 updates ([#310](https://github.com/flex-development/tsconfig-types/issues/310))
+- [[`29d8e97`](https://github.com/flex-development/tsconfig-types/commit/29d8e976c7ed8064f4532a665a7d0bd084599632)] **deps-dev:** Bump the typescript-eslint group with 2 updates ([#324](https://github.com/flex-development/tsconfig-types/issues/324))
+- [[`6a8dabb`](https://github.com/flex-development/tsconfig-types/commit/6a8dabba396c22bdf7479605ae65166cba2a01d9)] **deps-dev:** Bump vite from 4.4.7 to 4.4.8 ([#285](https://github.com/flex-development/tsconfig-types/issues/285))
+- [[`0e7ddc8`](https://github.com/flex-development/tsconfig-types/commit/0e7ddc8d3990d9796ec52116c32cb25b852489ba)] **deps-dev:** Bump vite from 4.4.8 to 4.4.9 ([#296](https://github.com/flex-development/tsconfig-types/issues/296))
+- [[`eb5d363`](https://github.com/flex-development/tsconfig-types/commit/eb5d363cbbc9ec57ff689e359db01fb70421ab32)] **deps:** Bump @flex-development/tutils from 6.0.0-alpha.12 to 6.0.0-alpha.13 ([#278](https://github.com/flex-development/tsconfig-types/issues/278))
+- [[`879e3dc`](https://github.com/flex-development/tsconfig-types/commit/879e3dc2e80fc722d99e2d91306b2050b9551642)] **deps:** Bump @flex-development/tutils from 6.0.0-alpha.13 to 6.0.0-alpha.14 ([#286](https://github.com/flex-development/tsconfig-types/issues/286))
+- [[`99ebf8c`](https://github.com/flex-development/tsconfig-types/commit/99ebf8cffe2e641ccd4d4e9bdccb1ba3982745ba)] **deps:** Bump @flex-development/tutils from 6.0.0-alpha.14 to 6.0.0-alpha.15 ([#291](https://github.com/flex-development/tsconfig-types/issues/291))
+- [[`13683b2`](https://github.com/flex-development/tsconfig-types/commit/13683b2e2b2aee3ce52e63d3dca082a3a6a011a5)] **deps:** Bump @flex-development/tutils from 6.0.0-alpha.15 to 6.0.0-alpha.18 ([#298](https://github.com/flex-development/tsconfig-types/issues/298))
+- [[`6e8ef08`](https://github.com/flex-development/tsconfig-types/commit/6e8ef08caf59967bcb62c9ad503e4bf0868e4166)] **deps:** Bump @flex-development/tutils from 6.0.0-alpha.18 to 6.0.0-alpha.19 ([#304](https://github.com/flex-development/tsconfig-types/issues/304))
+- [[`d2a3325`](https://github.com/flex-development/tsconfig-types/commit/d2a3325e4c578f243efb31c64d2ed69da527f62a)] **deps:** Bump @flex-development/tutils from 6.0.0-alpha.19 to 6.0.0-alpha.20 ([#308](https://github.com/flex-development/tsconfig-types/issues/308))
+- [[`7acb3e0`](https://github.com/flex-development/tsconfig-types/commit/7acb3e091379f2ad08af0de51c0731908c405b8b)] **deps:** Bump semver from 5.7.1 to 5.7.2 ([#375](https://github.com/flex-development/tsconfig-types/issues/375))
+- [[`4f20531`](https://github.com/flex-development/tsconfig-types/commit/4f20531ff6417e73a8b5c9c39fa39b582a6a8870)] **deps:** Bump tar from 6.1.13 to 6.2.1 ([#374](https://github.com/flex-development/tsconfig-types/issues/374))
+
+### :robot: Continuous Integration
+
+- [[`d93b1d2`](https://github.com/flex-development/tsconfig-types/commit/d93b1d261bc40b4ddb23b52efdd87832eb025c78)] **deps:** Bump actions/cache from 3.3.1 to 3.3.2 ([#337](https://github.com/flex-development/tsconfig-types/issues/337))
+- [[`bb838ce`](https://github.com/flex-development/tsconfig-types/commit/bb838cee30ea766d05120fa08346868e8004308d)] **deps:** Bump actions/checkout from 3.5.3 to 3.6.0 ([#328](https://github.com/flex-development/tsconfig-types/issues/328))
+- [[`6ba0b7e`](https://github.com/flex-development/tsconfig-types/commit/6ba0b7e48b881d96e8db75d56bea9251b2ba7c0b)] **deps:** Bump actions/checkout from 3.6.0 to 4.0.0 ([#335](https://github.com/flex-development/tsconfig-types/issues/335))
+- [[`2c9171d`](https://github.com/flex-development/tsconfig-types/commit/2c9171d9463e0c8b2d76dc3334818589826b6e50)] **deps:** Bump actions/checkout from 4.0.0 to 4.1.0 ([#351](https://github.com/flex-development/tsconfig-types/issues/351))
+- [[`512eaab`](https://github.com/flex-development/tsconfig-types/commit/512eaab5af14eeea35c7414ef177ca08eb8808aa)] **deps:** Bump actions/checkout from 4.1.0 to 4.1.1 ([#356](https://github.com/flex-development/tsconfig-types/issues/356))
+- [[`522859c`](https://github.com/flex-development/tsconfig-types/commit/522859c382e8953742587dc6f42ec5f32e4d5007)] **deps:** Bump actions/setup-node from 3.7.0 to 3.8.0 ([#312](https://github.com/flex-development/tsconfig-types/issues/312))
+- [[`2fe703c`](https://github.com/flex-development/tsconfig-types/commit/2fe703cd01be3b9157e76ec5f0390af41ee95bda)] **deps:** Bump actions/setup-node from 3.8.0 to 3.8.1 ([#321](https://github.com/flex-development/tsconfig-types/issues/321))
+- [[`88b56b1`](https://github.com/flex-development/tsconfig-types/commit/88b56b19f928d69a0614c9c95f9ee5705a59565e)] **deps:** Bump actions/setup-node from 4.0.4 to 4.1.0 ([#372](https://github.com/flex-development/tsconfig-types/issues/372))
+- [[`158a805`](https://github.com/flex-development/tsconfig-types/commit/158a8051caeb8d1ecdfc9f190e5f67c8e733f92f)] **deps:** Bump actions/upload-artifact from 3.1.2 to 3.1.3 ([#336](https://github.com/flex-development/tsconfig-types/issues/336))
+- [[`b5b9927`](https://github.com/flex-development/tsconfig-types/commit/b5b99278668be871005719cc1248c815a73cc78d)] **deps:** Bump actions/upload-artifact from 4.4.0 to 4.4.3 ([#371](https://github.com/flex-development/tsconfig-types/issues/371))
+- [[`d7eae50`](https://github.com/flex-development/tsconfig-types/commit/d7eae5051718c5bd538f6d25b5b13b6d7778b32a)] **deps:** Bump crazy-max/ghaction-import-gpg from 5.3.0 to 5.4.0 ([#334](https://github.com/flex-development/tsconfig-types/issues/334))
+- [[`c99f665`](https://github.com/flex-development/tsconfig-types/commit/c99f665e11a1ced993c14ad86be2387f853e30b1)] **deps:** Bump crazy-max/ghaction-import-gpg from 5.4.0 to 6.0.0 ([#341](https://github.com/flex-development/tsconfig-types/issues/341))
+- [[`629e199`](https://github.com/flex-development/tsconfig-types/commit/629e199f126098c6a34f3d5436e5b19b88e957c1)] **deps:** Bump crazy-max/ghaction-import-gpg from 6.1.0 to 6.2.0 ([#373](https://github.com/flex-development/tsconfig-types/issues/373))
+
+### :pencil: Documentation
+
+- [[`0322d06`](https://github.com/flex-development/tsconfig-types/commit/0322d06902e88cf47032c45e80f98d4dbf609635)] fix package install snippet
+
+### :house_with_garden: Housekeeping
+
+- [[`234858b`](https://github.com/flex-development/tsconfig-types/commit/234858b8022ad813407267a165a9ec2f645c675e)] use `.commitlintrc.ts`
+
+### :mechanical_arm: Refactors
+
+- [[`100b82f`](https://github.com/flex-development/tsconfig-types/commit/100b82f460fa5befe6fcf69af549c94d705c9c24)] project rewrite
+
 ## [4.0.0](https://github.com/flex-development/tsconfig-types/compare/3.2.0...4.0.0) (2023-07-27)
 
 ### ⚠ BREAKING CHANGES
@@ -471,4 +552,5 @@
 - [[`df80f1c`](https://github.com/flex-development/tsconfig-types/commit/df80f1cc75ff8b009defa4b46bf9f8b783d6f166)] **tests:** re-organize tests
 - [[`1382bdd`](https://github.com/flex-development/tsconfig-types/commit/1382bdd83b2b37f34492b755d1b1ae0e25a5ae4a)] **tests:** setup type testing
 - [[`5d89573`](https://github.com/flex-development/tsconfig-types/commit/5d89573c76576bfdc5bf1244fd63e1e70e03257e)] **ts:** enforce `exactOptionalPropertyTypes`
+
 

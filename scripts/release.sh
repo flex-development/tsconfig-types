@@ -1,31 +1,25 @@
 #!/bin/sh
 
+set -e
+
 # Local Release Workflow
 #
 # 1. run typecheck
-# 2. build project
+# 2. pack project
 # 3. run postbuild typecheck
-# 4. print package size report
-# 5. get new package version
-# 6. get release branch name
-# 7. switch to release branch
-# 8. stage changes
-# 9. commit changes
-# 10. push release branch to origin
-# 11. create pull request
+# 4. analyze types
+# 5. create release chore commit
+# 6. cleanup
 #
 # References:
 #
-# - https://cli.github.com/manual/gh_pr_create
+# - https://git-scm.com/docs/git-commit
+# - https://github.com/flex-development/grease
+# - https://jqlang.github.io
 
 yarn typecheck
-yarn build
+yarn pack
 yarn check:types:build
-yarn pkg-size
-VERSION=$(jq .version package.json -r)
-RELEASE_BRANCH=release/$VERSION
-git switch -c $RELEASE_BRANCH
-git add .
-git commit -s -m "release: $(jq .tagPrefix package.json -r)$VERSION"
-git push origin -u --no-verify $RELEASE_BRANCH
-gh pr create --assignee @me --label scope:release --web
+attw package.tgz
+git commit --allow-empty -S -s -m "release(chore): $(jq .version -r <<<$(grease bump -j $@))"
+yarn clean:pack

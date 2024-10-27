@@ -1,12 +1,19 @@
 {
   "compilerOptions": {
-    "declaration": true,
+    "allowJs": false,
+    "checkJs": false,
+    "customConditions": ["tsconfig-types", "import", "node"],
+    "declarationMap": false,
+    "emitDeclarationOnly": true,
+    "isolatedDeclarations": true,
     "noEmitOnError": true,
+    "rootDir": "./src",
+    "outDir": "./dist",
     "skipLibCheck": false,
-    "target": "es2022"
+    "sourceMap": false,
+    "target": "es2023"
   },
-  "exclude": ["**/__mocks__", "**/__tests__"],
+  "exclude": [],
   "extends": "./tsconfig.json",
-  "files": ["./typings/@types/node/http2.d.ts"],
   "include": ["./dist/*", "./src/*"]
 }

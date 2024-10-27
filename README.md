@@ -29,7 +29,7 @@ This package contains TypeScript definitions for `tsconfig.json` files and value
 In Node.js with [yarn][]:
 
 ```sh
-yarn add @flex-development/pkg-types
+yarn add @flex-development/tsconfig-types
 ```
 
 <blockquote>

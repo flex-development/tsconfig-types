@@ -60,12 +60,12 @@ interface Tsconfig extends JsonObject {
    *
    * @see https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-beta/#supporting-multiple-configuration-files-in-extends
    */
-  extends?: string[] | string | null
+  extends?: string[] | string | false | null
 
   /**
    * Files to include in the program.
    */
-  files?: string[] | null
+  files?: string[] | false | null
 
   /**
    * List of files to include in the program or glob patterns representing files
@@ -78,12 +78,12 @@ interface Tsconfig extends JsonObject {
    *
    * @see {@linkcode ProjectReference}
    */
-  references?: ProjectReference[] | null
+  references?: ProjectReference[] | false | null
 
   /**
    * Auto type-acquisition options.
    *
-   * @see {@linkcode ProjectReference}
+   * @see {@linkcode TypeAcquisition}
    */
   typeAcquisition?: TypeAcquisition | null
 

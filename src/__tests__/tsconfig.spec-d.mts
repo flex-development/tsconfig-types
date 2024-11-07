@@ -47,16 +47,16 @@ describe('unit-d:Tsconfig', () => {
       .toEqualTypeOf<Nilable<string[]>>()
   })
 
-  it('should match [extends?: string[] | string | null]', () => {
+  it('should match [extends?: string[] | string | false | null]', () => {
     expectTypeOf<TestSubject>()
       .toHaveProperty('extends')
-      .toEqualTypeOf<Nilable<string[] | string>>()
+      .toEqualTypeOf<Nilable<string[] | string | false>>()
   })
 
-  it('should match [files?: string[] | null]', () => {
+  it('should match [files?: string[] | false | null]', () => {
     expectTypeOf<TestSubject>()
       .toHaveProperty('files')
-      .toEqualTypeOf<Nilable<string[]>>()
+      .toEqualTypeOf<Nilable<string[] | false>>()
   })
 
   it('should match [include?: string[] | null]', () => {
@@ -65,10 +65,10 @@ describe('unit-d:Tsconfig', () => {
       .toEqualTypeOf<Nilable<string[]>>()
   })
 
-  it('should match [references?: ProjectReference[] | null]', () => {
+  it('should match [references?: ProjectReference[] | false | null]', () => {
     expectTypeOf<TestSubject>()
       .toHaveProperty('references')
-      .toEqualTypeOf<Nilable<ProjectReference[]>>()
+      .toEqualTypeOf<Nilable<ProjectReference[] | false>>()
   })
 
   it('should match [typeAcquisition?: TypeAcquisition | null]', () => {

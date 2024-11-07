@@ -1,19 +1,17 @@
 {
   "compilerOptions": {
+    "allowImportingTsExtensions": false,
     "allowJs": false,
     "checkJs": false,
-    "customConditions": ["tsconfig-types", "import", "node"],
+    "customConditions": ["tsconfig-types"],
     "declarationMap": false,
-    "emitDeclarationOnly": true,
-    "isolatedDeclarations": true,
     "noEmitOnError": true,
-    "rootDir": "./src",
-    "outDir": "./dist",
-    "skipLibCheck": false,
+    "outDir": "dist",
+    "rootDir": "src",
     "sourceMap": false,
     "target": "es2023"
   },
-  "exclude": [],
+  "exclude": ["**/__tests__/**"],
   "extends": "./tsconfig.json",
-  "include": ["./dist/*", "./src/*"]
+  "include": ["dist/**/*", "src/**/**.mts"]
 }

@@ -1,10 +1,9 @@
 {
   "compilerOptions": {
-    "allowJs": false,
-    "checkJs": false,
     "customConditions": ["types", "tsconfig-types"]
   },
+  "exclude": [],
   "extends": "./tsconfig.json",
-  "files": ["./typings/typescript/lib.es5.d.ts", "./vitest-env.d.mts"],
-  "include": ["./__tests__/**/**.mts", "./src/**/**.mts", "./src/**/.*.mts"]
+  "files": ["typings/typescript/lib.es5.d.ts", "vitest-env.d.mts"],
+  "include": ["__tests__/**/*", "src/**.mts", "typings/**/*"]
 }

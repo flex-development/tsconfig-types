@@ -1,3 +1,41 @@
+## [5.1.0](https://github.com/flex-development/tsconfig-types/compare/5.0.0...5.1.0) (2024-11-07)
+
+### :package: Build
+
+- [[`ea4ada4`](https://github.com/flex-development/tsconfig-types/commit/ea4ada4ca24cee219f874cb521b466999a116a6e)] **deps-dev:** Bump @stylistic/eslint-plugin from 2.10.0 to 2.10.1 ([#397](https://github.com/flex-development/tsconfig-types/issues/397))
+- [[`11e87a0`](https://github.com/flex-development/tsconfig-types/commit/11e87a0a491644df53ae8f0d839172550413930f)] **deps-dev:** Bump @stylistic/eslint-plugin from 2.9.0 to 2.10.0 ([#389](https://github.com/flex-development/tsconfig-types/issues/389))
+- [[`ada9131`](https://github.com/flex-development/tsconfig-types/commit/ada9131939f8565262ee250e811502d0f077d60d)] **deps-dev:** Bump cspell from 8.15.4 to 8.15.5 ([#391](https://github.com/flex-development/tsconfig-types/issues/391))
+- [[`f65177c`](https://github.com/flex-development/tsconfig-types/commit/f65177cc66b790905669f67ca7f81bb675d52797)] **deps-dev:** Bump cspell from 8.15.5 to 8.15.7 ([#400](https://github.com/flex-development/tsconfig-types/issues/400))
+- [[`5cd9c44`](https://github.com/flex-development/tsconfig-types/commit/5cd9c449bcac00e9f595f218523ea0ff58108e26)] **deps-dev:** Bump dprint from 0.47.4 to 0.47.5 ([#383](https://github.com/flex-development/tsconfig-types/issues/383))
+- [[`434a7c5`](https://github.com/flex-development/tsconfig-types/commit/434a7c5076d5170edf704c38a57ffcf1603884a8)] **deps-dev:** Bump eslint from 9.13.0 to 9.14.0 in the eslint group ([#395](https://github.com/flex-development/tsconfig-types/issues/395))
+- [[`dd6bce9`](https://github.com/flex-development/tsconfig-types/commit/dd6bce9ef0694e18aad17ac323ec5654a8c91110)] **deps-dev:** Bump eslint-plugin-n from 17.11.1 to 17.12.0 ([#390](https://github.com/flex-development/tsconfig-types/issues/390))
+- [[`ddaa77b`](https://github.com/flex-development/tsconfig-types/commit/ddaa77beff850075718373eaab4f60d5b18d89dc)] **deps-dev:** Bump eslint-plugin-n from 17.12.0 to 17.13.0 ([#404](https://github.com/flex-development/tsconfig-types/issues/404))
+- [[`f3a5e99`](https://github.com/flex-development/tsconfig-types/commit/f3a5e99f548dcf474e4e501bf1f07a22f17ad02b)] **deps-dev:** Bump eslint-plugin-yml from 1.14.0 to 1.15.0 ([#394](https://github.com/flex-development/tsconfig-types/issues/394))
+- [[`c94bb50`](https://github.com/flex-development/tsconfig-types/commit/c94bb50a1bdd3a43c5831ec96e136b5141a5d2db)] **deps-dev:** Bump globals from 15.11.0 to 15.12.0 ([#401](https://github.com/flex-development/tsconfig-types/issues/401))
+- [[`3f3b705`](https://github.com/flex-development/tsconfig-types/commit/3f3b705b21fa8a4163d23f71df1654054dc860fb)] **deps-dev:** Bump remark-validate-links from 13.0.1 to 13.0.2 in the remark group ([#396](https://github.com/flex-development/tsconfig-types/issues/396))
+- [[`a42d62b`](https://github.com/flex-development/tsconfig-types/commit/a42d62bdac2280d08f2f202ce0f589ad5cffca9c)] **deps-dev:** Bump the typescript-eslint group across 1 directory with 3 updates ([#384](https://github.com/flex-development/tsconfig-types/issues/384))
+- [[`6a16549`](https://github.com/flex-development/tsconfig-types/commit/6a16549c11e50f07a417d68927c63631ea442f43)] **deps-dev:** Bump the typescript-eslint group with 3 updates ([#387](https://github.com/flex-development/tsconfig-types/issues/387))
+- [[`4357ce3`](https://github.com/flex-development/tsconfig-types/commit/4357ce32820127994c15b923e8bb25c8af8bfa59)] **deps-dev:** Bump the typescript-eslint group with 3 updates ([#399](https://github.com/flex-development/tsconfig-types/issues/399))
+- [[`b150c21`](https://github.com/flex-development/tsconfig-types/commit/b150c217fa259bffed97d8dd8b2d159b6beb2e4d)] **deps-dev:** bump vitest from 2.1.3 to 2.1.4 in the vitest group
+
+### :robot: Continuous Integration
+
+- [[`c403f36`](https://github.com/flex-development/tsconfig-types/commit/c403f3611ee786e576eb0af14b7865c34661d5cf)] **deps:** Bump actions/cache from 4.1.0 to 4.1.2 ([#379](https://github.com/flex-development/tsconfig-types/issues/379))
+- [[`9cd5d17`](https://github.com/flex-development/tsconfig-types/commit/9cd5d173d7e9bd1d9706fa460119e2f7d46faeb9)] **deps:** Bump actions/checkout from 4.2.0 to 4.2.2 ([#380](https://github.com/flex-development/tsconfig-types/issues/380))
+- [[`114abc3`](https://github.com/flex-development/tsconfig-types/commit/114abc35678b335e188b41a9ff0e119b61294318)] **deps:** Bump jchen1/wait-for-green from 1.0.8 to 2.0.0 ([#378](https://github.com/flex-development/tsconfig-types/issues/378))
+
+### :sparkles: Features
+
+- [[`7a6d2f2`](https://github.com/flex-development/tsconfig-types/commit/7a6d2f22534206f6d41ae01233d7fd51b58c8f3d)] `TsconfigJson`
+
+### :bug: Fixes
+
+- [[`9fa2b40`](https://github.com/flex-development/tsconfig-types/commit/9fa2b40d1849812827e489f590c1ee3f1160c969)] [`Tsconfig`] root fields
+
+### :house_with_garden: Housekeeping
+
+- [[`0df32f7`](https://github.com/flex-development/tsconfig-types/commit/0df32f76710a8f9b5e6df62ad1a13c6df5ed43af)] drop `lint-staged`
+
 ## [5.0.0](https://github.com/flex-development/tsconfig-types/compare/4.0.0...5.0.0) (2024-10-27)
 
 ### ⚠ BREAKING CHANGES
@@ -552,5 +590,6 @@
 - [[`df80f1c`](https://github.com/flex-development/tsconfig-types/commit/df80f1cc75ff8b009defa4b46bf9f8b783d6f166)] **tests:** re-organize tests
 - [[`1382bdd`](https://github.com/flex-development/tsconfig-types/commit/1382bdd83b2b37f34492b755d1b1ae0e25a5ae4a)] **tests:** setup type testing
 - [[`5d89573`](https://github.com/flex-development/tsconfig-types/commit/5d89573c76576bfdc5bf1244fd63e1e70e03257e)] **ts:** enforce `exactOptionalPropertyTypes`
+
 
 

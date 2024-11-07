@@ -15,7 +15,6 @@ iife
 jchen
 jsxdev
 kaisugi
-lintstagedrc
 mkbuild
 nocheck
 nvmrc

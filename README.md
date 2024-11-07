@@ -95,6 +95,7 @@ import type {
 - [`TargetMap`](./src/target-map.mts)
 - [`Target`](./src/target.mts)
 - [`Tsconfig`](./src/tsconfig.mts)
+  - alias: `TsconfigJson`
 - [`TypeAcquisition`](./src/type-acquisition.mts)
 - [`WatchDirectoryMap`](./src/watch-directory-map.mts)
 - [`WatchDirectory`](./src/watch-directory.mts)

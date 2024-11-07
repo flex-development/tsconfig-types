@@ -50,7 +50,10 @@ export type { default as PollingWatchMap } from '#lib/polling-watch-map'
 export type { default as ProjectReference } from '#lib/project-reference'
 export type { default as Target } from '#lib/target'
 export type { default as TargetMap } from '#lib/target-map'
-export type { default as Tsconfig } from '#lib/tsconfig'
+export type {
+  default as Tsconfig,
+  default as TsconfigJson
+} from '#lib/tsconfig'
 export type { default as TypeAcquisition } from '#lib/type-acquisition'
 export type { default as WatchDirectory } from '#lib/watch-directory'
 export type { default as WatchDirectoryMap } from '#lib/watch-directory-map'
